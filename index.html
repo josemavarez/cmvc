@@ -1,0 +1,974 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SmartHTML framework, plataforma #LowCode que simplifica el desarrollo de aplicaciones - Kanecode</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="imgfiles/assets/images/favicon.png">
+
+	<link href="css2?family=Reenie+Beanie&family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/animate/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/glightbox/css/glightbox.css">
+
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/css/style.css?14">
+	<script src="jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous" type="42264ca914524534c0c096a6-text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"
+		type="42264ca914524534c0c096a6-text/javascript"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+	<div class="preloader">
+		<img class="preloader-item" src="imgfiles/assets/images/loader/CMVC_GIF.gif" alt="Loading" width="300px"
+			height="400px">
+	</div>
+
+	<div class="search-full collapse bg-dark p-3 pb-lg-0" id="search-open">
+		<div class="container position-relative">
+			<h2 class="position-absolute start-0 bottom-0 mb-n5 display-1 text-white-stroke opacity-1">
+				<span class="d-block">Search</span>
+			</h2>
+			<div class="row vh-100">
+				<div class="d-flex flex-column my-auto py-5 w-100">
+
+					<form class="form-dark form-line position-relative w-100">
+						<div class="mb-3 input-group-lg input-text-white-stroke mb-0">
+
+							<input class="form-control caret-primary mb-0 pe-6" type="text" name="search"
+								placeholder="What are you looking for? ">
+							<span class="focus-border"></span>
+						</div>
+
+						<button type="button" class="position-absolute end-0 top-0 btn pb-3 text-primary-hover h-100">
+							<i class="bi bi-search display-8"></i>
+						</button>
+					</form>
+
+					<p class="small mt-2 mb-0">E.g. Low-Code, kanestudio, Academy, developers, interprise</p>
+				</div>
+
+				<a class="position-fixed top-0 end-0 m-3 m-md-5 btn btn-white btn-round zoom-hover"
+					data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open"
+					aria-expanded="true">
+					<i class="fas fa-times p-0"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="topbarlogin">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary pattern-overlay-7">
+					<div class="modal-title p-3 text-white-force">
+						<h5 class="mb-0">Sign in to your account!</h5>
+						<p class="mb-0">Nice to see you! Please log in with your account.</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="w-100 p-3">
+
+						<form>
+
+							<div class="mb-3">
+								<label class="form-label" for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label" for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1"
+									placeholder="*********">
+							</div>
+
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">keep me signed in</label>
+							</div>
+
+							<div class="row align-items-center">
+								<div class="col-sm-4">
+									<button type="submit" class="btn btn-dark btn-line">Login</button>
+								</div>
+								<div class="col-sm-8 text-sm-end">
+									<span class="text-muted">Don't have an account? <a href="/sign-up">Signup
+											here</a></span>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<header class="navbar-light navbar-transparent navbar-sticky">
+
+		<div class="navbar-top d-none d-lg-block">
+			<div class="container">
+				<div class="d-md-flex justify-content-between align-items-center">
+
+					<div class=" d-flex align-items-center justify-content-center ">
+
+						<ul class="nav justify-content-center justify-content-md-start nav-main">
+							<li class="nav-item">
+								<a href="index.html" class="js-navbar--option" navbar-item-title="/index">Enroll Now</a>
+							</li>
+							<li class="nav-item">
+								<a class="js-navbar--option" navbar-item-title="/enterprise"
+									href="admission.html">Admission Exams</a>
+							</li>
+							<li class="nav-item" navbar-item-title="channel-partners">
+								<a href="contact.html" class="js-navbar--option">Request an Advisor</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="d-flex align-items-center justify-content-center">
+
+						<div class="dropdown ms-3">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownLanguage"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English </a>
+							<div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage">
+
+								<a class="dropdown-item text-white" href="index-spanish.html">Spanish</a>
+							</div>
+						</div>
+
+						<ul class="nav ms-3">
+							<li class="nav-item">
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">(786) 542 5210</a>
+							</li>
+							<li class="nav-item">
+								<a href="index.htm" class="nav-link" target="_blank"><i
+										class="far fa-user me-2"></i>Login</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider-light opacity-1"></div>
+
+
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+
+				<a class="navbar-brand" href="index.html">
+					<img class="navbar-brand-item" src="imgfiles/assets/images/logo.png" alt="Logo">
+				</a>
+
+
+				<button class="navbar-toggler ms-auto" type="button" id="navbar-toggler" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"> </span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+
+					<div class="offcanvas-header navbar-mobile">
+						<a href="index.htm" class="nav-link" target="_blank"><i class="far fa-user me-2"></i>Login</a>
+						<div class="dropdown ms-4 other-nav">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownLanguageMobile"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English </a>
+							<div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguageMobile">
+								<a class="dropdown-item text-white" href="#">Español</a>
+								<a class="dropdown-item text-white" href="#">Français</a>
+								<a class="dropdown-item text-white" href="#">Deutsch</a>
+							</div>
+						</div>
+						<button class="navbar-toggler ms-auto" type="button" id="remove-fixed-body"
+							data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<a class="ms-auto btn navbar-close" aria-label="Close">
+								<i class="fas fa-times p-0"></i>
+							</a>
+						</button>
+					</div>
+					<div class="navbar-mobile text-center">
+						<img src="imgfiles/assets/images/logo-w.png" alt="">
+					</div>
+
+					<div class=" text-center navbar-mobile">
+						<div class="btn-group w-75">
+							<ul class="dropdown-menu w-100 dropdown-menu-mobile" style="background: #fff !important;">
+								<li><a class="dropdown-item" href="index.html">Enroll Now</a></li>
+								<li><a class="dropdown-item" href="admission.html">Admission Exams</a></li>
+								<li><a class="dropdown-item" href="contact.html">Request an Advisor</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class=" navbar-nav navbar-nav-scroll navbar-nav-scroll mx-auto mt-3 mt-lg-0 mb-3 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="" id="about" data-bs-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">About CMVC</a>
+							<ul class="dropdown-menu" aria-labelledby="about">
+								<li> <a navbar-item-title="/index" class="dropdown-item" href="company.html">Company</a>
+								</li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="cares-act-info.html">CARES Act Info</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/privacy-policy.html">Privacy Policy</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+
+							<a class="nav-link " href="programs.html" id="kanestudio" aria-haspopup="true"
+								aria-expanded="false">Programs</a>
+
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="/developers-academy" class="nav-link js-navbar--option"
+								href="services.html" id="" aria-haspopup="true" aria-expanded="false">Services</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="/developers-community" class="nav-link js-navbar--option"
+								href="financial-aid.html" id="" aria-haspopup="true" aria-expanded="false">Financial
+								Aid</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="noticias" class="nav-link js-navbar--option" href="admission.html"
+								id="" aria-haspopup="true" aria-expanded="false">Admission</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth js-other-nav other-nav">
+							<a class="nav-link" href="blog.html" id="">Newsroom</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth js-other-nav other-nav">
+							<a class="nav-link" href="contact.html" id="" aria-haspopup="true"
+								aria-expanded="false">Contact Us</a>
+						</li>
+
+					</ul>
+				</div>
+
+
+				<div class="nav flex-nowrap align-items-center">
+
+					<div class="nav-item">
+						<a class="nav-link ms-2" data-bs-toggle="collapse" href="javascript:void(0)"
+							data-bs-target="#search-open">
+							<i class="bi bi-search display-9 "> </i>
+						</a>
+					</div>
+
+					<div class="nav-item d-none d-xl-block">
+						<a href="contact.html" target="_blank" class="btn btn-sm btn-primary mb-0 mx-2"
+							style=" padding: 0.6rem 1.3rem ">Contact Us</a>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+	</header>
+
+
+	<style>
+		.warn1 {
+			display: none;
+			color: black;
+		}
+
+		.warn2 {
+			display: none;
+			color: black;
+		}
+
+		.warn3 {
+			display: none;
+			color: black;
+		}
+	</style>
+	<main>
+
+
+		<section class=" position-relative bg-dark p-0 ">
+			<div class="position-absolute top-50 start-0 translate-middle z-index-9 ms-4 d-none d-xxl-block">
+				<div class="list-group-inline list-unstyled rotate-270 banner-social">
+					<a href="https://web.facebook.com/CMVCFACE" target="_blank"
+						class="list-group-item bg-transparent mt-4">Facebook</a>
+					<a href="https://www.instagram.com/cmvcmiami/" target="_blank"
+						class="list-group-item bg-transparent mt-4">Instagram</a>
+
+				</div>
+			</div>
+
+
+			<div class="scroll-down scroll-down-light m-5 d-none d-md-block">
+				<div class="scroll-line"></div>
+				<span class="scoll-text">Scroll Down</span>
+			</div>
+
+			<div
+				class="tiny-slider main-tiny-slider dots-white dots-bordered dots-end arrow-bordered arrow-large arrow-round arrow-start-bottom arrow-md-none">
+				<div class="tiny-slider-inner  main-slider-item" data-autoplay="true" data-autoplaytime="7000"
+					data-gutter="0" data-arrow="true" data-dots="true" data-items="1">
+
+					<div class="h-100  bg-dark "
+						style="background-image:url(imgfiles/assets/images/V3_HOME_mockup_nuevo.jpg); background-position: center center; background-size: cover;">
+						<div class="banner-home ">
+							<div class="container h-100  position-relative">
+								<div class="banner-home__text ">
+									<div class="slider-content text-start">
+										<h2
+											class="animate__animated animate__fadeInUp animate__delay-1s display-3 fw-bold text-white">
+											<span class="text-white-stroke text-primary-shadow d-block">Your School
+												of Progress</span>
+										</h2>
+
+										<p class=" text-primary animate__animated animate__fadeInUp animate__delay-3s">
+											Lorem ipsum dolor sit amet. Aut quos earum qui voluptatem voluptatem aut
+											dolorem iusto qui reprehenderit perferendis hic dolorem sint non magnam
+											modi.</p>
+										<div class="animate__animated animate__fadeInUp animate__delay-4s ">
+											<a href="register/index.htm" target="_blank"
+												class="btn btn-primary  me-3">Enroll NOW!</a>
+											<a href="/developers-platform" class="btn btn-outline-dark">Apply NOW!</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="h-100  bg-dark "
+						style="background-image:url(imgfiles/assets/images/HOME_slide_2.jpg); background-position: center center; background-size: cover;">
+						<div class="banner-home ">
+							<div class="container h-100  position-relative">
+								<div class="banner-home__text ">
+									<div class="slider-content text-start">
+										<h2
+											class="animate__animated animate__fadeInUp animate__delay-1s display-3 fw-bold text-white">
+											<span class="text-white-stroke text-primary-shadow d-block">Using
+												SmartHTML</span>
+										</h2>
+										<h3 class="animate__animated animate__fadeInUp animate__delay-2s text-white">to
+											integrate any framework is easy.</h3>
+										<p class=" text-primary animate__animated animate__fadeInUp animate__delay-3s">
+											Bring your project or template and expand its capacity by adding the
+											features you need, without limitations.</p>
+										<div class="animate__animated animate__fadeInUp animate__delay-4s ">
+											<a href="register/index.htm" target="_blank"
+												class="btn btn-primary  me-3">Try it free</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="h-100  bg-dark"
+						style="background-image:url(imgfiles/assets/images/HOME_slide_3.jpg);  background-position: center center; background-size: cover;">
+						<div class="banner-home ">
+							<div class="container h-100  position-relative">
+								<div class="banner-home__text ">
+									<div class="slider-content text-start">
+										<h2
+											class="animate__animated animate__fadeInUp animate__delay-1s display-3 fw-bold text-white">
+											<span class="text-white-stroke text-primary-shadow d-block">Reduce</span>
+										</h2>
+										<h3 class="animate__animated animate__fadeInUp animate__delay-2s text-white">
+											long lines of code.</h3>
+										<p class=" text-primary animate__animated animate__fadeInUp animate__delay-3s">
+											Eliminate repetitive tasks by creating smart and intuitive code blocks.</p>
+										<div class="animate__animated animate__fadeInUp animate__delay-4s ">
+											<a href="register/index.htm" target="_blank"
+												class="btn btn-primary  me-3">Try it free</a>
+											<a href="/developers-platform" class="btn btn-outline-dark">Platform
+												Overview</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="   ">
+			<div class="container">
+				<div class="d-none d-md-block"><img src="imgfiles/assets/images/pieza-1.png" alt="" class="img-program">
+				</div>
+				<div class="row position-relative">
+					<div class="text-center mb-5">
+						<h2 class="display-6 programs-title">
+							Programs
+						</h2>
+						<p class="p-program">Lorem ipsum dolor sit amet. Aut quos earum qui voluptatem voluptatem aut
+							dolorem iusto qui reprehenderit perferendis hic dolorem sint non magnam modi.</p>
+					</div>
+					<div class="container">
+						<div class="row programs ">
+
+							<div class="col-md-4 programs-card row py-5">
+								<div class="col-4 icon-cir">
+									<img src="imgfiles/assets/images/icono-1.png" alt="">
+								</div>
+								<div class="col-8">
+									<h4 class="fw-light text-white text-program"><strong>Dental</strong> <br>Assistant
+									</h4>
+								</div>
+							</div>
+
+							<div class="col-md-4 programs-card row py-5">
+								<div class="col-4 icon-cir">
+									<img src="imgfiles/assets/images/icono-2.png" alt="">
+								</div>
+								<div class="col-8">
+									<h4 class="fw-light text-white text-program"><strong>Associates of Science</strong>
+										<br> in Medical Assisting
+									</h4>
+								</div>
+							</div>
+
+							<div class="col-md-4 programs-card row py-5">
+								<div class="col-4 icon-cir">
+									<img src="imgfiles/assets/images/icono-3.png" alt="">
+								</div>
+								<div class="col-8">
+									<h4 class="fw-light text-white text-program"><strong>Medical</strong> <br>Assistant
+									</h4>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row programs">
+							<div class="col-md-4 programs-card row py-5">
+								<div class="col-4 icon-cir">
+									<img src="imgfiles/assets/images/icono-4.png" alt="">
+								</div>
+								<div class="col-8">
+									<h4 class="fw-light text-white text-program"><strong>Phlebotomy</strong>
+										<br>Technician
+									</h4>
+								</div>
+							</div>
+
+							<div class="col-md-4 programs-card row py-5">
+								<div class="col-4 icon-cir">
+									<img src="imgfiles/assets/images/icono-5.png" alt="">
+								</div>
+								<div class="col-8">
+									<h4 class="fw-light text-white text-program"><strong>Patient Care</strong>
+										<br>Technician
+									</h4>
+								</div>
+							</div>
+
+							<div class="col-md-4 programs-card row py-5">
+								<div class="col-4 icon-cir">
+									<img src="imgfiles/assets/images/icono-6.png" alt="">
+								</div>
+								<div class="col-8">
+									<h4 class="fw-light text-white text-program"><strong>Associate of Science</strong>
+										<br>in Nursing
+									</h4>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+				<div class="animate__animated animate__fadeInUp animate__delay-4s mt-5 text-center">
+					<a href="/programs.html" class="btn btn-outline-dark  me-3">Learn more</a>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+		<section class="bg-light home-foundation "
+			style="background-image:url(imgfiles/assets/images/pieza-2.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+			<div class="container">
+				<div class="row d-flex justify-content-md-between lf-text">
+					<div class="col-lg-7 text-center">
+						<h1 class="s-lf-h1 fw-light ">Are you ready to pursue your <br><strong>passion in
+								healthcare?</strong></h1>
+
+						<h3 class="s-lf-h3">Upcoming starts</h3>
+
+						<div class="lf-icons row">
+							<div class="col-4">
+								<img src="imgfiles/assets/images/icono-1.png" alt="">
+								<p class="p-lf">Dental</p>
+
+							</div>
+							<div class="col-4">
+								<img src="imgfiles/assets/images/icono-3.png" alt="">
+								<p class="p-lf">Medical</p>
+
+							</div>
+							<div class="col-4">
+								<img src="imgfiles/assets/images/icono-6.png" alt="">
+								<p class="p-lf">Nurse</p>
+
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
+
+					<div class="col-lg-5 animate__animated animate__fadeInUp animate__delay-4s mt-5 mb-4">
+						<form class="row g-3 lead-form">
+							<div class="col-md-6">
+								<label for="inputEmail4" class="form-label">Campus</label>
+								<input type="email" class="form-control" id="inputEmail4">
+							</div>
+
+							<div class="col-md-6">
+								<label for="inputState" class="form-label">Program</label>
+								<select class="form-select">
+									<option selected>Choose...</option>
+									<option>...</option>
+								</select>
+							</div>
+							<div class="col-12">
+								<label for="inputAddress" class="form-label">Name</label>
+								<input type="text" class="col-6 form-control" id="inputAddress"
+									placeholder="1234 Main St">
+							</div>
+							<div class="col-12">
+								<label for="inputAddress2" class="form-label">Phone</label>
+								<input type="text" class="form-control" id="inputAddress2"
+									placeholder="Apartment, studio, or floor">
+							</div>
+							<div class="col-md-12">
+								<label for="inputZip" class="form-label">Zip</label>
+								<input type="text" class="form-control" id="inputZip">
+							</div>
+							<div class="col-md-12">
+								<label for="inputCity" class="form-label">Email</label>
+								<input type="email" class="form-control" id="inputCity">
+							</div>
+
+							<div class="col-12">
+								<button type="submit" class="btn btn-primary">Send request</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="home-web-app"
+			style="background-image:url(imgfiles/assets/images/imagen-1.jpg);  background-position: center center; background-size: cover;">
+			<div class="container my-6 ">
+				<div class="row">
+					<div class="offset-md-6 col-md-6">
+						<div>
+							<img src="imgfiles/assets/images/1.png" alt="">
+						</div>
+						<h2 class="display-6 mb-6 text-white text-llete">
+							Are you ready to <br><strong>YOUR PROGRESS?</strong>
+						</h2>
+
+						<a href="/developers-academy" class="btn btn-primary me-3">Enroll now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+		<section>
+
+
+			<div class="services py-6">
+				<div class="container text-services p-4">
+					<div class="col-12 row">
+						<div class="col-12 col-md-4">
+							<h2 class="services-title">
+								Our services
+							</h2>
+							<p class="p-program">Lorem ipsum dolor sit amet. Aut quos earum qui voluptatem voluptatem
+								aut
+								dolorem iusto qui reprehenderit perferendis hic dolorem sint non magnam modi.</p>
+							<a href="/developers-academy" class="btn btn-primary me-3">Enroll now</a>
+						</div>
+						<div class="col-12 col-md-8">
+							<div class="col-12 row">
+								<div class="col-12 col-ls-6 ">
+									<div>
+
+										<h5 class="service-title pt-5">Admission</h5>
+
+										<p>Admission is the first place the student
+											meets when he/she visits the school
+											premises. At this time, the student is
+											greeted by an Admission Officer.</p>
+									</div>
+								</div>
+								<div class="col-12 col-ls-6">
+									<div>
+										<h5 class="service-title">Externship</h5>
+										<p>An externship is an invaluable way of
+											learning about the daily work of
+											professionals in your field. It can offer
+											individuals the opportunity to test a
+											career by job shadowing and having
+											hands on in a real medical scenario.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 row py-4">
+								<div class="col-12 col-ls-6">
+									<div>
+										<h5 class="service-title">Financial Aid and
+											Monthly Payments</h5>
+										<p>Compu-Med Vocational Careers, Corp.
+											is a participant in the student financial
+											assistance programs supported by the
+											U.S. Department of Education.</p>
+									</div>
+								</div>
+								<div class="col-12 col-ls-6">
+									<div>
+										<h5 class="service-title">Employment Assistant</h5>
+										<p>Although no guarantee of
+											employment can be made the Job
+											Placement Department is committed
+											to assisting our students and alumni
+											with employability skills.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="img-services" src="imgfiles/assets/images/pieza-3-.png" alt="">
+
+			</div>
+			</div>
+			<div class="col-7"></div>
+			</div>
+		</section>
+
+
+		<section class=""
+			style="background-image:url(imgfiles/assets/images/imagen-2.jpg);  background-position: center center; background-size: cover;">
+			<div class="container my-4 ">
+				<div class="row">
+					<div class=" col-md-6">
+
+						<h2 class="display-6 text-llete">
+							<strong>CMVC</strong>
+						</h2>
+						<h3 class="display-6 mb-6  text-llete">
+							Your School of Progress
+						</h3>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+	</main>
+	<script type="42264ca914524534c0c096a6-text/javascript">
+
+      $('#contact-form').submit(function (e){	
+		   e.preventDefault();		
+			var datos = new FormData(this);			
+			$.ajax({
+				cache: false,
+				contentType: false,
+				processData: false,
+				type: 'POST',
+				url: '/Contactanos.addSubscribe',
+				data: datos,
+				success: function(response) {
+					console.log(response);
+					 if(response == " OK")
+					{                    
+                  $("#modalcontent").html(`<h3>Thank<br/><span>You</span></h3>
+                     <p>Our partner manager will be contacting you shortly to define the next steps</p>
+                     `);
+						myModal.toggle();
+					}else{
+						$("#Grupo_8640").html(`<circle id="Elipse_1352" data-name="Elipse 1352" cx="58" cy="58" r="58" transform="translate(911 358)" fill="#ff3b3b"/>
+                  <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M31.283,27.451,42.832,15.9A2.706,2.706,0,0,0,39,12.076L27.456,23.625,15.908,12.076A2.706,2.706,0,1,0,12.081,15.9L23.629,27.451,12.081,39a2.706,2.706,0,0,0,3.827,3.827L27.456,31.278,39,42.827A2.706,2.706,0,1,0,42.832,39Z" transform="translate(941.716 388.71)" fill="#fff"/>`);
+                  $("#modalcontent").html(`<h3>Oups</h3>
+                  <p>it was not possible to send this form Please try again later</p>`);
+                   myModal.toggle();
+					} 
+				}
+			});
+		
+	});
+
+	$('#start-form').submit(function (e){	
+		e.preventDefault();
+		var emailPeople=$("#peopleEmail").val();
+		
+		if(emailPeople==''){
+			$("#warnMsn1").show("fast")
+		}
+
+		else if(validateEmail(emailPeople)) {
+			console.log("DONE")
+			$("#warnMsn1").hide()
+			$("#warnMsn2").hide()
+			$("#warnMsn3").show()
+		}
+
+		else{
+			$("#warnMsn2").show("fast")
+		}
+	});
+
+	function validateEmail(email) {
+		const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(String(email).toLowerCase());
+	}
+
+   </script>
+
+	<style>
+		.footerL {
+			font-size: 12px !important;
+		}
+
+		.footerl2 {}
+	</style>
+	<footer class="bg-dark footer-sticky  pt-6">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 col-lg-2 mb-5">
+					<img src="imgfiles/assets/images/logo-w.png" class="mb-5" alt="">
+					<h6 class="mt-2 me-4 text-white footerl2">Follow on:</h6>
+					<div class="d-flex me-auto">
+						<div class="footer-social-media">
+							<a href="https://www.facebook.com/kanecode" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="6.784" height="12.77"
+									viewbox="0 0 6.784 12.77">
+									<path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
+										d="M7.949,7.183,8.3,4.872H6.1v-1.5A1.151,1.151,0,0,1,7.393,2.124h1V.156A12.1,12.1,0,0,0,6.618,0a2.811,2.811,0,0,0-3,3.111V4.872H1.609V7.183H3.623V12.77H6.1V7.183Z"
+										transform="translate(-1.609)" fill="#f8bf52"></path>
+								</svg>
+							</a>
+							<a href="https://twitter.com/KaneCodeInc " target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="15.424" height="12.77"
+									viewbox="0 0 15.424 12.77">
+									<path id="Icon_metro-twitter" data-name="Icon metro-twitter"
+										d="M17.995,6.329a6.236,6.236,0,0,1-1.817.508,3.224,3.224,0,0,0,1.391-1.784,6.265,6.265,0,0,1-2.01.782,3.133,3.133,0,0,0-2.31-1.018,3.2,3.2,0,0,0-3.164,3.224,3.294,3.294,0,0,0,.082.735A8.93,8.93,0,0,1,3.644,5.407a3.267,3.267,0,0,0,.979,4.3,3.108,3.108,0,0,1-1.433-.4c0,.013,0,.027,0,.041A3.211,3.211,0,0,0,5.729,12.51a3.113,3.113,0,0,1-1.429.055A3.176,3.176,0,0,0,7.256,14.8a6.294,6.294,0,0,1-4.685,1.335,8.837,8.837,0,0,0,4.851,1.448,9.033,9.033,0,0,0,9-9.173q0-.21-.009-.417a6.5,6.5,0,0,0,1.579-1.669Z"
+										transform="translate(-2.571 -4.817)" fill="#f8bf52"></path>
+								</svg>
+							</a>
+							<a href="https://es.linkedin.com/company/kanecode" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12.768" height="12.768"
+									viewbox="0 0 12.768 12.768">
+									<path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"
+										d="M2.858,12.768H.211V4.244H2.858ZM1.533,3.081A1.54,1.54,0,1,1,3.066,1.534,1.546,1.546,0,0,1,1.533,3.081Zm11.232,9.687H10.124V8.619c0-.989-.02-2.257-1.376-2.257-1.376,0-1.587,1.074-1.587,2.186v4.221H4.516V4.244H7.055V5.407h.037A2.781,2.781,0,0,1,9.6,4.03c2.679,0,3.171,1.764,3.171,4.056v4.682Z"
+										transform="translate(0 0)" fill="#f8bf52"></path>
+								</svg>
+							</a>
+							<a href="https://www.instagram.com/wearekanecode/ " target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="14.27" height="14.27"
+									viewbox="0 0 14.27 14.27">
+									<g id="Icon_feather-instagram" data-name="Icon feather-instagram"
+										transform="translate(0.75 0.75)">
+										<path id="Path_10898" data-name="Path 10898"
+											d="M6.193,3h6.385A3.193,3.193,0,0,1,15.77,6.193v6.385a3.192,3.192,0,0,1-3.193,3.193H6.193A3.193,3.193,0,0,1,3,12.578V6.193A3.193,3.193,0,0,1,6.193,3Z"
+											transform="translate(-3 -3)" fill="none" stroke="#f8bf52"
+											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+										<path id="Path_10899" data-name="Path 10899"
+											d="M17.052,14.074a2.507,2.507,0,1,1-2.112-2.112A2.507,2.507,0,0,1,17.052,14.074Z"
+											transform="translate(-8.159 -8.085)" fill="none" stroke="#f8bf52"
+											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+										<path id="Path_10900" data-name="Path 10900" d="M26.25,9.75h0"
+											transform="translate(-16.353 -6.877)" fill="none" stroke="#f8bf52"
+											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+									</g>
+								</svg>
+							</a>
+							<a href="https://www.youtube.com/channel/UCdrjbNzgz4WxbZhWhxCwZbg " target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18.162" height="12.77"
+									viewbox="0 0 18.162 12.77">
+									<path id="Icon_awesome-youtube" data-name="Icon awesome-youtube"
+										d="M18.832,6.5a2.282,2.282,0,0,0-1.606-1.616,53.93,53.93,0,0,0-7.1-.382,53.93,53.93,0,0,0-7.1.382A2.282,2.282,0,0,0,1.429,6.5a23.94,23.94,0,0,0-.38,4.4,23.94,23.94,0,0,0,.38,4.4,2.248,2.248,0,0,0,1.606,1.59,53.93,53.93,0,0,0,7.1.382,53.93,53.93,0,0,0,7.1-.382,2.248,2.248,0,0,0,1.606-1.59,23.94,23.94,0,0,0,.38-4.4,23.94,23.94,0,0,0-.38-4.4ZM8.273,13.6V8.2l4.747,2.7L8.273,13.6Z"
+										transform="translate(-1.05 -4.5)" fill="#f8bf52"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class=" col-md-6 col-lg-10">
+					<div class="row justify-content-around">
+
+						<div class="col-md-6 offset-lg-1 col-lg-2 mb-5">
+							<h6 class="mb-4 text-white">Contact Us</h6>
+							<a href="https://kanecode.readme.io/docs" target="_blank"
+								class="text-white mb-2 footerL">2900 West 12th Avenue. 3rd Floor. Hialeah, FL 33012</a>
+
+							<a href="/support" class="text-white mb-2 footerL">(305) 888-9200 / (786) 542-5210</a>
+							<a href="/support" class="text-white mb-2 footerL">info@compumed.edu</a>
+							<a href="/support" class="text-white mb-2 footerL">11401 SW 40 Street. Suite 150, 1st Floor.
+								Miami, FL</a>
+							<a href="/support" class="text-white mb-2 footerL">(305) 553-2898 / (305) 221-6713</a>
+
+						</div>
+						<div class="col-md-6 col-lg-2 mb-5">
+							<h6 class="mb-4 text-white">Useful Links</h6>
+							<a href="/channel-partners-become-a-partner" class="text-white mb-2 footerL">Blog</a>
+							<a href="/channel-partner-program" class="text-white mb-2 footerL">Company</a>
+							<a href="/enterprise-academy" class="text-white mb-2 footerL">Services</a>
+							<a href="/find-your-partner" class="text-white mb-2 footerL">Programs</a>
+							<a href="/channel-partners-become-a-partner" class="text-white mb-2 footerL">Admission</a>
+							<a href="/channel-partner-program" class="text-white mb-2 footerL">Financial aid</a>
+							<a href="/enterprise-academy" class="text-white mb-2 footerL">Get a consultation</a>
+							<a href="/find-your-partner" class="text-white mb-2 footerL">Events</a>
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5">
+							<a class="twitter-timeline" data-height="300" data-theme="dark"
+								href="https://twitter.com/CMVCMiami?ref_src=twsrc%5Etfw">Tweets by CMVCMiami</a>
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="divider-light opacity-1"></div>
+
+			<div class="row align-items-center justify-content-md-between py-4">
+				<div class="col-md-6">
+					<div class="text-center text-md-start text-white" style="font-size: 14px">© 2022 Compumed. All
+						rights reserved
+					</div>
+				</div>
+				<div class="col-md-6 footer-legacy">
+					<ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+						<li class="nav-item"><a class="nav-link  text-white text-primary-hover"
+								href="/developers-privacy-policy">Privacy statement</a></li>
+						<li class="nav-item"><a class="nav-link  text-white text-primary-hover"
+								href="/developers-cookies">Cookie Policy</a></li>
+						<li class="nav-item"><a class="nav-link  text-white text-primary-hover pe-0"
+								href="/developers-contact-us">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+
+	<div class="back-top">
+		<div class="scroll-line"></div>
+		<span class="scoll-text">Go Up</span>
+	</div>
+
+
+	<script src="imgfiles/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"
+		type="42264ca914524534c0c096a6-text/javascript"></script>
+
+	<script src="imgfiles/assets/vendor/glightbox/js/glightbox.js"
+		type="42264ca914524534c0c096a6-text/javascript"></script>
+	<script src="imgfiles/assets/vendor/tiny-slider/tiny-slider.js"
+		type="42264ca914524534c0c096a6-text/javascript"></script>
+	<script src="imgfiles/assets/vendor/jarallax/jarallax.min.js"
+		type="42264ca914524534c0c096a6-text/javascript"></script>
+	<script src="imgfiles/assets/vendor/jarallax/jarallax-video.min.js"
+		type="42264ca914524534c0c096a6-text/javascript"></script>
+
+	<script src="imgfiles/assets/js/functions.js" type="42264ca914524534c0c096a6-text/javascript"></script>
+
+	<script type="42264ca914524534c0c096a6-text/javascript">
+    preloader();
+
+    if($("#staticBackdrop")){
+        var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+            keyboard: true
+         })
+    }
+
+    if($("#modalerror")){
+        var myModalerror = new bootstrap.Modal(document.getElementById('modalerror'), {
+            keyboard: true
+         })
+    }
+
+	if($("#ask")){
+        var myModalask = new bootstrap.Modal(document.getElementById('ask'), {
+            keyboard: true
+         })
+    }
+
+     
+
+    function preloader() {        
+        //console.log("entro al preloader jquery");            
+        $('.preloader').addClass(' animate__animated animate__fadeOut');
+        setTimeout(function(){
+            $('.preloader').css("display" ,'none');
+        }, 500);                    
+    }
+
+</script>
+	<script type="42264ca914524534c0c096a6-text/javascript"
+		src="includes/general_scripts.js%2Cajax%40ajaxCaller.js%2Cajax%40sections.js"></script>
+	<script type="42264ca914524534c0c096a6-text/javascript">
+<!--
+window.onload = new Function('iniciaScripts','document.eBDPageReady=true;' + onload_calls);
+ -->
+</script>
+	<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+		data-cf-settings="42264ca914524534c0c096a6-|49" defer=""></script>
+
+</body>
+
+</html>

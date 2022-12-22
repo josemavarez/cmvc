@@ -1,0 +1,764 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SmartHTML framework, plataforma #LowCode que simplifica el desarrollo de aplicaciones - Kanecode</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="imgfiles/assets/images/favicon.png">
+
+	<link href="css2?family=Reenie+Beanie&family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/animate/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/glightbox/css/glightbox.css">
+
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/css/style.css?14">
+	<script src="jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous" type="42264ca914524534c0c096a6-text/javascript"></script>
+	<script src="ajax/libs/font-awesome/5.12.0-2/js/fontawesome.min.js"
+		type="42264ca914524534c0c096a6-text/javascript"></script>
+	<link href="assets/external/widget.css" rel="stylesheet">
+	<script src="assets/external/widget.js" type="42264ca914524534c0c096a6-text/javascript" async=""></script>
+
+
+</head>
+
+<body>
+
+
+	<div class="preloader">
+		<img class="preloader-item" src="imgfiles/assets/images/loader/CMVC_GIF.gif" alt="Loading" width="300px"
+			height="400px">
+	</div>
+
+	<div class="search-full collapse bg-dark p-3 pb-lg-0" id="search-open">
+		<div class="container position-relative">
+			<h2 class="position-absolute start-0 bottom-0 mb-n5 display-1 text-white-stroke opacity-1">
+				<span class="d-block">Search</span>
+			</h2>
+			<div class="row vh-100">
+				<div class="d-flex flex-column my-auto py-5 w-100">
+
+					<form class="form-dark form-line position-relative w-100">
+						<div class="mb-3 input-group-lg input-text-white-stroke mb-0">
+
+							<input class="form-control caret-primary mb-0 pe-6" type="text" name="search"
+								placeholder="What are you looking for? ">
+							<span class="focus-border"></span>
+						</div>
+
+						<button type="button" class="position-absolute end-0 top-0 btn pb-3 text-primary-hover h-100">
+							<i class="bi bi-search display-8"></i>
+						</button>
+					</form>
+
+					<p class="small mt-2 mb-0">E.g. Low-Code, kanestudio, Academy, developers, interprise</p>
+				</div>
+
+				<a class="position-fixed top-0 end-0 m-3 m-md-5 btn btn-white btn-round zoom-hover"
+					data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open"
+					aria-expanded="true">
+					<i class="fas fa-times p-0"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="topbarlogin">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary pattern-overlay-7">
+					<div class="modal-title p-3 text-white-force">
+						<h5 class="mb-0">Sign in to your account!</h5>
+						<p class="mb-0">Nice to see you! Please log in with your account.</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="w-100 p-3">
+
+						<form>
+
+							<div class="mb-3">
+								<label class="form-label" for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label" for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1"
+									placeholder="*********">
+							</div>
+
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">keep me signed in</label>
+							</div>
+
+							<div class="row align-items-center">
+								<div class="col-sm-4">
+									<button type="submit" class="btn btn-dark btn-line">Login</button>
+								</div>
+								<div class="col-sm-8 text-sm-end">
+									<span class="text-muted">Don't have an account? <a href="/sign-up">Signup
+											here</a></span>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<header class="navbar-light navbar-transparent navbar-sticky">
+
+		<div class="navbar-top d-none d-lg-block">
+			<div class="container">
+				<div class="d-md-flex justify-content-between align-items-center">
+
+					<div class=" d-flex align-items-center justify-content-center ">
+
+						<ul class="nav justify-content-center justify-content-md-start nav-main">
+							<li class="nav-item">
+								<a href="index.html" class="js-navbar--option" navbar-item-title="/index">Enroll Now</a>
+							</li>
+							<li class="nav-item">
+								<a class="js-navbar--option" navbar-item-title="/enterprise"
+									href="/enterprise">Admission Exams</a>
+							</li>
+							<li class="nav-item" navbar-item-title="channel-partners">
+								<a href="/channel-partners" class="js-navbar--option">Request an Advisor</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="d-flex align-items-center justify-content-center">
+
+						<div class="dropdown ms-3">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownLanguage"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English </a>
+							<div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage">
+
+								<a class="dropdown-item text-white" href="index-spanish.html">Spanish</a>
+							</div>
+						</div>
+
+						<ul class="nav ms-3">
+							<li class="nav-item">
+							</li>
+							<li class="nav-item">
+								<a href="/developers-contact-us" class="nav-link">(786) 542 5210</a>
+							</li>
+							<li class="nav-item">
+								<a href="index.htm" class="nav-link" target="_blank"><i
+										class="far fa-user me-2"></i>Login</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider-light opacity-1"></div>
+
+
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+
+				<a class="navbar-brand" href="index.html">
+					<img class="navbar-brand-item" src="imgfiles/assets/images/logo.png" alt="Logo">
+				</a>
+
+
+				<button class="navbar-toggler ms-auto" type="button" id="navbar-toggler" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"> </span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+
+					<div class="offcanvas-header navbar-mobile">
+						<a href="index.htm" class="nav-link" target="_blank"><i class="far fa-user me-2"></i>Login</a>
+						<div class="dropdown ms-4 other-nav">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownLanguageMobile"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English </a>
+							<div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguageMobile">
+								<a class="dropdown-item text-white" href="#">Español</a>
+								<a class="dropdown-item text-white" href="#">Français</a>
+								<a class="dropdown-item text-white" href="#">Deutsch</a>
+							</div>
+						</div>
+						<button class="navbar-toggler ms-auto" type="button" id="remove-fixed-body"
+							data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<a class="ms-auto btn navbar-close" aria-label="Close">
+								<i class="fas fa-times p-0"></i>
+							</a>
+						</button>
+					</div>
+					<div class="navbar-mobile text-center">
+						<svg class="mb-2 " xmlns="http://www.w3.org/2000/svg" width="189.667" height="49.608"
+							viewbox="0 0 189.667 49.608">
+							<g id="Logo_kanecode" data-name="Logo kanecode" transform="translate(-88.283 -413.629)">
+								<g id="Group_7410" data-name="Group 7410" transform="translate(88.68 413.629)">
+									<path id="Path_10676" data-name="Path 10676"
+										d="M871.989,451.147a2.421,2.421,0,0,0-2.423,2.442,2.383,2.383,0,0,0,.5,1.443l5.18,6.795-5.18,6.795a2.383,2.383,0,0,0-.5,1.443,2.42,2.42,0,0,0,2.423,2.442l8.141-10.68Z"
+										transform="translate(-690.86 -442.546)" fill="#f8bf52"></path>
+									<path id="Path_10677" data-name="Path 10677"
+										d="M473.764,455.6c.2-.091.406-.179.618-.251l.064-.022c.154-.051.311-.1.47-.138l.092-.021q.193-.046.389-.081l.131-.023c.149-.024.3-.042.451-.056l.145-.011c.152-.011.306-.018.46-.019h.041c.138,0,.275.005.411.013h0a6.963,6.963,0,0,1,5.185,2.8l3.59-1.077a10.629,10.629,0,0,0-6.515-5.02l-.08-.021q-.232-.059-.469-.108l-.039-.007c-.141-.029-.284-.054-.428-.077l-.118-.018c-.155-.023-.312-.044-.469-.06l-.035,0c-.147-.015-.3-.025-.445-.034l-.125-.006c-.16-.007-.322-.012-.484-.012q-.275,0-.548.014a10.621,10.621,0,0,0,0,21.211q.272.014.548.014c.162,0,.324-.005.484-.012l.125-.006c.149-.009.3-.019.445-.034l.035,0c.157-.016.314-.037.469-.06l.118-.018c.144-.023.287-.048.428-.077l.039-.007q.236-.049.469-.109l.08-.021a10.629,10.629,0,0,0,6.515-5.021l-3.59-1.077a6.962,6.962,0,0,1-5.185,2.8h0c-.136.008-.273.013-.411.013h-.041c-.154,0-.308-.008-.46-.019l-.145-.011c-.152-.014-.3-.032-.451-.056l-.131-.023q-.2-.035-.389-.08l-.092-.021c-.159-.04-.315-.087-.47-.138l-.064-.022c-.212-.072-.416-.16-.618-.251a6.985,6.985,0,0,1-3.753-4.146l-.01-.027h0c-.011-.033-.018-.067-.029-.1-.039-.124-.075-.249-.107-.376-.013-.05-.023-.1-.035-.152s-.022-.092-.031-.138h0a7.008,7.008,0,0,1-.133-.991q-.011-.17-.014-.342c0-.026,0-.052,0-.078,0-.007,0-.013,0-.02s0-.013,0-.02c0-.026,0-.052,0-.078q0-.172.014-.342a7,7,0,0,1,.133-.991h0c.009-.047.021-.092.031-.138s.022-.1.035-.152c.032-.127.068-.252.107-.376.01-.033.018-.067.029-.1h0l.01-.027A6.984,6.984,0,0,1,473.764,455.6Z"
+										transform="translate(-379.786 -442.706)" fill="#fff"></path>
+									<path id="Path_10678" data-name="Path 10678"
+										d="M569.543,450.966a10.68,10.68,0,1,0,10.679,10.68A10.68,10.68,0,0,0,569.543,450.966Zm0,17.672a6.992,6.992,0,1,1,6.992-6.992A6.992,6.992,0,0,1,569.543,468.638Z"
+										transform="translate(-451.383 -442.407)" fill="#fff"></path>
+									<path id="Path_10679" data-name="Path 10679"
+										d="M274.519,451.322a9.885,9.885,0,0,0-9.82,9.471v11.768h4.092V460.793a6.1,6.1,0,0,1,5.728-5.843c3.319,0,5.637,3.183,5.637,6.045v11.566h4.091V460.995A9.836,9.836,0,0,0,274.519,451.322Z"
+										transform="translate(-224.654 -442.681)" fill="#fff"></path>
+									<path id="Path_10680" data-name="Path 10680"
+										d="M373.118,451.322a10.619,10.619,0,1,0,9.229,15.878l-3.627-1.088a6.96,6.96,0,0,1-12.211-1.975h17.007a12.846,12.846,0,0,0,.2-2.176A10.621,10.621,0,0,0,373.118,451.322Zm-6.81,9.189a6.961,6.961,0,0,1,6.81-5.521,7.041,7.041,0,0,1,6.851,5.521Z"
+										transform="translate(-300.019 -442.681)" fill="#fff"></path>
+									<path id="Path_10681" data-name="Path 10681"
+										d="M177.173,453.941h0a10.619,10.619,0,1,0,0,16v2.619H180.8V461.949A10.613,10.613,0,0,0,177.173,453.941ZM170.2,468.934a6.972,6.972,0,1,1,6.972-6.972A6.974,6.974,0,0,1,170.2,468.934Z"
+										transform="translate(-143.619 -442.681)" fill="#fff"></path>
+									<rect id="Rectangle_1505" data-name="Rectangle 1505" width="3.627" height="21.239"
+										transform="translate(0 8.641)" fill="#fff"></rect>
+									<path id="Path_10682" data-name="Path 10682"
+										d="M119.788,453.489a2.421,2.421,0,0,0-2.423-2.442l-8.141,10.68,8.141,10.68a2.42,2.42,0,0,0,2.423-2.442,2.382,2.382,0,0,0-.5-1.443l-5.18-6.795,5.18-6.795A2.383,2.383,0,0,0,119.788,453.489Z"
+										transform="translate(-104.819 -442.469)" fill="#fff"></path>
+									<path id="Path_10683" data-name="Path 10683"
+										d="M680.435,424.889h0a10.619,10.619,0,1,0,0,16v2.619h3.627V413.629h-3.627Zm-6.972,14.993a6.972,6.972,0,1,1,6.972-6.972A6.974,6.974,0,0,1,673.463,439.881Z"
+										transform="translate(-531.512 -413.629)" fill="#fff"></path>
+									<path id="Path_10684" data-name="Path 10684"
+										d="M777.571,451.287a10.619,10.619,0,1,0,9.229,15.879l-3.627-1.088a6.96,6.96,0,0,1-12.211-1.974h17.007a12.867,12.867,0,0,0,.2-2.176A10.621,10.621,0,0,0,777.571,451.287Zm-6.811,9.189a6.962,6.962,0,0,1,6.811-5.522,7.042,7.042,0,0,1,6.852,5.522Z"
+										transform="translate(-611.755 -442.654)" fill="#fff"></path>
+								</g>
+								<g id="Group_7412" data-name="Group 7412" transform="translate(88.283 450.625)">
+									<g id="Group_7411" data-name="Group 7411" transform="translate(0 0)">
+										<path id="Path_10685" data-name="Path 10685"
+											d="M88.283,577.871h.859v8.643h-.859Z"
+											transform="translate(-88.283 -577.216)" fill="#fff"></path>
+										<path id="Path_10686" data-name="Path 10686"
+											d="M115.691,588.6c0-1.5-.773-2.263-1.964-2.263-1.215,0-2.074.816-2.074,2.461v3.66h-.847V588.6c0-1.5-.785-2.263-1.976-2.263-1.227,0-2.074.816-2.074,2.461v3.66H105.9v-6.751h.859v1.162a2.391,2.391,0,0,1,2.222-1.286,2.476,2.476,0,0,1,2.479,1.657,2.442,2.442,0,0,1,2.418-1.657,2.586,2.586,0,0,1,2.664,2.918v3.957h-.847Z"
+											transform="translate(-101.858 -583.162)" fill="#fff"></path>
+										<path id="Path_10687" data-name="Path 10687"
+											d="M167.455,585.692a2.8,2.8,0,0,1,2.651,1.583v-1.484h.859v6.751h-.859v-1.5a2.829,2.829,0,0,1-2.664,1.6,3.487,3.487,0,0,1,.012-6.949Zm.159.754a2.457,2.457,0,0,0-2.492,2.708,2.5,2.5,0,1,0,2.492-2.708Z"
+											transform="translate(-146.836 -583.244)" fill="#fff"></path>
+										<path id="Path_10688" data-name="Path 10688"
+											d="M208.945,585.692a2.813,2.813,0,0,1,2.651,1.57v-1.471h.859v6.924a3.236,3.236,0,0,1-6.333.841h.847a2.294,2.294,0,0,0,2.357,1.546,2.194,2.194,0,0,0,2.271-2.387v-1.669a2.823,2.823,0,0,1-2.651,1.6,3.486,3.486,0,0,1,0-6.949Zm.16.754a2.457,2.457,0,0,0-2.492,2.708,2.5,2.5,0,1,0,2.492-2.708Z"
+											transform="translate(-178.815 -583.244)" fill="#fff"></path>
+										<path id="Path_10689" data-name="Path 10689"
+											d="M248.088,575.644a.626.626,0,1,1,1.252,0,.626.626,0,1,1-1.252,0Zm.2,1.916h.859v6.751h-.859Z"
+											transform="translate(-211.454 -575.013)" fill="#fff"></path>
+										<path id="Path_10690" data-name="Path 10690"
+											d="M271.578,588.6c0-1.5-.81-2.263-2.037-2.263-1.252,0-2.123.791-2.123,2.436v3.685h-.859v-6.751h.859v1.15a2.445,2.445,0,0,1,2.283-1.274,2.611,2.611,0,0,1,2.725,2.918v3.957h-.847Z"
+											transform="translate(-225.69 -583.162)" fill="#fff"></path>
+										<path id="Path_10691" data-name="Path 10691"
+											d="M307.376,592.641a3.48,3.48,0,0,1,0-6.949,3.024,3.024,0,0,1,3.167,3.128,5.966,5.966,0,0,1-.025.68h-5.56a2.351,2.351,0,0,0,2.418,2.411,2.076,2.076,0,0,0,2.16-1.509h.908A2.949,2.949,0,0,1,307.376,592.641Zm-2.418-3.846h4.713a2.2,2.2,0,0,0-2.332-2.362A2.322,2.322,0,0,0,304.958,588.8Z"
+											transform="translate(-254.616 -583.244)" fill="#fff"></path>
+										<path id="Path_10692" data-name="Path 10692"
+											d="M374.271,588.6c0-1.5-.773-2.263-1.964-2.263-1.215,0-2.074.816-2.074,2.461v3.66h-.847V588.6c0-1.5-.786-2.263-1.976-2.263-1.227,0-2.074.816-2.074,2.461v3.66h-.859v-6.751h.859v1.162a2.391,2.391,0,0,1,2.222-1.286,2.476,2.476,0,0,1,2.479,1.657,2.442,2.442,0,0,1,2.418-1.657,2.586,2.586,0,0,1,2.664,2.918v3.957h-.847Z"
+											transform="translate(-301.161 -583.162)" fill="#fff"></path>
+										<path id="Path_10693" data-name="Path 10693"
+											d="M426.156,592.641a3.477,3.477,0,1,1,3.375-3.475A3.28,3.28,0,0,1,426.156,592.641Zm0-.754a2.734,2.734,0,1,0-2.455-2.72A2.439,2.439,0,0,0,426.156,591.887Z"
+											transform="translate(-346.138 -583.244)" fill="#fff"></path>
+										<path id="Path_10694" data-name="Path 10694"
+											d="M465.127,592.46h-.859v-6.751h.859v1.2a2.306,2.306,0,0,1,2.3-1.323v.9h-.233c-1.117,0-2.062.507-2.062,2.2Z"
+											transform="translate(-378.077 -583.162)" fill="#fff"></path>
+										<path id="Path_10695" data-name="Path 10695"
+											d="M490.577,592.641a3.48,3.48,0,0,1,0-6.949,3.024,3.024,0,0,1,3.167,3.128,5.966,5.966,0,0,1-.025.68h-5.56a2.352,2.352,0,0,0,2.418,2.411,2.076,2.076,0,0,0,2.16-1.509h.908A2.949,2.949,0,0,1,490.577,592.641Zm-2.418-3.846h4.713a2.2,2.2,0,0,0-2.332-2.362A2.322,2.322,0,0,0,488.159,588.8Z"
+											transform="translate(-395.82 -583.244)" fill="#fff"></path>
+										<path id="Path_10696" data-name="Path 10696"
+											d="M523.851,609.318h.958l-1.264,3.24h-.6Z"
+											transform="translate(-423.301 -601.454)" fill="#fff"></path>
+										<path id="Path_10697" data-name="Path 10697"
+											d="M563.832,585.692a2.9,2.9,0,0,1,3.081,2.3h-.921a2.043,2.043,0,0,0-2.16-1.558c-1.313,0-2.381.9-2.381,2.733s1.068,2.745,2.381,2.745a2.038,2.038,0,0,0,2.16-1.57h.921a2.94,2.94,0,0,1-3.081,2.3,3.482,3.482,0,0,1,0-6.949Z"
+											transform="translate(-452.309 -583.244)" fill="#fff"></path>
+										<path id="Path_10698" data-name="Path 10698"
+											d="M602.076,592.641a3.477,3.477,0,1,1,3.375-3.475A3.28,3.28,0,0,1,602.076,592.641Zm0-.754a2.734,2.734,0,1,0-2.455-2.72A2.439,2.439,0,0,0,602.076,591.887Z"
+											transform="translate(-481.73 -583.244)" fill="#fff"></path>
+										<path id="Path_10699" data-name="Path 10699"
+											d="M641.691,577.96a2.911,2.911,0,0,1,2.639,1.558V575.66h.859v9.15h-.859V583.3a2.794,2.794,0,0,1-2.651,1.608,3.486,3.486,0,0,1,.012-6.949Zm.147.754a2.457,2.457,0,0,0-2.492,2.708,2.5,2.5,0,1,0,2.492-2.708Z"
+											transform="translate(-512.348 -575.512)" fill="#fff"></path>
+										<path id="Path_10700" data-name="Path 10700"
+											d="M683.254,592.641a3.48,3.48,0,0,1,0-6.949,3.024,3.024,0,0,1,3.167,3.128,5.981,5.981,0,0,1-.024.68h-5.56a2.351,2.351,0,0,0,2.418,2.411,2.076,2.076,0,0,0,2.16-1.509h.908A2.949,2.949,0,0,1,683.254,592.641Zm-2.418-3.846h4.713a2.2,2.2,0,0,0-2.332-2.362A2.321,2.321,0,0,0,680.837,588.8Z"
+											transform="translate(-544.327 -583.244)" fill="#fff"></path>
+										<path id="Path_10701" data-name="Path 10701"
+											d="M740.353,575.66h.859v9.15h-.859Z"
+											transform="translate(-590.872 -575.512)" fill="#fff"></path>
+										<path id="Path_10702" data-name="Path 10702"
+											d="M759.543,592.641a3.48,3.48,0,0,1,0-6.949,3.024,3.024,0,0,1,3.167,3.128,6.025,6.025,0,0,1-.024.68h-5.56a2.351,2.351,0,0,0,2.418,2.411,2.075,2.075,0,0,0,2.16-1.509h.908A2.949,2.949,0,0,1,759.543,592.641Zm-2.418-3.846h4.713a2.2,2.2,0,0,0-2.332-2.362A2.321,2.321,0,0,0,757.125,588.8Z"
+											transform="translate(-603.127 -583.244)" fill="#fff"></path>
+										<path id="Path_10703" data-name="Path 10703"
+											d="M797.607,592.641c-1.522,0-2.59-.767-2.7-2h.884c.074.742.712,1.273,1.8,1.273.958,0,1.5-.519,1.5-1.162,0-1.669-4.026-.693-4.026-3.227,0-1,.945-1.83,2.357-1.83a2.182,2.182,0,0,1,2.455,2.065h-.859a1.434,1.434,0,0,0-1.62-1.323c-.9,0-1.461.482-1.461,1.076,0,1.83,3.965.853,4,3.24C799.938,591.838,798.993,592.641,797.607,592.641Z"
+											transform="translate(-632.919 -583.244)" fill="#fff"></path>
+										<path id="Path_10704" data-name="Path 10704"
+											d="M830.264,592.641c-1.522,0-2.59-.767-2.7-2h.884c.074.742.712,1.273,1.8,1.273.958,0,1.5-.519,1.5-1.162,0-1.669-4.026-.693-4.026-3.227,0-1,.945-1.83,2.357-1.83a2.182,2.182,0,0,1,2.455,2.065h-.859a1.434,1.434,0,0,0-1.62-1.323c-.9,0-1.461.482-1.461,1.076,0,1.83,3.964.853,4,3.24C832.6,591.838,831.651,592.641,830.264,592.641Z"
+											transform="translate(-658.09 -583.244)" fill="#fff"></path>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</div>
+
+					<div class=" text-center navbar-mobile">
+						<div class="btn-group w-75">
+							<button type="button" class="btn btn-outline-light dropdown-toggle  "
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Developers
+							</button>
+							<ul class="dropdown-menu w-100 dropdown-menu-mobile" style="background: #fff !important;">
+								<li><a class="dropdown-item" href="index.html">Enroll Now</a></li>
+								<li><a class="dropdown-item" href="/enterprise">Admission Exams</a></li>
+								<li><a class="dropdown-item" href="/channel-partners">Request an Advisor</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class=" navbar-nav navbar-nav-scroll navbar-nav-scroll mx-auto mt-3 mt-lg-0 mb-3 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="/about-us" id="about" data-bs-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">About CMVC</a>
+							<ul class="dropdown-menu" aria-labelledby="about">
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-about-us">Company</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-platform">CARES Act Info</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-features">Privacy Policy</a></li>
+								<!-- <li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-benefit">Benefit</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-low-code">Low-Code</a></li> -->
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+
+							<a class="nav-link dropdown-toggle" href="#" id="kanestudio" data-bs-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">Programs</a>
+							<ul class="dropdown-menu" aria-labelledby="kanestudio">
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-kanestudio">kanestudio</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-pricing">Pricing</a></li>
+							</ul>
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="/developers-academy" class="nav-link js-navbar--option"
+								href="/developers-academy" id="" aria-haspopup="true" aria-expanded="false">Services</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="/developers-community" class="nav-link js-navbar--option"
+								href="/developers-community" id="" aria-haspopup="true" aria-expanded="false">Financial
+								Aid</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="/noticias" class="nav-link js-navbar--option" href="/noticias" id=""
+								aria-haspopup="true" aria-expanded="false">Admission</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth js-other-nav other-nav">
+							<a class="nav-link" href="#" id="" aria-haspopup="true" aria-expanded="false"
+								onclick="if (!window.__cfRLUnblockHandlers) return false; Calendly.initPopupWidget({url: 'https://calendly.com/ventaskanecode/demo-plataforma?month=2021-09&back=1'});return false;"
+								data-cf-modified-42264ca914524534c0c096a6-="">Newsroom</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth js-other-nav other-nav">
+							<a class="nav-link" href="/developers-contact-us" id="" aria-haspopup="true"
+								aria-expanded="false">Contact Us</a>
+						</li>
+
+					</ul>
+				</div>
+
+
+				<div class="nav flex-nowrap align-items-center">
+
+					<div class="nav-item">
+						<a class="nav-link ms-2" data-bs-toggle="collapse" href="javascript:void(0)"
+							data-bs-target="#search-open">
+							<i class="bi bi-search display-9 "> </i>
+						</a>
+					</div>
+
+					<div class="nav-item d-none d-xl-block">
+						<a href="register/index.htm" target="_blank" class="btn btn-sm btn-primary mb-0 mx-2"
+							style=" padding: 0.6rem 1.3rem ">Contact Us</a>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+	</header>
+
+
+	<style>
+		.warn1 {
+			display: none;
+			color: black;
+		}
+
+		.warn2 {
+			display: none;
+			color: black;
+		}
+
+		.warn3 {
+			display: none;
+			color: black;
+		}
+	</style>
+	<main>
+
+
+
+		<section class="
+		bg-parallax bg-dark-overlay-1
+		pt-8 pt-md-10
+		pb-6 pb-md-8
+		position-relative height-600-header
+		" style="background: none center center / cover no-repeat; z-index: 0;" data-jarallax-original-styles="
+		background: url(imgfiles/assets/images/PRIVATE_POLICY_mockup.jpg)
+		no-repeat center center;
+		background-size: cover;
+		">
+			<div class="
+		   position-absolute
+		   top-50
+		   start-0
+		   translate-middle
+		   z-index-9
+		   ms-4
+		   d-none d-xxl-block
+		   ">
+				<div class="list-group-inline list-unstyled rotate-270">
+					<a href="https://www.facebook.com/kanecode" target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">Facebook</a>
+					<a href="https://es.linkedin.com/company/kanecode" target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">LinkedIn</a>
+					<a href="https://twitter.com/KaneCodeInc" target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">Twitter</a>
+					<a href="https://www.instagram.com/wearekanecode/" target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">Instagram</a>
+					<a href="https://www.youtube.com/channel/UCdrjbNzgz4WxbZhWhxCwZbg  " target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">YouTube</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row d-flex justify-content-lg-between">
+
+					<div class="col-md-7">
+						<img src="/imgfiles/assets/images/about/kanestudio@2x.png" alt="" class="logo-kane">
+						<h2 class="animate__animated animate__fadeInUp animate__delay-1s display-3 fw-bold text-white">
+							<span class="text-white-stroke text-primary-shadow d-block">Admission</span>
+						</h2>
+						<p class="pp-p">Admissions are all about finding a school that fits your needs!</p>
+					</div>
+				</div>
+
+			</div>
+			<div id="jarallax-container-0"
+				style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+				<div
+					style="background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(imgfiles/assets/images/mockup_admission.jpg); position: absolute; top: 0px; left: 0px; width: 100%; height: 600px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 63px; transform: translate3d(0px, -63px, 0px);">
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<section class="s2-bg   ">
+			<div class="container ">
+				<div><img src="imgfiles/assets/images/pieza-5 (2).png" alt="" class="img-pp2"></div>
+				<div><img src="imgfiles/assets/images/pieza-8.png" alt="" class="img-pp3"></div>
+				<div><img src="imgfiles/assets/images/pieza-6.png" alt="" class="img-pp4"></div>
+				<div><img src="imgfiles/assets/images/pieza-4 (2).png" alt="" class="img-pp5"></div>
+				<div class="text-center my-5">
+					<div class="p-4"><img src="imgfiles/assets/images/admission.png" alt=""></div>
+					<h2 class="display-6 pp-title">
+						Admission Requirements <br><strong>and Procedures</strong>
+					</h2>
+					<p>Admissions are all about finding a school that fits your needs! When visiting educational
+						premises, students seek academic environments where they can thrive. At CMVC, students are
+						greeted and identified by an admissions officer. An interview is conducted to explain to the
+						prospective student the services our institution offers and evaluate qualifications for
+						entrance.</p>
+					<div class="row text-start align-items-center">
+
+						<div class="col-6">
+							<h3 class="display-6 pp-subtitle ">
+								Qualifications for Career Programs
+							</h3>
+						</div>
+						<div class="col-6">
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">01</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Prospective students must be 18 or older or have proof of emancipation.</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">02</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">A prerequisite of a High School Diploma or recipient of an Equivalent (General Equivalency Diploma (GED). **Please note that students with High School Diplomas from foreign, non-English speaking countries will be required to obtain an additional certified translation of the High School Diploma in English. The document must be a certified document stating that the translated diploma is equivalent to the High School level in the United States.</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">03</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Students who attended an eligible program at a Title IV institution before July I, 2012, may use any of the ATB alternatives to become eligible for Title IV HEA student assistance.</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">04</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Depending on the vocational career program chosen, a passing score of a CMVC competent assessment or another entrance exam may be required.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section class="home-web-app"
+			style="background-image:url(imgfiles/assets/images/admission2.jpg);  background-position: center center; background-size: cover; width: 100%;">
+			<div class="container my-4 ">
+				<div class="row ">
+					<div class="col-md-6"></div>
+					<div class="col-md-6">
+						<p class="px-4">Compu-Med Vocational Careers reserves the right to deny admission to any applicant who does not meet these requirements. Admission Officers strive to assist, orient, and advise the prospective student on any matter about the school and the programs imparted. After the interview, a school tour is provided, and prospective students are given an exclusive invitation to listen to a class before making the big decision. If the student still wishes to enroll, they are directed to the Financial Aid Department to complete the goal of becoming a healthcare professional one step closer!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<style>
+			.footerL {
+				font-size: 12px !important;
+			}
+
+			.footerl2 {}
+		</style>
+		<footer class="bg-dark footer-sticky  pt-6">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-lg-2 mb-5">
+						<img src="imgfiles/assets/images/logo-w.png" class="mb-5" alt="">
+						<h6 class="mt-2 me-4 text-white footerl2">Follow on:</h6>
+						<div class="d-flex me-auto">
+							<div class="footer-social-media">
+								<a href="https://www.facebook.com/kanecode" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="6.784" height="12.77"
+										viewbox="0 0 6.784 12.77">
+										<path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
+											d="M7.949,7.183,8.3,4.872H6.1v-1.5A1.151,1.151,0,0,1,7.393,2.124h1V.156A12.1,12.1,0,0,0,6.618,0a2.811,2.811,0,0,0-3,3.111V4.872H1.609V7.183H3.623V12.77H6.1V7.183Z"
+											transform="translate(-1.609)" fill="#f8bf52"></path>
+									</svg>
+								</a>
+								<a href="https://twitter.com/KaneCodeInc " target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15.424" height="12.77"
+										viewbox="0 0 15.424 12.77">
+										<path id="Icon_metro-twitter" data-name="Icon metro-twitter"
+											d="M17.995,6.329a6.236,6.236,0,0,1-1.817.508,3.224,3.224,0,0,0,1.391-1.784,6.265,6.265,0,0,1-2.01.782,3.133,3.133,0,0,0-2.31-1.018,3.2,3.2,0,0,0-3.164,3.224,3.294,3.294,0,0,0,.082.735A8.93,8.93,0,0,1,3.644,5.407a3.267,3.267,0,0,0,.979,4.3,3.108,3.108,0,0,1-1.433-.4c0,.013,0,.027,0,.041A3.211,3.211,0,0,0,5.729,12.51a3.113,3.113,0,0,1-1.429.055A3.176,3.176,0,0,0,7.256,14.8a6.294,6.294,0,0,1-4.685,1.335,8.837,8.837,0,0,0,4.851,1.448,9.033,9.033,0,0,0,9-9.173q0-.21-.009-.417a6.5,6.5,0,0,0,1.579-1.669Z"
+											transform="translate(-2.571 -4.817)" fill="#f8bf52"></path>
+									</svg>
+								</a>
+								<a href="https://es.linkedin.com/company/kanecode" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12.768" height="12.768"
+										viewbox="0 0 12.768 12.768">
+										<path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"
+											d="M2.858,12.768H.211V4.244H2.858ZM1.533,3.081A1.54,1.54,0,1,1,3.066,1.534,1.546,1.546,0,0,1,1.533,3.081Zm11.232,9.687H10.124V8.619c0-.989-.02-2.257-1.376-2.257-1.376,0-1.587,1.074-1.587,2.186v4.221H4.516V4.244H7.055V5.407h.037A2.781,2.781,0,0,1,9.6,4.03c2.679,0,3.171,1.764,3.171,4.056v4.682Z"
+											transform="translate(0 0)" fill="#f8bf52"></path>
+									</svg>
+								</a>
+								<a href="https://www.instagram.com/wearekanecode/ " target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14.27" height="14.27"
+										viewbox="0 0 14.27 14.27">
+										<g id="Icon_feather-instagram" data-name="Icon feather-instagram"
+											transform="translate(0.75 0.75)">
+											<path id="Path_10898" data-name="Path 10898"
+												d="M6.193,3h6.385A3.193,3.193,0,0,1,15.77,6.193v6.385a3.192,3.192,0,0,1-3.193,3.193H6.193A3.193,3.193,0,0,1,3,12.578V6.193A3.193,3.193,0,0,1,6.193,3Z"
+												transform="translate(-3 -3)" fill="none" stroke="#f8bf52"
+												stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+											</path>
+											<path id="Path_10899" data-name="Path 10899"
+												d="M17.052,14.074a2.507,2.507,0,1,1-2.112-2.112A2.507,2.507,0,0,1,17.052,14.074Z"
+												transform="translate(-8.159 -8.085)" fill="none" stroke="#f8bf52"
+												stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+											</path>
+											<path id="Path_10900" data-name="Path 10900" d="M26.25,9.75h0"
+												transform="translate(-16.353 -6.877)" fill="none" stroke="#f8bf52"
+												stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+											</path>
+										</g>
+									</svg>
+								</a>
+								<a href="https://www.youtube.com/channel/UCdrjbNzgz4WxbZhWhxCwZbg " target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.162" height="12.77"
+										viewbox="0 0 18.162 12.77">
+										<path id="Icon_awesome-youtube" data-name="Icon awesome-youtube"
+											d="M18.832,6.5a2.282,2.282,0,0,0-1.606-1.616,53.93,53.93,0,0,0-7.1-.382,53.93,53.93,0,0,0-7.1.382A2.282,2.282,0,0,0,1.429,6.5a23.94,23.94,0,0,0-.38,4.4,23.94,23.94,0,0,0,.38,4.4,2.248,2.248,0,0,0,1.606,1.59,53.93,53.93,0,0,0,7.1.382,53.93,53.93,0,0,0,7.1-.382,2.248,2.248,0,0,0,1.606-1.59,23.94,23.94,0,0,0,.38-4.4,23.94,23.94,0,0,0-.38-4.4ZM8.273,13.6V8.2l4.747,2.7L8.273,13.6Z"
+											transform="translate(-1.05 -4.5)" fill="#f8bf52"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class=" col-md-6 col-lg-10">
+						<div class="row justify-content-around">
+
+							<div class="col-md-6 offset-lg-1 col-lg-2 mb-5">
+								<h6 class="mb-4 text-white">Contact Us</h6>
+								<a href="https://kanecode.readme.io/docs" target="_blank"
+									class="text-white mb-2 footerL">2900 West 12th Avenue. 3rd Floor. Hialeah, FL
+									33012</a>
+
+								<a href="/support" class="text-white mb-2 footerL">(305) 888-9200 / (786) 542-5210</a>
+								<a href="/support" class="text-white mb-2 footerL">info@compumed.edu</a>
+								<a href="/support" class="text-white mb-2 footerL">11401 SW 40 Street. Suite 150, 1st
+									Floor.
+									Miami, FL</a>
+								<a href="/support" class="text-white mb-2 footerL">(305) 553-2898 / (305) 221-6713</a>
+
+							</div>
+							<div class="col-md-6 col-lg-2 mb-5">
+								<h6 class="mb-4 text-white">Useful Links</h6>
+								<a href="/channel-partners-become-a-partner" class="text-white mb-2 footerL">Blog</a>
+								<a href="/channel-partner-program" class="text-white mb-2 footerL">Company</a>
+								<a href="/enterprise-academy" class="text-white mb-2 footerL">Services</a>
+								<a href="/find-your-partner" class="text-white mb-2 footerL">Programs</a>
+								<a href="/channel-partners-become-a-partner"
+									class="text-white mb-2 footerL">Admission</a>
+								<a href="/channel-partner-program" class="text-white mb-2 footerL">Financial aid</a>
+								<a href="/enterprise-academy" class="text-white mb-2 footerL">Get a consultation</a>
+								<a href="/find-your-partner" class="text-white mb-2 footerL">Events</a>
+							</div>
+							<div class="col-md-6 col-lg-4 mb-5">
+								<a class="twitter-timeline" data-height="300" data-theme="dark"
+									href="https://twitter.com/CMVCMiami?ref_src=twsrc%5Etfw">Tweets by CMVCMiami</a>
+								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="divider-light opacity-1"></div>
+
+				<div class="row align-items-center justify-content-md-between py-4">
+					<div class="col-md-6">
+						<div class="text-center text-md-start text-white" style="font-size: 14px">© 2022 Compumed. All
+							rights reserved
+						</div>
+					</div>
+					<div class="col-md-6 footer-legacy">
+						<ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+							<li class="nav-item"><a class="nav-link  text-white text-primary-hover"
+									href="/developers-privacy-policy">Privacy statement</a></li>
+							<li class="nav-item"><a class="nav-link  text-white text-primary-hover"
+									href="/developers-cookies">Cookie Policy</a></li>
+							<li class="nav-item"><a class="nav-link  text-white text-primary-hover pe-0"
+									href="/developers-contact-us">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+
+		<div class="back-top">
+			<div class="scroll-line"></div>
+			<span class="scoll-text">Go Up</span>
+		</div>
+
+
+		<script src="imgfiles/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+
+		<script src="imgfiles/assets/vendor/glightbox/js/glightbox.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+		<script src="imgfiles/assets/vendor/tiny-slider/tiny-slider.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+		<script src="imgfiles/assets/vendor/jarallax/jarallax.min.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+		<script src="imgfiles/assets/vendor/jarallax/jarallax-video.min.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+
+		<script src="imgfiles/assets/js/functions.js" type="42264ca914524534c0c096a6-text/javascript"></script>
+
+		<script type="42264ca914524534c0c096a6-text/javascript">
+    preloader();
+
+    if($("#staticBackdrop")){
+        var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+            keyboard: true
+         })
+    }
+
+    if($("#modalerror")){
+        var myModalerror = new bootstrap.Modal(document.getElementById('modalerror'), {
+            keyboard: true
+         })
+    }
+
+	if($("#ask")){
+        var myModalask = new bootstrap.Modal(document.getElementById('ask'), {
+            keyboard: true
+         })
+    }
+
+     
+
+    function preloader() {        
+        //console.log("entro al preloader jquery");            
+        $('.preloader').addClass(' animate__animated animate__fadeOut');
+        setTimeout(function(){
+            $('.preloader').css("display" ,'none');
+        }, 500);                    
+    }
+
+</script>
+		<script type="42264ca914524534c0c096a6-text/javascript"
+			src="includes/general_scripts.js%2Cajax%40ajaxCaller.js%2Cajax%40sections.js"></script>
+		<script type="42264ca914524534c0c096a6-text/javascript">
+<!--
+window.onload = new Function('iniciaScripts','document.eBDPageReady=true;' + onload_calls);
+// -->
+</script>
+		<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+			data-cf-settings="42264ca914524534c0c096a6-|49" defer=""></script>
+</body>
+
+</html>

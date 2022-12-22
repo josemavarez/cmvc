@@ -1,0 +1,1358 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SmartHTML framework, plataforma #LowCode que simplifica el desarrollo de aplicaciones - Kanecode</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="imgfiles/assets/images/favicon.png">
+
+	<link href="css2?family=Reenie+Beanie&family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/animate/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/vendor/glightbox/css/glightbox.css">
+
+	<link rel="stylesheet" type="text/css" href="imgfiles/assets/css/style.css?14">
+	<script src="jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous" type="42264ca914524534c0c096a6-text/javascript"></script>
+	<script src="ajax/libs/font-awesome/5.12.0-2/js/fontawesome.min.js"
+		type="42264ca914524534c0c096a6-text/javascript"></script>
+	<link href="assets/external/widget.css" rel="stylesheet">
+	<script src="assets/external/widget.js" type="42264ca914524534c0c096a6-text/javascript" async=""></script>
+
+
+</head>
+
+<body>
+
+
+	<div class="preloader">
+		<img class="preloader-item" src="imgfiles/assets/images/loader/CMVC_GIF.gif" alt="Loading" width="300px"
+			height="400px">
+	</div>
+
+	<div class="search-full collapse bg-dark p-3 pb-lg-0" id="search-open">
+		<div class="container position-relative">
+			<h2 class="position-absolute start-0 bottom-0 mb-n5 display-1 text-white-stroke opacity-1">
+				<span class="d-block">Search</span>
+			</h2>
+			<div class="row vh-100">
+				<div class="d-flex flex-column my-auto py-5 w-100">
+
+					<form class="form-dark form-line position-relative w-100">
+						<div class="mb-3 input-group-lg input-text-white-stroke mb-0">
+
+							<input class="form-control caret-primary mb-0 pe-6" type="text" name="search"
+								placeholder="What are you looking for? ">
+							<span class="focus-border"></span>
+						</div>
+
+						<button type="button" class="position-absolute end-0 top-0 btn pb-3 text-primary-hover h-100">
+							<i class="bi bi-search display-8"></i>
+						</button>
+					</form>
+
+					<p class="small mt-2 mb-0">E.g. Low-Code, kanestudio, Academy, developers, interprise</p>
+				</div>
+
+				<a class="position-fixed top-0 end-0 m-3 m-md-5 btn btn-white btn-round zoom-hover"
+					data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open"
+					aria-expanded="true">
+					<i class="fas fa-times p-0"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="topbarlogin">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary pattern-overlay-7">
+					<div class="modal-title p-3 text-white-force">
+						<h5 class="mb-0">Sign in to your account!</h5>
+						<p class="mb-0">Nice to see you! Please log in with your account.</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="w-100 p-3">
+
+						<form>
+
+							<div class="mb-3">
+								<label class="form-label" for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label" for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1"
+									placeholder="*********">
+							</div>
+
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">keep me signed in</label>
+							</div>
+
+							<div class="row align-items-center">
+								<div class="col-sm-4">
+									<button type="submit" class="btn btn-dark btn-line">Login</button>
+								</div>
+								<div class="col-sm-8 text-sm-end">
+									<span class="text-muted">Don't have an account? <a href="/sign-up">Signup
+											here</a></span>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<header class="navbar-light navbar-transparent navbar-sticky">
+
+		<div class="navbar-top d-none d-lg-block">
+			<div class="container">
+				<div class="d-md-flex justify-content-between align-items-center">
+
+					<div class=" d-flex align-items-center justify-content-center ">
+
+						<ul class="nav justify-content-center justify-content-md-start nav-main">
+							<li class="nav-item">
+								<a href="index.html" class="js-navbar--option" navbar-item-title="/index">Enroll Now</a>
+							</li>
+							<li class="nav-item">
+								<a class="js-navbar--option" navbar-item-title="/enterprise"
+									href="/enterprise">Admission Exams</a>
+							</li>
+							<li class="nav-item" navbar-item-title="channel-partners">
+								<a href="/channel-partners" class="js-navbar--option">Request an Advisor</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="d-flex align-items-center justify-content-center">
+
+						<div class="dropdown ms-3">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownLanguage"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English </a>
+							<div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage">
+
+								<a class="dropdown-item text-white" href="index-spanish.html">Spanish</a>
+							</div>
+						</div>
+
+						<ul class="nav ms-3">
+							<li class="nav-item">
+							</li>
+							<li class="nav-item">
+								<a href="/developers-contact-us" class="nav-link">(786) 542 5210</a>
+							</li>
+							<li class="nav-item">
+								<a href="index.htm" class="nav-link" target="_blank"><i
+										class="far fa-user me-2"></i>Login</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider-light opacity-1"></div>
+
+
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+
+				<a class="navbar-brand" href="index.html">
+					<img class="navbar-brand-item" src="imgfiles/assets/images/logo.png" alt="Logo">
+				</a>
+
+
+				<button class="navbar-toggler ms-auto" type="button" id="navbar-toggler" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"> </span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+
+					<div class="offcanvas-header navbar-mobile">
+						<a href="index.htm" class="nav-link" target="_blank"><i class="far fa-user me-2"></i>Login</a>
+						<div class="dropdown ms-4 other-nav">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownLanguageMobile"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English </a>
+							<div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguageMobile">
+								<a class="dropdown-item text-white" href="#">Español</a>
+								<a class="dropdown-item text-white" href="#">Français</a>
+								<a class="dropdown-item text-white" href="#">Deutsch</a>
+							</div>
+						</div>
+						<button class="navbar-toggler ms-auto" type="button" id="remove-fixed-body"
+							data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<a class="ms-auto btn navbar-close" aria-label="Close">
+								<i class="fas fa-times p-0"></i>
+							</a>
+						</button>
+					</div>
+					<div class="navbar-mobile text-center">
+						<svg class="mb-2 " xmlns="http://www.w3.org/2000/svg" width="189.667" height="49.608"
+							viewbox="0 0 189.667 49.608">
+							<g id="Logo_kanecode" data-name="Logo kanecode" transform="translate(-88.283 -413.629)">
+								<g id="Group_7410" data-name="Group 7410" transform="translate(88.68 413.629)">
+									<path id="Path_10676" data-name="Path 10676"
+										d="M871.989,451.147a2.421,2.421,0,0,0-2.423,2.442,2.383,2.383,0,0,0,.5,1.443l5.18,6.795-5.18,6.795a2.383,2.383,0,0,0-.5,1.443,2.42,2.42,0,0,0,2.423,2.442l8.141-10.68Z"
+										transform="translate(-690.86 -442.546)" fill="#f8bf52"></path>
+									<path id="Path_10677" data-name="Path 10677"
+										d="M473.764,455.6c.2-.091.406-.179.618-.251l.064-.022c.154-.051.311-.1.47-.138l.092-.021q.193-.046.389-.081l.131-.023c.149-.024.3-.042.451-.056l.145-.011c.152-.011.306-.018.46-.019h.041c.138,0,.275.005.411.013h0a6.963,6.963,0,0,1,5.185,2.8l3.59-1.077a10.629,10.629,0,0,0-6.515-5.02l-.08-.021q-.232-.059-.469-.108l-.039-.007c-.141-.029-.284-.054-.428-.077l-.118-.018c-.155-.023-.312-.044-.469-.06l-.035,0c-.147-.015-.3-.025-.445-.034l-.125-.006c-.16-.007-.322-.012-.484-.012q-.275,0-.548.014a10.621,10.621,0,0,0,0,21.211q.272.014.548.014c.162,0,.324-.005.484-.012l.125-.006c.149-.009.3-.019.445-.034l.035,0c.157-.016.314-.037.469-.06l.118-.018c.144-.023.287-.048.428-.077l.039-.007q.236-.049.469-.109l.08-.021a10.629,10.629,0,0,0,6.515-5.021l-3.59-1.077a6.962,6.962,0,0,1-5.185,2.8h0c-.136.008-.273.013-.411.013h-.041c-.154,0-.308-.008-.46-.019l-.145-.011c-.152-.014-.3-.032-.451-.056l-.131-.023q-.2-.035-.389-.08l-.092-.021c-.159-.04-.315-.087-.47-.138l-.064-.022c-.212-.072-.416-.16-.618-.251a6.985,6.985,0,0,1-3.753-4.146l-.01-.027h0c-.011-.033-.018-.067-.029-.1-.039-.124-.075-.249-.107-.376-.013-.05-.023-.1-.035-.152s-.022-.092-.031-.138h0a7.008,7.008,0,0,1-.133-.991q-.011-.17-.014-.342c0-.026,0-.052,0-.078,0-.007,0-.013,0-.02s0-.013,0-.02c0-.026,0-.052,0-.078q0-.172.014-.342a7,7,0,0,1,.133-.991h0c.009-.047.021-.092.031-.138s.022-.1.035-.152c.032-.127.068-.252.107-.376.01-.033.018-.067.029-.1h0l.01-.027A6.984,6.984,0,0,1,473.764,455.6Z"
+										transform="translate(-379.786 -442.706)" fill="#fff"></path>
+									<path id="Path_10678" data-name="Path 10678"
+										d="M569.543,450.966a10.68,10.68,0,1,0,10.679,10.68A10.68,10.68,0,0,0,569.543,450.966Zm0,17.672a6.992,6.992,0,1,1,6.992-6.992A6.992,6.992,0,0,1,569.543,468.638Z"
+										transform="translate(-451.383 -442.407)" fill="#fff"></path>
+									<path id="Path_10679" data-name="Path 10679"
+										d="M274.519,451.322a9.885,9.885,0,0,0-9.82,9.471v11.768h4.092V460.793a6.1,6.1,0,0,1,5.728-5.843c3.319,0,5.637,3.183,5.637,6.045v11.566h4.091V460.995A9.836,9.836,0,0,0,274.519,451.322Z"
+										transform="translate(-224.654 -442.681)" fill="#fff"></path>
+									<path id="Path_10680" data-name="Path 10680"
+										d="M373.118,451.322a10.619,10.619,0,1,0,9.229,15.878l-3.627-1.088a6.96,6.96,0,0,1-12.211-1.975h17.007a12.846,12.846,0,0,0,.2-2.176A10.621,10.621,0,0,0,373.118,451.322Zm-6.81,9.189a6.961,6.961,0,0,1,6.81-5.521,7.041,7.041,0,0,1,6.851,5.521Z"
+										transform="translate(-300.019 -442.681)" fill="#fff"></path>
+									<path id="Path_10681" data-name="Path 10681"
+										d="M177.173,453.941h0a10.619,10.619,0,1,0,0,16v2.619H180.8V461.949A10.613,10.613,0,0,0,177.173,453.941ZM170.2,468.934a6.972,6.972,0,1,1,6.972-6.972A6.974,6.974,0,0,1,170.2,468.934Z"
+										transform="translate(-143.619 -442.681)" fill="#fff"></path>
+									<rect id="Rectangle_1505" data-name="Rectangle 1505" width="3.627" height="21.239"
+										transform="translate(0 8.641)" fill="#fff"></rect>
+									<path id="Path_10682" data-name="Path 10682"
+										d="M119.788,453.489a2.421,2.421,0,0,0-2.423-2.442l-8.141,10.68,8.141,10.68a2.42,2.42,0,0,0,2.423-2.442,2.382,2.382,0,0,0-.5-1.443l-5.18-6.795,5.18-6.795A2.383,2.383,0,0,0,119.788,453.489Z"
+										transform="translate(-104.819 -442.469)" fill="#fff"></path>
+									<path id="Path_10683" data-name="Path 10683"
+										d="M680.435,424.889h0a10.619,10.619,0,1,0,0,16v2.619h3.627V413.629h-3.627Zm-6.972,14.993a6.972,6.972,0,1,1,6.972-6.972A6.974,6.974,0,0,1,673.463,439.881Z"
+										transform="translate(-531.512 -413.629)" fill="#fff"></path>
+									<path id="Path_10684" data-name="Path 10684"
+										d="M777.571,451.287a10.619,10.619,0,1,0,9.229,15.879l-3.627-1.088a6.96,6.96,0,0,1-12.211-1.974h17.007a12.867,12.867,0,0,0,.2-2.176A10.621,10.621,0,0,0,777.571,451.287Zm-6.811,9.189a6.962,6.962,0,0,1,6.811-5.522,7.042,7.042,0,0,1,6.852,5.522Z"
+										transform="translate(-611.755 -442.654)" fill="#fff"></path>
+								</g>
+								<g id="Group_7412" data-name="Group 7412" transform="translate(88.283 450.625)">
+									<g id="Group_7411" data-name="Group 7411" transform="translate(0 0)">
+										<path id="Path_10685" data-name="Path 10685"
+											d="M88.283,577.871h.859v8.643h-.859Z"
+											transform="translate(-88.283 -577.216)" fill="#fff"></path>
+										<path id="Path_10686" data-name="Path 10686"
+											d="M115.691,588.6c0-1.5-.773-2.263-1.964-2.263-1.215,0-2.074.816-2.074,2.461v3.66h-.847V588.6c0-1.5-.785-2.263-1.976-2.263-1.227,0-2.074.816-2.074,2.461v3.66H105.9v-6.751h.859v1.162a2.391,2.391,0,0,1,2.222-1.286,2.476,2.476,0,0,1,2.479,1.657,2.442,2.442,0,0,1,2.418-1.657,2.586,2.586,0,0,1,2.664,2.918v3.957h-.847Z"
+											transform="translate(-101.858 -583.162)" fill="#fff"></path>
+										<path id="Path_10687" data-name="Path 10687"
+											d="M167.455,585.692a2.8,2.8,0,0,1,2.651,1.583v-1.484h.859v6.751h-.859v-1.5a2.829,2.829,0,0,1-2.664,1.6,3.487,3.487,0,0,1,.012-6.949Zm.159.754a2.457,2.457,0,0,0-2.492,2.708,2.5,2.5,0,1,0,2.492-2.708Z"
+											transform="translate(-146.836 -583.244)" fill="#fff"></path>
+										<path id="Path_10688" data-name="Path 10688"
+											d="M208.945,585.692a2.813,2.813,0,0,1,2.651,1.57v-1.471h.859v6.924a3.236,3.236,0,0,1-6.333.841h.847a2.294,2.294,0,0,0,2.357,1.546,2.194,2.194,0,0,0,2.271-2.387v-1.669a2.823,2.823,0,0,1-2.651,1.6,3.486,3.486,0,0,1,0-6.949Zm.16.754a2.457,2.457,0,0,0-2.492,2.708,2.5,2.5,0,1,0,2.492-2.708Z"
+											transform="translate(-178.815 -583.244)" fill="#fff"></path>
+										<path id="Path_10689" data-name="Path 10689"
+											d="M248.088,575.644a.626.626,0,1,1,1.252,0,.626.626,0,1,1-1.252,0Zm.2,1.916h.859v6.751h-.859Z"
+											transform="translate(-211.454 -575.013)" fill="#fff"></path>
+										<path id="Path_10690" data-name="Path 10690"
+											d="M271.578,588.6c0-1.5-.81-2.263-2.037-2.263-1.252,0-2.123.791-2.123,2.436v3.685h-.859v-6.751h.859v1.15a2.445,2.445,0,0,1,2.283-1.274,2.611,2.611,0,0,1,2.725,2.918v3.957h-.847Z"
+											transform="translate(-225.69 -583.162)" fill="#fff"></path>
+										<path id="Path_10691" data-name="Path 10691"
+											d="M307.376,592.641a3.48,3.48,0,0,1,0-6.949,3.024,3.024,0,0,1,3.167,3.128,5.966,5.966,0,0,1-.025.68h-5.56a2.351,2.351,0,0,0,2.418,2.411,2.076,2.076,0,0,0,2.16-1.509h.908A2.949,2.949,0,0,1,307.376,592.641Zm-2.418-3.846h4.713a2.2,2.2,0,0,0-2.332-2.362A2.322,2.322,0,0,0,304.958,588.8Z"
+											transform="translate(-254.616 -583.244)" fill="#fff"></path>
+										<path id="Path_10692" data-name="Path 10692"
+											d="M374.271,588.6c0-1.5-.773-2.263-1.964-2.263-1.215,0-2.074.816-2.074,2.461v3.66h-.847V588.6c0-1.5-.786-2.263-1.976-2.263-1.227,0-2.074.816-2.074,2.461v3.66h-.859v-6.751h.859v1.162a2.391,2.391,0,0,1,2.222-1.286,2.476,2.476,0,0,1,2.479,1.657,2.442,2.442,0,0,1,2.418-1.657,2.586,2.586,0,0,1,2.664,2.918v3.957h-.847Z"
+											transform="translate(-301.161 -583.162)" fill="#fff"></path>
+										<path id="Path_10693" data-name="Path 10693"
+											d="M426.156,592.641a3.477,3.477,0,1,1,3.375-3.475A3.28,3.28,0,0,1,426.156,592.641Zm0-.754a2.734,2.734,0,1,0-2.455-2.72A2.439,2.439,0,0,0,426.156,591.887Z"
+											transform="translate(-346.138 -583.244)" fill="#fff"></path>
+										<path id="Path_10694" data-name="Path 10694"
+											d="M465.127,592.46h-.859v-6.751h.859v1.2a2.306,2.306,0,0,1,2.3-1.323v.9h-.233c-1.117,0-2.062.507-2.062,2.2Z"
+											transform="translate(-378.077 -583.162)" fill="#fff"></path>
+										<path id="Path_10695" data-name="Path 10695"
+											d="M490.577,592.641a3.48,3.48,0,0,1,0-6.949,3.024,3.024,0,0,1,3.167,3.128,5.966,5.966,0,0,1-.025.68h-5.56a2.352,2.352,0,0,0,2.418,2.411,2.076,2.076,0,0,0,2.16-1.509h.908A2.949,2.949,0,0,1,490.577,592.641Zm-2.418-3.846h4.713a2.2,2.2,0,0,0-2.332-2.362A2.322,2.322,0,0,0,488.159,588.8Z"
+											transform="translate(-395.82 -583.244)" fill="#fff"></path>
+										<path id="Path_10696" data-name="Path 10696"
+											d="M523.851,609.318h.958l-1.264,3.24h-.6Z"
+											transform="translate(-423.301 -601.454)" fill="#fff"></path>
+										<path id="Path_10697" data-name="Path 10697"
+											d="M563.832,585.692a2.9,2.9,0,0,1,3.081,2.3h-.921a2.043,2.043,0,0,0-2.16-1.558c-1.313,0-2.381.9-2.381,2.733s1.068,2.745,2.381,2.745a2.038,2.038,0,0,0,2.16-1.57h.921a2.94,2.94,0,0,1-3.081,2.3,3.482,3.482,0,0,1,0-6.949Z"
+											transform="translate(-452.309 -583.244)" fill="#fff"></path>
+										<path id="Path_10698" data-name="Path 10698"
+											d="M602.076,592.641a3.477,3.477,0,1,1,3.375-3.475A3.28,3.28,0,0,1,602.076,592.641Zm0-.754a2.734,2.734,0,1,0-2.455-2.72A2.439,2.439,0,0,0,602.076,591.887Z"
+											transform="translate(-481.73 -583.244)" fill="#fff"></path>
+										<path id="Path_10699" data-name="Path 10699"
+											d="M641.691,577.96a2.911,2.911,0,0,1,2.639,1.558V575.66h.859v9.15h-.859V583.3a2.794,2.794,0,0,1-2.651,1.608,3.486,3.486,0,0,1,.012-6.949Zm.147.754a2.457,2.457,0,0,0-2.492,2.708,2.5,2.5,0,1,0,2.492-2.708Z"
+											transform="translate(-512.348 -575.512)" fill="#fff"></path>
+										<path id="Path_10700" data-name="Path 10700"
+											d="M683.254,592.641a3.48,3.48,0,0,1,0-6.949,3.024,3.024,0,0,1,3.167,3.128,5.981,5.981,0,0,1-.024.68h-5.56a2.351,2.351,0,0,0,2.418,2.411,2.076,2.076,0,0,0,2.16-1.509h.908A2.949,2.949,0,0,1,683.254,592.641Zm-2.418-3.846h4.713a2.2,2.2,0,0,0-2.332-2.362A2.321,2.321,0,0,0,680.837,588.8Z"
+											transform="translate(-544.327 -583.244)" fill="#fff"></path>
+										<path id="Path_10701" data-name="Path 10701"
+											d="M740.353,575.66h.859v9.15h-.859Z"
+											transform="translate(-590.872 -575.512)" fill="#fff"></path>
+										<path id="Path_10702" data-name="Path 10702"
+											d="M759.543,592.641a3.48,3.48,0,0,1,0-6.949,3.024,3.024,0,0,1,3.167,3.128,6.025,6.025,0,0,1-.024.68h-5.56a2.351,2.351,0,0,0,2.418,2.411,2.075,2.075,0,0,0,2.16-1.509h.908A2.949,2.949,0,0,1,759.543,592.641Zm-2.418-3.846h4.713a2.2,2.2,0,0,0-2.332-2.362A2.321,2.321,0,0,0,757.125,588.8Z"
+											transform="translate(-603.127 -583.244)" fill="#fff"></path>
+										<path id="Path_10703" data-name="Path 10703"
+											d="M797.607,592.641c-1.522,0-2.59-.767-2.7-2h.884c.074.742.712,1.273,1.8,1.273.958,0,1.5-.519,1.5-1.162,0-1.669-4.026-.693-4.026-3.227,0-1,.945-1.83,2.357-1.83a2.182,2.182,0,0,1,2.455,2.065h-.859a1.434,1.434,0,0,0-1.62-1.323c-.9,0-1.461.482-1.461,1.076,0,1.83,3.965.853,4,3.24C799.938,591.838,798.993,592.641,797.607,592.641Z"
+											transform="translate(-632.919 -583.244)" fill="#fff"></path>
+										<path id="Path_10704" data-name="Path 10704"
+											d="M830.264,592.641c-1.522,0-2.59-.767-2.7-2h.884c.074.742.712,1.273,1.8,1.273.958,0,1.5-.519,1.5-1.162,0-1.669-4.026-.693-4.026-3.227,0-1,.945-1.83,2.357-1.83a2.182,2.182,0,0,1,2.455,2.065h-.859a1.434,1.434,0,0,0-1.62-1.323c-.9,0-1.461.482-1.461,1.076,0,1.83,3.964.853,4,3.24C832.6,591.838,831.651,592.641,830.264,592.641Z"
+											transform="translate(-658.09 -583.244)" fill="#fff"></path>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</div>
+
+					<div class=" text-center navbar-mobile">
+						<div class="btn-group w-75">
+							<button type="button" class="btn btn-outline-light dropdown-toggle  "
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Developers
+							</button>
+							<ul class="dropdown-menu w-100 dropdown-menu-mobile" style="background: #fff !important;">
+								<li><a class="dropdown-item" href="index.html">Enroll Now</a></li>
+								<li><a class="dropdown-item" href="/enterprise">Admission Exams</a></li>
+								<li><a class="dropdown-item" href="/channel-partners">Request an Advisor</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class=" navbar-nav navbar-nav-scroll navbar-nav-scroll mx-auto mt-3 mt-lg-0 mb-3 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="/about-us" id="about" data-bs-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">About CMVC</a>
+							<ul class="dropdown-menu" aria-labelledby="about">
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-about-us">Company</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-platform">CARES Act Info</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-features">Privacy Policy</a></li>
+								<!-- <li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-benefit">Benefit</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-low-code">Low-Code</a></li> -->
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+
+							<a class="nav-link dropdown-toggle" href="#" id="kanestudio" data-bs-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">Programs</a>
+							<ul class="dropdown-menu" aria-labelledby="kanestudio">
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-kanestudio">kanestudio</a></li>
+								<li> <a navbar-item-title="/index" class="dropdown-item"
+										href="/developers-pricing">Pricing</a></li>
+							</ul>
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="/developers-academy" class="nav-link js-navbar--option"
+								href="/developers-academy" id="" aria-haspopup="true" aria-expanded="false">Services</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="/developers-community" class="nav-link js-navbar--option"
+								href="/developers-community" id="" aria-haspopup="true" aria-expanded="false">Financial
+								Aid</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a navbar-item-title="/noticias" class="nav-link js-navbar--option" href="/noticias" id=""
+								aria-haspopup="true" aria-expanded="false">Admission</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth js-other-nav other-nav">
+							<a class="nav-link" href="#" id="" aria-haspopup="true" aria-expanded="false"
+								onclick="if (!window.__cfRLUnblockHandlers) return false; Calendly.initPopupWidget({url: 'https://calendly.com/ventaskanecode/demo-plataforma?month=2021-09&back=1'});return false;"
+								data-cf-modified-42264ca914524534c0c096a6-="">Newsroom</a>
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth js-other-nav other-nav">
+							<a class="nav-link" href="/developers-contact-us" id="" aria-haspopup="true"
+								aria-expanded="false">Contact Us</a>
+						</li>
+
+					</ul>
+				</div>
+
+
+				<div class="nav flex-nowrap align-items-center">
+
+					<div class="nav-item">
+						<a class="nav-link ms-2" data-bs-toggle="collapse" href="javascript:void(0)"
+							data-bs-target="#search-open">
+							<i class="bi bi-search display-9 "> </i>
+						</a>
+					</div>
+
+					<div class="nav-item d-none d-xl-block">
+						<a href="register/index.htm" target="_blank" class="btn btn-sm btn-primary mb-0 mx-2"
+							style=" padding: 0.6rem 1.3rem ">Contact Us</a>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+	</header>
+
+
+	<style>
+		.warn1 {
+			display: none;
+			color: black;
+		}
+
+		.warn2 {
+			display: none;
+			color: black;
+		}
+
+		.warn3 {
+			display: none;
+			color: black;
+		}
+	</style>
+	<main>
+
+
+
+		<section class="
+		bg-parallax bg-dark-overlay-1
+		pt-8 pt-md-10
+		pb-6 pb-md-8
+		position-relative height-600-header
+		" style="background: none center center / cover no-repeat; z-index: 0;" data-jarallax-original-styles="
+		background: url(imgfiles/assets/images/PRIVATE_POLICY_mockup.jpg)
+		no-repeat center center;
+		background-size: cover;
+		">
+			<div class="
+		   position-absolute
+		   top-50
+		   start-0
+		   translate-middle
+		   z-index-9
+		   ms-4
+		   d-none d-xxl-block
+		   ">
+				<div class="list-group-inline list-unstyled rotate-270">
+					<a href="https://www.facebook.com/kanecode" target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">Facebook</a>
+					<a href="https://es.linkedin.com/company/kanecode" target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">LinkedIn</a>
+					<a href="https://twitter.com/KaneCodeInc" target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">Twitter</a>
+					<a href="https://www.instagram.com/wearekanecode/" target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">Instagram</a>
+					<a href="https://www.youtube.com/channel/UCdrjbNzgz4WxbZhWhxCwZbg  " target="_blank"
+						class="list-group-item text-white bg-transparent mt-4">YouTube</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row d-flex justify-content-lg-between">
+
+					<div class="col-md-7">
+						<img src="/imgfiles/assets/images/about/kanestudio@2x.png" alt="" class="logo-kane">
+						<h2 class="animate__animated animate__fadeInUp animate__delay-1s display-3 fw-bold text-white">
+							<span class="text-white-stroke text-primary-shadow d-block"><strong>Financial</strong>
+								Aid</span>
+						</h2>
+						<p>Compu-Med Vocational Careers strive to make education cost
+							affordable. CMVC is certif ed by the U.S. Department of Education
+							for Title IV funds.</p>
+					</div>
+				</div>
+
+			</div>
+			<div id="jarallax-container-0"
+				style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+				<div
+					style="background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(imgfiles/assets/images/mockup_financial.jpg); position: absolute; top: 0px; left: 0px; width: 100%; height: 684px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 63px; transform: translate3d(0px, -63px, 0px);">
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<section class="" style="background-color: #f3f3f3;">
+			<div class="container">
+				<div><img src="imgfiles/assets/images/pieza-8.png" alt="" class="img-pp3"></div>
+				<div><img src="imgfiles/assets/images/pieza-6.png" alt="" class="img-pp4"></div>
+				<div><img src="imgfiles/assets/images/pieza-4 (2).png" alt="" class="img-pp5"></div>
+				<div class="row g-0 d-flex align-items-center">
+
+					<div class="col-sm-8">
+						<div class="caja-color amarilla caja-color-mas-grande" style="background-color: #ffffff;">
+
+							<p>Tuition assistance and f nancial aid is available, and there are a
+								variety of grants, loans, scholarships, and other options available.
+								These programs are designed to help applicants provide Title IV
+								to continue their education. Financial Aid is available for those
+								who qualify.</p>
+							<h2 class="mb-3 display-6 mt-4">Financial <br>
+								<strong>Aid Procedures</strong>
+							</h2>
+							<p>CMVC Financial Aid Off cers assist the student with f nancial
+								planning. To apply for f nancial aid, students must complete the
+								Free Application for Federal Student Aid (FAFSA).</p>
+							<img src="imgfiles/assets/images/Identidad 1.png" alt="">
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="caja-color caja-color-mas-grande" style="background-color: #F8BF52;">
+							<img src="imgfiles/assets/images/icono-cash.png" alt="">
+							<h2 class="mb-3 display-6 mt-4">grants <br>
+								<strong>loans</strong> <br>
+								scholarships
+							</h2>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="s2-bg"
+			style="background-image:url(imgfiles/assets/images/bg3finaid.png);  background-position: left top; background-size: contain;background-repeat: no-repeat;">
+			<div class="container ">
+				<div><img src="imgfiles/assets/images/pieza-5 (2).png" alt="" class="img-pp2"></div>
+				<div><img src="imgfiles/assets/images/pieza-8.png" alt="" class="img-pp3"></div>
+				<div><img src="imgfiles/assets/images/pieza-6.png" alt="" class="img-pp4"></div>
+				<div><img src="imgfiles/assets/images/pieza-4 (2).png" alt="" class="img-pp5"></div>
+				<div class="text-left my-5">
+					<h2 class="display-6 mb-6 pp-title">
+						Applying for <strong>Financial Aid</strong>
+					</h2>
+					<div class="row">
+						<div class="col-12">
+
+							Students interested in applying for the Federal Title IV aid program must complete the Free
+							Application Federal Student Aid (FAFSA). The FAFSA may be completed at
+							https://studentaid.gov.
+							You must complete a FAFSA every year. <br>
+							CompuMed Federal School Code is 031086.
+							<br>
+							<strong>Some documents needed to apply for Federal Financial Aid:</strong>
+						</div>
+						<div class="col-12 col-md-6 pt-5">
+
+
+
+
+
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">01</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Your Social Security number (it is important that you enter it
+										correctly on the FAFSA). NOTE: when completing the FAFSA, the name must be the
+										same as shown on your social security card.</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">02</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Your parents’ Social Security numbers if you are a dependent
+										student.</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">03</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Your driver’s license number if you have one.</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">04</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Your Alien Registration Number if you are not a U.S. Citizen</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">05</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Federal tax information or tax return transcripts including IRS W-2
+										information, for you (and your spouse, if you are married), and for your
+										parents, if you are a dependent student. We recommend completing your taxes
+										first. Use the IRS Data Retrieval Tool if you are eligible when completing the
+										FAFSA. Using this tool may lower your probability of being selected for
+										verification and providing additional documents for that process.</p>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="col-12 col-md-6">
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">06</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Records of your untaxed income, such as child support received,
+										interest income, and veterans' non-education benefits, for you, and your
+										parents, if you are a dependent student (if applicable).</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">07</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Information on cash; savings and checking account balances;
+										investments, including stocks and bonds and real estate but not including the
+										home in which you live; and business and farm assets for you, and for your
+										parents if you are a dependent student (if applicable).</p>
+								</div>
+							</div>
+							<div class="d-flex mb-2">
+								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">08</h2>
+								<div class="ms-3 ms-md-5 mb-2">
+
+									<p class="mb-2">Create an FSA and Password – You will use your FSA ID every year to
+										fill out a FAFSA and/or Federal Student Loans. You can create your FSA ID and
+										password at www.studentaid.gov.
+										<br><br>
+										If you already have one, please make sure your personal information is up to
+										date.
+										<br><br>
+										If you are a DEPENDENT student, have a parent create an FSA ID too.
+									</p>
+								</div>
+							</div>
+							<div>Respond promptly to any requests and notify us immediately if
+								you move or change your telephone number and/or email.</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="bg-primary">
+			<div class="container">
+				<div class="col-12 text-center">
+					<h3>Steps to complete the <strong>FAFSA</strong></h3>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="col-12 row py-0 row ">
+					<div class="col-1"></div>
+					<div class="col-12 col-md-2">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width=""
+							height="501.572" viewBox="0 0 264.842 501.572">
+							<defs>
+								<linearGradient id="linear-gradient" x1="0.5" y1="-0.02" x2="0.5" y2="0.961"
+									gradientUnits="objectBoundingBox">
+									<stop offset="0" stop-color="#4e597a" />
+									<stop offset="0.218" stop-color="#80889f" />
+									<stop offset="0.481" stop-color="#b6bac8" />
+									<stop offset="0.708" stop-color="#dddfe6" />
+									<stop offset="0.889" stop-color="#f6f6f8" />
+									<stop offset="1" stop-color="#fff" />
+								</linearGradient>
+							</defs>
+							<g id="Grupo_3881" data-name="Grupo 3881" transform="translate(-224.837 -3304.171)">
+								<path class="d-none d-md-block" id="Trazado_178212" data-name="Trazado 178212"
+									d="M469.186,3720.784h-208a20.515,20.515,0,0,0-20.492,20.49v64.469h3.883v-64.469a16.628,16.628,0,0,1,16.609-16.608h208a16.628,16.628,0,0,1,16.61,16.608v64.469h3.883v-64.469A20.515,20.515,0,0,0,469.186,3720.784Z"
+									opacity="0.8" fill="url(#linear-gradient)" />
+								<path id="Trazado_178217" data-name="Trazado 178217"
+									d="M469.186,3304.171h-208a20.515,20.515,0,0,0-20.492,20.492v46.015a1.941,1.941,0,0,0,3.883,0v-46.015a16.628,16.628,0,0,1,16.609-16.609h208a16.628,16.628,0,0,1,16.61,16.609v358a16.628,16.628,0,0,1-16.61,16.609h-208a16.628,16.628,0,0,1-16.609-16.609V3486.482a1.941,1.941,0,0,0-3.883,0v196.179a20.517,20.517,0,0,0,20.492,20.493h208a20.517,20.517,0,0,0,20.493-20.493v-358A20.515,20.515,0,0,0,469.186,3304.171Z"
+									fill="#4e597a" />
+								<path id="Trazado_178226" data-name="Trazado 178226"
+									d="M258.09,3473.488a1.942,1.942,0,1,0,0-3.883H244.579v-83.993a1.94,1.94,0,0,0-3.084-1.568l-15.86,11.559a1.942,1.942,0,0,0,2.287,3.139l12.774-9.312V3469.6H226.779a1.942,1.942,0,1,0,0,3.883Z"
+									fill="#4e597a" />
+								<g id="Grupo_3471" data-name="Grupo 3471">
+									<path id="Trazado_178228" data-name="Trazado 178228"
+										d="M347.475,3401.531l2.835,2.834,8.4-8.4-.945-.945,3.3-3.3a13.166,13.166,0,1,0-.944-.946l-3.3,3.3-.945-.945Zm14.991-12.156a10.481,10.481,0,1,1,7.409,3.068A10.492,10.492,0,0,1,362.466,3389.375Z"
+										fill="#454747" />
+									<path id="Trazado_178229" data-name="Trazado 178229"
+										d="M375.736,3376.1l-.944.944a6.963,6.963,0,0,0-9.834,0l-.944-.944A8.3,8.3,0,0,1,375.736,3376.1Z"
+										fill="#454747" />
+								</g>
+								<text id="Go_to_www.studentaid.gov" data-name="Go to www.studentaid.gov"
+									transform="translate(279.902 3481.844)" fill="#333" font-size="16"
+									font-family="Montserrat-Light, Montserrat" font-weight="300"
+									letter-spacing="-0.025em">
+									<tspan x="63.539" y="15">Go to </tspan>
+									<tspan x="3.547" y="35" font-family="Montserrat-SemiBold, Montserrat"
+										font-weight="600">
+										www.studentaid.gov</tspan>
+								</text>
+							</g>
+						</svg>
+					</div>
+					<div class=" col-12 col-md-2">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width=""
+							height="501.572" viewBox="0 0 267.799 501.572">
+							<defs>
+								<linearGradient id="linear-gradient" x1="0.5" y1="-0.02" x2="0.5" y2="0.961"
+									gradientUnits="objectBoundingBox">
+									<stop offset="0" stop-color="#f6af42" />
+									<stop offset="0.009" stop-color="#f6af44" />
+									<stop offset="0.369" stop-color="#f9d193" />
+									<stop offset="0.666" stop-color="#fceacd" />
+									<stop offset="0.884" stop-color="#fef9f1" />
+									<stop offset="1" stop-color="#fff" />
+								</linearGradient>
+							</defs>
+							<g id="Grupo_3882" data-name="Grupo 3882" transform="translate(-523.101 -3304.171)">
+								<path  class="d-none d-md-block" id="Trazado_178213" data-name="Trazado 178213"
+									d="M770.408,3720.784h-208a20.514,20.514,0,0,0-20.491,20.49v64.469H545.8v-64.469a16.628,16.628,0,0,1,16.609-16.608h208a16.629,16.629,0,0,1,16.61,16.608v64.469H790.9v-64.469A20.515,20.515,0,0,0,770.408,3720.784Z"
+									opacity="0.8" fill="url(#linear-gradient)" />
+								<path id="Trazado_178218" data-name="Trazado 178218"
+									d="M770.408,3304.171h-208a20.514,20.514,0,0,0-20.491,20.492v46.015a1.941,1.941,0,0,0,3.882,0v-46.015a16.629,16.629,0,0,1,16.609-16.609h208a16.629,16.629,0,0,1,16.61,16.609v358a16.629,16.629,0,0,1-16.61,16.609h-208a16.629,16.629,0,0,1-16.609-16.609V3486.482a1.941,1.941,0,0,0-3.882,0v196.179a20.516,20.516,0,0,0,20.491,20.493h208a20.516,20.516,0,0,0,20.492-20.493v-358A20.514,20.514,0,0,0,770.408,3304.171Z"
+									fill="#f6af42" />
+								<path id="Trazado_178224" data-name="Trazado 178224"
+									d="M524.278,3473.333a1.9,1.9,0,0,0,.224.078c.022.007.044.012.066.018.055.013.111.025.167.034l.075.011c.068.007.137.012.206.013h37.66a1.942,1.942,0,1,0,0-3.883H528.5l32.888-54.046h0a20.759,20.759,0,1,0-38.284-11.129,1.941,1.941,0,1,0,3.882,0,16.876,16.876,0,1,1,31.106,9.074l-.008.017-.014.019-34.683,57c-.007.011-.013.024-.019.034-.02.034-.038.068-.055.1s-.024.048-.035.072-.029.067-.042.1-.021.053-.03.082-.02.061-.029.092-.017.065-.025.1-.011.055-.016.083-.012.075-.017.111-.005.05-.007.076-.006.08-.007.119v.077c0,.038,0,.074.006.111s.005.06.009.088.008.063.014.094.012.066.019.1.013.053.02.078.019.071.031.1.018.049.026.073.026.068.041.1.025.052.038.077.029.058.045.089.033.056.051.083.03.048.046.071a.9.9,0,0,0,.066.086.374.374,0,0,0,.047.061c.024.029.049.055.075.082l.055.057c.024.024.05.046.076.07l.071.059c.023.018.047.037.072.054s.06.042.091.062c.011.006.02.014.032.021s.017.008.026.014a1.727,1.727,0,0,0,.2.107Z"
+									fill="#f6af42" />
+								<path id="Trazado_178237" data-name="Trazado 178237"
+									d="M684.089,3371.593l-2.669-1.063-1.1-2.846a.677.677,0,0,0-.5-.424.693.693,0,0,0-.626.185l-3.355,3.355a.678.678,0,0,0-.155.729l1.01,2.62-1.463,1.415a13.675,13.675,0,1,0-15.767,22.055l-2.983,7.276,2.532,1.037,2.982-7.276a13.656,13.656,0,0,0,3.269.542v6.123H668v-6.27a14.129,14.129,0,0,0,1.894-.42l2.994,7.3,2.53-1.037-3-7.322a13.657,13.657,0,0,0,3.767-21.028l1.417-1.367,2.623,1.042a.676.676,0,0,0,.251.049.686.686,0,0,0,.485-.2l3.357-3.356a.683.683,0,0,0-.232-1.119Zm-6.964-.14,2.3-2.3.664,1.721-2.32,2.243Zm-.893,14.09a10.375,10.375,0,1,1-3.448-7.684l-1.964,1.9a7.732,7.732,0,1,0,1.026,1.062l1.97-1.906A10.279,10.279,0,0,1,676.232,3385.543Zm-8.884-2.352a2.818,2.818,0,1,0,.948.986l2.136-2.065a5.68,5.68,0,0,1-4.533,9.139,5.708,5.708,0,1,1,0-11.417,5.658,5.658,0,0,1,3.578,1.3Zm12.967-8.409-1.631-.648,2.359-2.28,1.575.625Z"
+									fill="#454747" />
+								<text
+									id="Create_your_FSA_ID_and_password_If_you_already_have_one_please_make_sure_your_personal_information_is_up_to_date._If_you_are_a_DEPENDENT_student_please_have_a_parent_create_an_FSA_ID_as_well_"
+									data-name="Create your FSA ID and password (If you already have one, please make sure your personal information is up to date. If you are a DEPENDENT student, please have a parent create an FSA ID as well) "
+									transform="translate(584.929 3445.844)" fill="#333" font-size="16"
+									font-family="Montserrat-Light, Montserrat" font-weight="300"
+									letter-spacing="-0.025em">
+									<tspan x="13.203" y="15">Create your FSA ID </tspan>
+									<tspan x="6.347" y="35">and password (If you </tspan>
+									<tspan x="18.699" y="55">already have one, </tspan>
+									<tspan x="-0.693" y="75">please make sure your </tspan>
+									<tspan x="4.603" y="95">personal information </tspan>
+									<tspan x="0.387" y="115">is up to date. If you are </tspan>
+									<tspan x="26.771" y="135">a DEPENDENT </tspan>
+									<tspan x="0.259" y="155">student, please have a </tspan>
+									<tspan x="4.947" y="175">parent create an FSA </tspan>
+									<tspan x="46.059" y="195">ID as well) </tspan>
+								</text>
+							</g>
+						</svg>
+
+					</div>
+					<div class="col-12 col-md-2 ">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width=""
+							height="501.572" viewBox="0 0 267.799 501.572">
+							<defs>
+								<linearGradient id="linear-gradient" x1="0.5" y1="-0.02" x2="0.5" y2="0.961"
+									gradientUnits="objectBoundingBox">
+									<stop offset="0" stop-color="#8bc5c7" />
+									<stop offset="0.021" stop-color="#8dc6c8" />
+									<stop offset="0.483" stop-color="#cae4e5" />
+									<stop offset="0.822" stop-color="#f0f7f8" />
+									<stop offset="1" stop-color="#fff" />
+								</linearGradient>
+							</defs>
+							<g id="Grupo_3883" data-name="Grupo 3883" transform="translate(-824.322 -3304.171)">
+								<path  class="d-none d-md-block" id="Trazado_178214" data-name="Trazado 178214"
+									d="M1071.63,3720.784h-208a20.515,20.515,0,0,0-20.493,20.49v64.469h3.884v-64.469a16.627,16.627,0,0,1,16.609-16.608h208a16.627,16.627,0,0,1,16.608,16.608v64.469h3.883v-64.469A20.514,20.514,0,0,0,1071.63,3720.784Z"
+									opacity="0.8" fill="url(#linear-gradient)" />
+								<path id="Trazado_178219" data-name="Trazado 178219"
+									d="M1071.63,3304.171h-208a20.515,20.515,0,0,0-20.493,20.492v45.628a1.942,1.942,0,0,0,3.884,0v-45.628a16.627,16.627,0,0,1,16.609-16.609h208a16.627,16.627,0,0,1,16.608,16.609v358a16.627,16.627,0,0,1-16.608,16.609h-208a16.627,16.627,0,0,1-16.609-16.609V3489.608a1.942,1.942,0,0,0-3.884,0v193.053a20.517,20.517,0,0,0,20.493,20.493h208a20.516,20.516,0,0,0,20.491-20.493v-358A20.514,20.514,0,0,0,1071.63,3304.171Z"
+									fill="#8bc5c7" />
+								<path id="Trazado_178222" data-name="Trazado 178222"
+									d="M865.839,3455.857v-13.794a20.783,20.783,0,0,0-12.007-18.817,20.756,20.756,0,1,0-29.51-18.817,1.942,1.942,0,0,0,3.884,0A16.875,16.875,0,1,1,845.08,3421.3a1.942,1.942,0,1,0,0,3.884,16.893,16.893,0,0,1,16.875,16.875v13.794a16.875,16.875,0,0,1-33.749,0,1.942,1.942,0,0,0-3.884,0,20.758,20.758,0,0,0,41.517,0Z"
+									fill="#8bc5c7" />
+								<g id="Grupo_3472" data-name="Grupo 3472">
+									<path id="Trazado_178230" data-name="Trazado 178230"
+										d="M986,3383.482l.306-1.514v-.069c0-7.834-5.125-12.953-12.908-13.359a13.81,13.81,0,0,0-10.41,3.734,13.1,13.1,0,0,0-3.609,10.281c.144,2.7,1.687,5.162,2.927,7.135.2.316.389.622.567.913v5.75l-5.046,4.962,1.729,1.757,5.783-5.686v-7.456l-.169-.29c-.235-.4-.5-.82-.776-1.26-1.144-1.824-2.441-3.892-2.552-5.959a10.7,10.7,0,0,1,2.892-8.4,10.951,10.951,0,0,1,8.383-3.014c6.432.334,10.32,4.391,10.416,10.856l-.209,2.056,2.707,5.718-2.848,1.18-.549,5.446-8.445-.658-.186,2.46,4.9.379v6.216h2.466v-6.024l3.489.271.665-6.374,3.917-1.611Z"
+										fill="#454747" />
+									<path id="Trazado_178231" data-name="Trazado 178231"
+										d="M974.074,3384.108a2.1,2.1,0,0,0,1.858-2.129l.041-.256a1.187,1.187,0,0,1,.985-1.043l2.036-.337a2.569,2.569,0,0,0,1.9-1.51,2.271,2.271,0,0,0-.19-2.2,8.7,8.7,0,0,0-7.164-3.843,9.649,9.649,0,0,0-7.923,3.2,7.378,7.378,0,0,0-1.474,2.966h0l0,.034a8.6,8.6,0,0,0-.028,3.715,2.105,2.105,0,0,0,.992,2.04v0h.006a1.8,1.8,0,0,0,.806.18c.076,0,.154,0,.237-.012l.061-.006a3.52,3.52,0,0,1,1.763,1.034,3.81,3.81,0,0,1,.568,2.953l1.215.207a5.017,5.017,0,0,0-.834-3.95,3.466,3.466,0,0,0-.537-.469l2.842-.29a4.278,4.278,0,0,0-.519,2.348,12.509,12.509,0,0,1-.189,2.516l1.209.237a13.7,13.7,0,0,0,.213-2.752c0-1.625.024-2.222,1.648-2.592Zm-7.5-7.331c.019-.022.041-.043.06-.064a2.6,2.6,0,0,0,.546.7l.84-.9a1.5,1.5,0,0,1-.39-.747,8.019,8.019,0,0,1,2.729-1.379,6.965,6.965,0,0,0-.339,1.961l1.232.021a4.864,4.864,0,0,1,.619-2.289,9.982,9.982,0,0,1,1.113-.069c.165,0,.33,0,.5.011s.293.03.441.043l-.374.8,1.115.525.529-1.126a7.74,7.74,0,0,1,1.5.5,3.957,3.957,0,0,0-.386,3.747l1.08-.593a2.805,2.805,0,0,1,.39-2.552,7.322,7.322,0,0,1,1.913,1.959,1.055,1.055,0,0,1,.078,1.027,1.316,1.316,0,0,1-.973.777l-2.037.337a2.485,2.485,0,0,0-1.454.841,3.977,3.977,0,0,0-1.907-1.811c.17-.478.462-1.239.729-1.908l-1.145-.457c-.372.927-.595,1.521-.733,1.916a11.1,11.1,0,0,0-3.2-.449v1.232c2.3,0,5.287,1.225,5.707,2.738l0,0-.04.257c-.079.989-.588,1.037-.758,1.056l-5.548.569a2.56,2.56,0,0,1,.856-1.195,2.5,2.5,0,0,1,1.965-.37l.209-1.217a3.727,3.727,0,0,0-2.9.592,3.907,3.907,0,0,0-1.442,2.326l-1.064.109-.112,0c-.17,0-.569,0-.569-.989l-.012-.138a8.267,8.267,0,0,1-.14-2.353,4.011,4.011,0,0,1,1.556.8l.733-.991a4.294,4.294,0,0,0-2.033-1.117A6.136,6.136,0,0,1,966.572,3376.777Z"
+										fill="#454747" />
+								</g>
+								<text id="Complete_your_FAFSA._CMVC_Federal_School_Code_031086_Hialeah_._" data-name="Complete your
+						  FAFSA. CMVC
+						  Federal School
+						  Code 031086
+						  (Hialeah). " transform="translate(886.111 3445.844)" fill="#333" font-size="16"
+									font-family="Montserrat-Light, Montserrat" font-weight="300"
+									letter-spacing="-0.025em">
+									<tspan x="29.483" y="15">Complete your</tspan>
+									<tspan x="33.555" y="35">FAFSA. CMVC</tspan>
+									<tspan x="30.011" y="55">Federal School</tspan>
+									<tspan font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+										<tspan x="35.667" y="75">Code 031086</tspan>
+									</tspan>
+									<tspan x="48.931" y="95">(Hialeah). </tspan>
+								</text>
+							</g>
+						</svg>
+
+					</div>
+					<div class=" col-12 col-md-2">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width=""
+							height="501.572" viewBox="0 0 277.5 501.572">
+							<defs>
+								<linearGradient id="linear-gradient" x1="0.5" y1="-0.02" x2="0.5" y2="0.961"
+									gradientUnits="objectBoundingBox">
+									<stop offset="0" stop-color="#218ae0" />
+									<stop offset="0.131" stop-color="#439ce4" />
+									<stop offset="0.447" stop-color="#93c6ef" />
+									<stop offset="0.707" stop-color="#cde4f8" />
+									<stop offset="0.898" stop-color="#f1f7fd" />
+									<stop offset="1" stop-color="#fff" />
+								</linearGradient>
+							</defs>
+							<g id="Grupo_3884" data-name="Grupo 3884" transform="translate(-1115.842 -3304.171)">
+								<path  class="d-none d-md-block" id="Trazado_178215" data-name="Trazado 178215"
+									d="M1372.851,3720.784h-208a20.515,20.515,0,0,0-20.492,20.49v64.469h3.882v-64.469a16.627,16.627,0,0,1,16.61-16.608h208a16.628,16.628,0,0,1,16.61,16.608v64.469h3.881v-64.469A20.515,20.515,0,0,0,1372.851,3720.784Z"
+									opacity="0.8" fill="url(#linear-gradient)" />
+								<path id="Trazado_178220" data-name="Trazado 178220"
+									d="M1372.851,3304.171h-208a20.515,20.515,0,0,0-20.492,20.492v45.628a1.941,1.941,0,0,0,3.882,0v-45.628a16.628,16.628,0,0,1,16.61-16.609h208a16.628,16.628,0,0,1,16.61,16.609v358a16.628,16.628,0,0,1-16.61,16.609h-208a16.628,16.628,0,0,1-16.61-16.609V3489.608a1.941,1.941,0,0,0-3.882,0v193.053a20.517,20.517,0,0,0,20.492,20.493h208a20.516,20.516,0,0,0,20.491-20.493v-358A20.515,20.515,0,0,0,1372.851,3304.171Z"
+									fill="#218ae0" />
+								<path id="Trazado_178225" data-name="Trazado 178225"
+									d="M1144.361,3474.675a1.941,1.941,0,0,0,3.882,0v-28.666h11.06a1.941,1.941,0,0,0,0-3.881h-11.06v-56.9a1.942,1.942,0,0,0-3.688-.849l-28.519,58.844a1.941,1.941,0,0,0,1.747,2.788h26.578Zm-23.479-32.547,23.479-48.445v48.445Z"
+									fill="#218ae0" />
+								<g id="Grupo_3474" data-name="Grupo 3474">
+									<path id="Trazado_178235" data-name="Trazado 178235"
+										d="M1278.86,3378.969h-.139c-.77-5.674-5.1-8.873-10.3-8.873s-9.547,3.2-10.317,8.873h-.094a8.607,8.607,0,0,0-.322,17.208v-2.837a5.817,5.817,0,0,1,.337-11.624,5.4,5.4,0,0,1,1.116.152l1.731.351v-1.741a7.8,7.8,0,0,1,7.807-7.634,7.709,7.709,0,0,1,7.8,7.64v1.751l1.538-.363a3.831,3.831,0,0,1,.963-.156,5.914,5.914,0,0,1,5.924,5.811c0,3.2-2.4,5.813-5.241,5.813v2.837c4.254,0,8.078-3.834,8.078-8.6A8.817,8.817,0,0,0,1278.86,3378.969Z"
+										fill="#454747" />
+									<path id="Trazado_178236" data-name="Trazado 178236"
+										d="M1274.117,3391.92l1.789-2.22-2.134-2.1-2.313,1.882a6.393,6.393,0,0,0-1.137-.476l-.192-2.946h-3.044l-.293,2.922a6.363,6.363,0,0,0-1.163.466l-2.288-1.821-2.049,2.049,1.791,2.206a6.923,6.923,0,0,0-.692,1.218l-2.941.332v2.822l2.822.367a6.5,6.5,0,0,0,.6,1.354L1261.2,3400l2.172,2.152,2-1.628a5.735,5.735,0,0,0,1.413.309l.263,2.254h3.042l.221-2.26a5.924,5.924,0,0,0,1.4-.454l2,1.779,2.1-2.1-1.667-2.079a7.31,7.31,0,0,0,.792-1.346l2.951-.331v-2.858l-3.09-.33A6.937,6.937,0,0,0,1274.117,3391.92Zm-3.7,6.058a3.477,3.477,0,0,1-4.8-4.8,3.551,3.551,0,0,1,2.655-1.628,3.512,3.512,0,0,1,3.774,3.774A3.551,3.551,0,0,1,1270.419,3397.978Z"
+										fill="#454747" />
+								</g>
+								<text
+									id="Create_a_save_Key._Temporary_use_to_allow_you_to_return_to_the_application_and_fill_out_the_FAFSA._"
+									data-name="Create a save Key. Temporary use
+						  to allow you to
+						  return to the application and
+						  fill out the FAFSA. " transform="translate(1186.256 3445.844)" fill="#333" font-size="16"
+									font-family="Montserrat-Light, Montserrat" font-weight="300"
+									letter-spacing="-0.025em">
+									<tspan x="17.635" y="15">Create a save Key. </tspan>
+									<tspan x="29.227" y="35">Temporary use</tspan>
+									<tspan x="31.443" y="55">to allow you to</tspan>
+									<tspan x="36.059" y="75">return to the </tspan>
+									<tspan x="26.715" y="95">application and</tspan>
+									<tspan x="16.971" y="115">fill out the FAFSA. </tspan>
+								</text>
+							</g>
+						</svg>
+
+					</div>
+					<div class=" col-12 col-md-2">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width=""
+							height="501.572" viewBox="0 0 267.8 501.572">
+							<defs>
+								<linearGradient id="linear-gradient" x1="0.5" y1="-0.02" x2="0.5" y2="0.961"
+									gradientUnits="objectBoundingBox">
+									<stop offset="0" stop-color="#013765" />
+									<stop offset="0.139" stop-color="#366185" />
+									<stop offset="0.313" stop-color="#7290aa" />
+									<stop offset="0.481" stop-color="#a4b8c8" />
+									<stop offset="0.638" stop-color="#cbd6e0" />
+									<stop offset="0.781" stop-color="#e7ecf1" />
+									<stop offset="0.906" stop-color="#f8fafb" />
+									<stop offset="1" stop-color="#fff" />
+								</linearGradient>
+							</defs>
+							<path  class="d-none d-md-block" id="Trazado_178216" data-name="Trazado 178216"
+								d="M1674.072,3720.784h-208a20.515,20.515,0,0,0-20.492,20.49v64.469h3.883v-64.469a16.628,16.628,0,0,1,16.609-16.608h208a16.629,16.629,0,0,1,16.61,16.608v64.469h3.883v-64.469A20.516,20.516,0,0,0,1674.072,3720.784Z"
+								transform="translate(-1426.765 -3304.171)" opacity="0.8" fill="url(#linear-gradient)" />
+							<path id="Trazado_178221" data-name="Trazado 178221"
+								d="M1674.072,3304.171h-208a20.515,20.515,0,0,0-20.492,20.492v47.121a1.941,1.941,0,0,0,3.883,0v-47.121a16.628,16.628,0,0,1,16.609-16.609h208a16.629,16.629,0,0,1,16.61,16.609v358a16.629,16.629,0,0,1-16.61,16.609h-208a16.628,16.628,0,0,1-16.609-16.609V3489.608a1.941,1.941,0,0,0-3.883,0v193.053a20.517,20.517,0,0,0,20.492,20.493h208a20.517,20.517,0,0,0,20.493-20.493v-358A20.516,20.516,0,0,0,1674.072,3304.171Z"
+								transform="translate(-1426.765 -3304.171)" fill="#013765" />
+							<path id="Trazado_178223" data-name="Trazado 178223"
+								d="M1468.281,3455.857v-16.782a20.753,20.753,0,0,0-35.226-14.878V3388.66h27.331a1.941,1.941,0,1,0,0-3.883h-29.272a1.941,1.941,0,0,0-1.941,1.943v43.089a1.841,1.841,0,0,0,.009.247l0,.024a1.579,1.579,0,0,0,.025.158l.012.054a1.118,1.118,0,0,0,.033.128c.006.02.014.044.02.063.013.04.027.076.041.114.01.02.019.042.029.062.016.036.034.073.053.11.01.016.019.035.03.051.02.038.043.077.067.113.009.014.019.029.03.043.026.037.053.073.081.108.011.013.022.026.033.037.029.035.059.069.092.1.012.013.027.024.04.038.031.029.061.058.1.087a.586.586,0,0,0,.061.046.705.705,0,0,0,.085.064,1.115,1.115,0,0,0,.1.061l.053.034.011.005.132.067c.012.005.025.013.042.019a1.458,1.458,0,0,0,.147.055l.03.012c.047.015.1.026.144.038l.044.011c.039.008.081.014.122.019.023,0,.046.009.067.01.039,0,.077.006.114.008s.052,0,.079,0l.021,0c.035,0,.07,0,.1-.006a.543.543,0,0,0,.061,0c.051,0,.1-.012.149-.02l.034,0a1.408,1.408,0,0,0,.16-.037.075.075,0,0,1,.019,0c.054-.015.107-.033.16-.051a.029.029,0,0,1,.015-.008,1.653,1.653,0,0,0,.153-.068.107.107,0,0,0,.022-.01c.046-.024.09-.048.134-.074l.032-.021c.041-.025.078-.054.117-.081l.039-.029c.036-.029.073-.06.107-.09.011-.012.025-.023.036-.035.035-.034.069-.07.1-.106.008-.009.018-.019.026-.029.039-.045.075-.091.109-.139l.007-.01a1.755,1.755,0,0,0,.126-.2,16.877,16.877,0,0,1,31.572,8.3v16.782a16.875,16.875,0,0,1-33.751,0,1.941,1.941,0,1,0-3.882,0,20.758,20.758,0,1,0,41.516,0Z"
+								transform="translate(-1426.765 -3304.171)" fill="#013765" />
+							<g id="Grupo_3473" data-name="Grupo 3473" transform="translate(-1426.765 -3304.171)">
+								<path id="Trazado_178232" data-name="Trazado 178232"
+									d="M1587.994,3371.324l.029-1.34-1.338.03a25.148,25.148,0,0,0-17.3,7.391l-.231.232-6.28-2.833-.2.2-5.719,5.72-2.138,2.137.908.907,2.42-2.422,4.863,2.545,4.65,4.651.443.442-3.58,3.58.906.907,3.58-3.581.463.464,4.651,4.65,2.545,4.863-2.422,2.421.907.907,2.136-2.138,5.919-5.918-2.836-6.28.233-.232A25.14,25.14,0,0,0,1587.994,3371.324Zm-24.843,5.012,5.033,2.269-4.3,4.3-4.794-2.509Zm13.092,7.239-1.812-1.81-4.963,4.963-2.891-2.892,4.618-4.618a22.6,22.6,0,0,1,14.165-6.571,22.587,22.587,0,0,1-6.572,14.166l-4.615,4.619-2.893-2.893Zm5.428,11.281-4.058,4.059-2.509-4.794,4.3-4.3Z"
+									fill="#454747" />
+								<path id="Trazado_178233" data-name="Trazado 178233"
+									d="M1569,3394.3a33.942,33.942,0,0,1-10.325,5.005,38.276,38.276,0,0,1,5.014-10.335l.737-1.048-2.1-1.477-.738,1.05a40.174,40.174,0,0,0-5.99,13.315l-.4,1.867,1.876-.338a35.719,35.719,0,0,0,13.436-5.974l1.032-.759-1.518-2.065Z"
+									fill="#454747" />
+								<path id="Trazado_178234" data-name="Trazado 178234"
+									d="M1582.033,3379.384a3.409,3.409,0,1,0-3.408,3.409A3.411,3.411,0,0,0,1582.033,3379.384Zm-5.536,0a2.127,2.127,0,1,1,2.128,2.127A2.13,2.13,0,0,1,1576.5,3379.384Z"
+									fill="#454747" />
+							</g>
+							<text
+								id="The_system_will_guide_you_through_the_questions._You_can_save_the_application_and_continue_filling_it_out_later_if_you_do_not_have_the_information._You_must_remember_your_access_key_to_be_able_to_return_to_complete_the_FAFSA._"
+								data-name="The system will guide you through the questions. You can save the application and continue filling it out later if you do not have the information. You must remember your access key to be able to return to complete the FAFSA. "
+								transform="translate(59.374 141.673)" fill="#333" font-size="16"
+								font-family="Montserrat-Light, Montserrat" font-weight="300" letter-spacing="-0.025em">
+								<tspan x="2.795" y="15">The system will guide </tspan>
+								<tspan x="22.091" y="35">you through the </tspan>
+								<tspan x="13.507" y="55">questions. You can </tspan>
+								<tspan x="8.619" y="75">save the application </tspan>
+								<tspan x="3.275" y="95">and continue filling it </tspan>
+								<tspan x="3.819" y="115">out later if you do not </tspan>
+								<tspan x="3.163" y="135">have the information. </tspan>
+								<tspan x="4.363" y="155">You must remember </tspan>
+								<tspan x="4.683" y="175">your access key to be </tspan>
+								<tspan x="23.235" y="195">able to return to </tspan>
+								<tspan x="4.339" y="215">complete the FAFSA. </tspan>
+							</text>
+						</svg>
+
+					</div>
+					<div class="col-1"></div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class=""
+			style="background-image:url(imgfiles/assets/images/imagen-ftp.jpg);  background-position: center center; background-size: cover;">
+			<div class="container my-3 ">
+				<div class="row">
+					<div class="offset-md-2 col-md-6">
+
+						<h2 class="display-6  text-llete">
+							Types of <br><strong>Financial Aid Program</strong>
+						</h2>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="container">
+				<div class="col-12 ">
+					<p class="py-4">Title IV is an entitlement program, designed to assist those who need it to attend a
+						post-secondary educational institution. Pell Grants are designed to be the floor of a Financial
+						Aid package and must be combined with other forms of aid to meet the full cost of education. The
+						Title IV entitlement amount is determined by the cost of education at the institution attended
+						and the actual number of credits for which enrolled. One must reapply annually for Title IV
+						consideration. Students must be enrolled in an eligible degree or certificate program. For
+						further information on Title IV filing, check with the Financial Aid Office. Aid comes in a
+						variety of ways and chances are you might have more options than you think. Aid can come in the
+						form of grants and loans. We also encourage you to research other tuition assistance resources,
+						such as need and merit-based scholarships and employer tuition reimbursement.</p>
+
+					<div class="row col-12 py-4">
+						<div class="col-md-5">
+							<img src="imgfiles/assets/images/Grupo 3887.png" alt="">
+
+						</div>
+						<div class="col-md-6 py-3">
+							<p>Limited to students in an undergraduate program who have financial need and have never
+								earned a baccalaureate degree. This aid does not have to be repaid in most cases
+								<br><br>
+								<strong>Federal Pell Grant -</strong> Grants may be awarded if you show financial need
+								based on the Free Application for Federal Student Aid (FAFSA). This is a need-based
+								federal grant program for students who are seeking their first undergraduate degree.
+								<br><br>
+
+								<strong>Federal Supplemental Educational Opportunity Grant (FSEOG) -</strong> This is a
+								need–based federal grant awarded to undergraduates seeking a first undergraduate degree
+								in an eligible program who have exceptional financial need. Limited funding is available
+								in this program and awarded first come–first served. Recipients are chosen based on EFC
+								(Expected Family Contribution) and application date, and funds are usually not available
+								to late applicants. Initial awards are estimated based on the results of the FAFSA and
+								assume a full-time enrollment.
+							</p>
+						</div>
+					</div>
+					<div class="row col-12 py-4">
+						<div class="col-md-5">
+							<img src="imgfiles/assets/images/Grupo 3886.png" alt="">
+
+						</div>
+						<div class="col-md-6 py-3">
+							<p>Federal Loans are established and supported by the federal government and the Department
+								of Education serves as a lender. Applicants must first apply for the Free Application
+								for Federal Student Aid (FAFSA). ALL FEDERAL DIRECT LOAN MUST BE PAID BACK. Repayment
+								begins 6 months after you leave school or drops to less than half-time status. To
+								receive any loans must enroll at least 6 credits each term toward a degree program. A
+								Master Promissory Note and Entrance Counseling are required. To learn more please visit
+								https://studentaid.gov/understand-aid/types/loans/subsidized-unsubsidized
+								<br><br>
+								Direct Subsidized Loans - are loans made to eligible undergraduate students who
+								demonstrate financial need to help cover the costs. The government will pay the interest
+								while you are enrolled in school.
+								<br><br>
+								Direct Unsubsidized Loans - are loans made to eligible undergraduates, but eligibility
+								is not based on financial need. The student is responsible for paying the interest while
+								in school and after.
+								<br><br>
+								Direct PLUS Loans - are loans made to parents of dependent undergraduate students to
+								help pay for education expenses not covered by other financial aid. Eligibility is not
+								based on financial need, but a credit check is required. Parents of dependent students
+								may borrow on behalf of their children. Parents loans must be repaid over a 10-year
+								period with interest beginning 60 days after disbursement.
+							</p>
+						</div>
+					</div>
+					<div class="row col-12 py-4">
+						<div class="col-md-5">
+							<img src="imgfiles/assets/images/Grupo 3888.png" alt="">
+
+						</div>
+						<div class="col-md-6 py-3">
+							<p>Florida Student Assistance Grant (FSAG) - The Florida Student Assistance Grant (FSAG)
+								Program is a need-based grant program available to degree-seeking, resident,
+								undergraduate students who demonstrate substantial financial need and are enrolled in
+								participating postsecondary institutions.
+								<br><br>
+								Florida Bright Futures Scholarship - Bright Futures awards include: Florida Academic
+								Scholars award (FAS), Florida Medallion Scholars award (FMS), Florida Gold Seal CAPE
+								Scholars award GSC (Gold Seal CAPE)) and the Florida Gold Seal Vocational Scholars award
+								GSV (Gold Seal Vocational). For more information please (see Bright Future Handbook).
+								<br><br>
+								Vocational Rehabilitation - CMVC is approved by the US Department of Vocational
+								Rehabilitation (DVR). Students approved by DVR will have their tuition and fees
+								subsidized by DVR.
+								<br><br>
+								529 Florida PrePaid College Plan
+								<br><br>
+								Scholarships
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section>
+			<div class="container">
+				<div class="col-12">
+					<h3>Cost of Attendance</h3>
+
+					<div class="row">
+						<div class="col-md-7">
+							<img src="" alt="">
+							<h4>DEGREE PROGRAM</h4>
+							<p>The cost per credit for a General Education / Pre-Requirement is $395.00 and for a
+								Nursing credit it is $700.00. Also, there is a registration fee of $150.00 and a $30
+								textbook fee that is charged with each credit. Both fees should be non-refundable. Also
+								included in the tuition is the Basic Life Support course, background, and drug screen
+								fees held with CMVC. Students are responsible for any titers or vaccines that the
+								clinical site may require. Students will be given one (1) uniform, pen light, and
+								stethoscope before the start of their clinical rotations.</p>
+						</div>
+						<div class="col-md-5">
+							<img src="" alt="">
+							<h4>DIPLOMA PROGRAM</h4>
+							<p>Helpful Links: <br><br>
+								FAFSA – https://studentaid.gov/h/apply-for-aid/fafsa Federal Direct Loan -
+								https://studentaid.gov/mpn/ Entrance Loan Counseling –
+								https://studentaid.gov/entrance-counseling/
+								<br><br>
+								Online CMVC Financial Aid System https://compumed.campusivy.com/apps/core/account/login
+								<br><br>
+								The Financial Aid System allows you to see: General financial aid important information,
+								Awards, Loans and loan history and Access forms TFC Tuition Funding – manage payments
+								options https://www.tfcstudentinfo.com/UserAccount/Login Phone number
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section
+			style="background-image:url(imgfiles/assets/images/bg3finaid.png);  background-position: left top; background-size: contain;background-repeat: no-repeat;">
+			<div class="container">
+				<div class="col-12">
+					<img src="imgfiles/assets/images/pieza-16.png" alt="">
+					<h3 class="text-center">Additional Resources for Students</h3>
+					<div class="row">
+						<div class="col-md-6">
+							video
+							<h5>How to Create an Account and Username (FSA ID) for StudentAid.gov</h5>
+						</div>
+						<div class="col-md-6">
+							video
+							<h5>How to Fill Out the Free Application for Federal Student Aid (FAFSA®) Form</h5>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<section
+			style="background-image:url(imgfiles/assets/images/imagen-5.jpg);  background-position: left top; background-size: cover;background-repeat: no-repeat;">
+			<div class="container">
+				<div class="col-12 row">
+					<div class="offset-md-2 col-md-6">
+						<div>
+							<img src="imgfiles/assets/images/1.png" alt="">
+						</div>
+						<h4 class="">
+							<strong>CMVC Ascendium</strong><br> Information for Students
+						</h4>
+						<p>Ascendium is a free service available to all CMVC students. An Ascendium Student Loan
+							Counselor may contact you directly to talk about your loan repayment. You may also contact
+							an Ascendium Student Loan Counselor for FREE at or email them at:</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+
+		<section class="pp-bg">
+			<div class="container my-3 ">
+
+				<div class="">
+
+					<h2 class="display-6  text-center">
+						Financial Aid Frequently<br><strong>Questions & Answer</strong>
+					</h2>
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<section class="">
+			<div class="container my-3 ">
+
+
+				<br> Q – What is Financial Aid?<br> A - Financial aid is funding at the state and federal level that
+				helps students pay for education. There are many kinds of financial aid, including grants, loans, and
+				scholarships.<br><br> Q – How do I apply for Financial Aid? A - Completing a Free Application for
+				Federal Student Aid (FAFSA) Q - What is CompuMed Vocational Career Federal School Code and Address:<br>
+				A – 031086 and Hialeah<br><br> Q -How do I transfer my financial aid information from another
+				institution to CompuMed Vocational Careers (CMVC)?<br> A -You will need to update the Title IV code
+				number to 031086, add CompuMed Vocational Careers name and address (Hialeah)on your Student Aid Report
+				(SAR).<br><br> To do this you can:<br>Visit the FAFSA website and select FAFSA on the Web. Then click on
+				“Make Corrections to a Processed FAFSA”.
+
+			</div>
+		</section>
+
+
+
+
+
+
+		<style>
+			.footerL {
+				font-size: 12px !important;
+			}
+
+			.footerl2 {}
+		</style>
+		<footer class="bg-dark footer-sticky  pt-6">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-lg-2 mb-5">
+						<img src="imgfiles/assets/images/logo-w.png" class="mb-5" alt="">
+						<h6 class="mt-2 me-4 text-white footerl2">Follow on:</h6>
+						<div class="d-flex me-auto">
+							<div class="footer-social-media">
+								<a href="https://www.facebook.com/kanecode" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="6.784" height="12.77"
+										viewbox="0 0 6.784 12.77">
+										<path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
+											d="M7.949,7.183,8.3,4.872H6.1v-1.5A1.151,1.151,0,0,1,7.393,2.124h1V.156A12.1,12.1,0,0,0,6.618,0a2.811,2.811,0,0,0-3,3.111V4.872H1.609V7.183H3.623V12.77H6.1V7.183Z"
+											transform="translate(-1.609)" fill="#f8bf52"></path>
+									</svg>
+								</a>
+								<a href="https://twitter.com/KaneCodeInc " target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15.424" height="12.77"
+										viewbox="0 0 15.424 12.77">
+										<path id="Icon_metro-twitter" data-name="Icon metro-twitter"
+											d="M17.995,6.329a6.236,6.236,0,0,1-1.817.508,3.224,3.224,0,0,0,1.391-1.784,6.265,6.265,0,0,1-2.01.782,3.133,3.133,0,0,0-2.31-1.018,3.2,3.2,0,0,0-3.164,3.224,3.294,3.294,0,0,0,.082.735A8.93,8.93,0,0,1,3.644,5.407a3.267,3.267,0,0,0,.979,4.3,3.108,3.108,0,0,1-1.433-.4c0,.013,0,.027,0,.041A3.211,3.211,0,0,0,5.729,12.51a3.113,3.113,0,0,1-1.429.055A3.176,3.176,0,0,0,7.256,14.8a6.294,6.294,0,0,1-4.685,1.335,8.837,8.837,0,0,0,4.851,1.448,9.033,9.033,0,0,0,9-9.173q0-.21-.009-.417a6.5,6.5,0,0,0,1.579-1.669Z"
+											transform="translate(-2.571 -4.817)" fill="#f8bf52"></path>
+									</svg>
+								</a>
+								<a href="https://es.linkedin.com/company/kanecode" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12.768" height="12.768"
+										viewbox="0 0 12.768 12.768">
+										<path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"
+											d="M2.858,12.768H.211V4.244H2.858ZM1.533,3.081A1.54,1.54,0,1,1,3.066,1.534,1.546,1.546,0,0,1,1.533,3.081Zm11.232,9.687H10.124V8.619c0-.989-.02-2.257-1.376-2.257-1.376,0-1.587,1.074-1.587,2.186v4.221H4.516V4.244H7.055V5.407h.037A2.781,2.781,0,0,1,9.6,4.03c2.679,0,3.171,1.764,3.171,4.056v4.682Z"
+											transform="translate(0 0)" fill="#f8bf52"></path>
+									</svg>
+								</a>
+								<a href="https://www.instagram.com/wearekanecode/ " target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14.27" height="14.27"
+										viewbox="0 0 14.27 14.27">
+										<g id="Icon_feather-instagram" data-name="Icon feather-instagram"
+											transform="translate(0.75 0.75)">
+											<path id="Path_10898" data-name="Path 10898"
+												d="M6.193,3h6.385A3.193,3.193,0,0,1,15.77,6.193v6.385a3.192,3.192,0,0,1-3.193,3.193H6.193A3.193,3.193,0,0,1,3,12.578V6.193A3.193,3.193,0,0,1,6.193,3Z"
+												transform="translate(-3 -3)" fill="none" stroke="#f8bf52"
+												stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+											</path>
+											<path id="Path_10899" data-name="Path 10899"
+												d="M17.052,14.074a2.507,2.507,0,1,1-2.112-2.112A2.507,2.507,0,0,1,17.052,14.074Z"
+												transform="translate(-8.159 -8.085)" fill="none" stroke="#f8bf52"
+												stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+											</path>
+											<path id="Path_10900" data-name="Path 10900" d="M26.25,9.75h0"
+												transform="translate(-16.353 -6.877)" fill="none" stroke="#f8bf52"
+												stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+											</path>
+										</g>
+									</svg>
+								</a>
+								<a href="https://www.youtube.com/channel/UCdrjbNzgz4WxbZhWhxCwZbg " target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.162" height="12.77"
+										viewbox="0 0 18.162 12.77">
+										<path id="Icon_awesome-youtube" data-name="Icon awesome-youtube"
+											d="M18.832,6.5a2.282,2.282,0,0,0-1.606-1.616,53.93,53.93,0,0,0-7.1-.382,53.93,53.93,0,0,0-7.1.382A2.282,2.282,0,0,0,1.429,6.5a23.94,23.94,0,0,0-.38,4.4,23.94,23.94,0,0,0,.38,4.4,2.248,2.248,0,0,0,1.606,1.59,53.93,53.93,0,0,0,7.1.382,53.93,53.93,0,0,0,7.1-.382,2.248,2.248,0,0,0,1.606-1.59,23.94,23.94,0,0,0,.38-4.4,23.94,23.94,0,0,0-.38-4.4ZM8.273,13.6V8.2l4.747,2.7L8.273,13.6Z"
+											transform="translate(-1.05 -4.5)" fill="#f8bf52"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class=" col-md-6 col-lg-10">
+						<div class="row justify-content-around">
+
+							<div class="col-md-6 offset-lg-1 col-lg-2 mb-5">
+								<h6 class="mb-4 text-white">Contact Us</h6>
+								<a href="https://kanecode.readme.io/docs" target="_blank"
+									class="text-white mb-2 footerL">2900 West 12th Avenue. 3rd Floor. Hialeah, FL
+									33012</a>
+
+								<a href="/support" class="text-white mb-2 footerL">(305) 888-9200 / (786) 542-5210</a>
+								<a href="/support" class="text-white mb-2 footerL">info@compumed.edu</a>
+								<a href="/support" class="text-white mb-2 footerL">11401 SW 40 Street. Suite 150, 1st
+									Floor.
+									Miami, FL</a>
+								<a href="/support" class="text-white mb-2 footerL">(305) 553-2898 / (305) 221-6713</a>
+
+							</div>
+							<div class="col-md-6 col-lg-2 mb-5">
+								<h6 class="mb-4 text-white">Useful Links</h6>
+								<a href="/channel-partners-become-a-partner" class="text-white mb-2 footerL">Blog</a>
+								<a href="/channel-partner-program" class="text-white mb-2 footerL">Company</a>
+								<a href="/enterprise-academy" class="text-white mb-2 footerL">Services</a>
+								<a href="/find-your-partner" class="text-white mb-2 footerL">Programs</a>
+								<a href="/channel-partners-become-a-partner"
+									class="text-white mb-2 footerL">Admission</a>
+								<a href="/channel-partner-program" class="text-white mb-2 footerL">Financial aid</a>
+								<a href="/enterprise-academy" class="text-white mb-2 footerL">Get a consultation</a>
+								<a href="/find-your-partner" class="text-white mb-2 footerL">Events</a>
+							</div>
+							<div class="col-md-6 col-lg-4 mb-5">
+								<a class="twitter-timeline" data-height="300" data-theme="dark"
+									href="https://twitter.com/CMVCMiami?ref_src=twsrc%5Etfw">Tweets by CMVCMiami</a>
+								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="divider opacity-1"></div>
+
+				<div class="row align-items-center justify-content-md-between py-4">
+					<div class="col-md-6">
+						<div class="text-center text-md-start text-white" style="font-size: 14px">© 2022 Compumed. All
+							rights reserved
+						</div>
+					</div>
+					<div class="col-md-6 footer-legacy">
+						<ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+							<li class="nav-item"><a class="nav-link  text-white text-primary-hover"
+									href="/developers-privacy-policy">Privacy statement</a></li>
+							<li class="nav-item"><a class="nav-link  text-white text-primary-hover"
+									href="/developers-cookies">Cookie Policy</a></li>
+							<li class="nav-item"><a class="nav-link  text-white text-primary-hover pe-0"
+									href="/developers-contact-us">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+
+		<div class="back-top">
+			<div class="scroll-line"></div>
+			<span class="scoll-text">Go Up</span>
+		</div>
+
+
+		<script src="imgfiles/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+
+		<script src="imgfiles/assets/vendor/glightbox/js/glightbox.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+		<script src="imgfiles/assets/vendor/tiny-slider/tiny-slider.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+		<script src="imgfiles/assets/vendor/jarallax/jarallax.min.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+		<script src="imgfiles/assets/vendor/jarallax/jarallax-video.min.js"
+			type="42264ca914524534c0c096a6-text/javascript"></script>
+
+		<script src="imgfiles/assets/js/functions.js" type="42264ca914524534c0c096a6-text/javascript"></script>
+
+		<script type="42264ca914524534c0c096a6-text/javascript">
+    preloader();
+
+    if($("#staticBackdrop")){
+        var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+            keyboard: true
+         })
+    }
+
+    if($("#modalerror")){
+        var myModalerror = new bootstrap.Modal(document.getElementById('modalerror'), {
+            keyboard: true
+         })
+    }
+
+	if($("#ask")){
+        var myModalask = new bootstrap.Modal(document.getElementById('ask'), {
+            keyboard: true
+         })
+    }
+
+     
+
+    function preloader() {        
+        //console.log("entro al preloader jquery");            
+        $('.preloader').addClass(' animate__animated animate__fadeOut');
+        setTimeout(function(){
+            $('.preloader').css("display" ,'none');
+        }, 500);                    
+    }
+
+</script>
+		<script type="42264ca914524534c0c096a6-text/javascript"
+			src="includes/general_scripts.js%2Cajax%40ajaxCaller.js%2Cajax%40sections.js"></script>
+		<script type="42264ca914524534c0c096a6-text/javascript">
+<!--
+window.onload = new Function('iniciaScripts','document.eBDPageReady=true;' + onload_calls);
+// -->
+</script>
+		<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+			data-cf-settings="42264ca914524534c0c096a6-|49" defer=""></script>
+</body>
+
+</html>
