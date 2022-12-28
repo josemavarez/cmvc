@@ -506,16 +506,7 @@ progress {
     line-height: 1.4
 }
 
-@media(min-width:1200px) {
-    .display-3 {
-        font-size: 5rem
-    }
 
-    .banner-home__text h2,
-    .banner-home__text .h2 {
-        line-height: 5rem !important
-    }
-}
 
 .display-4 {
     font-size: calc(2.28125rem + 3.375vw);
@@ -19254,7 +19245,8 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 }
 
 .navbar-top {
-    border-bottom: 1px solid #fff
+    border-bottom: 1px solid #fff;
+    background-color: #ffffff6b;
 }
 
 .navbar-top span {
@@ -21604,8 +21596,8 @@ h3,
 
 .arrow-bordered [data-controls] {
     background: 0 0 !important;
-    color: #d0d4d9;
-    border: 2px solid #d0d4d9;
+    color: #013765;
+    border: 2px solid #013765;
     box-sizing: initial
 }
 
@@ -22230,10 +22222,7 @@ button.text-primary-hover:hover {
     }
 }
 
-.banner-home__text h2,
-.banner-home__text .h2 {
-    line-height: 3rem
-}
+
 
 .home-foundation {
     text-align: center
@@ -24134,7 +24123,7 @@ section.project-benefits .h3 span {
     left: 0;
 }
 .p-program{
-    font-size: 18px;
+    font-size: 16px;
     color: #1A1A1A;
     font-weight: 400;
 }
@@ -24144,10 +24133,11 @@ section.project-benefits .h3 span {
     border-radius: 30px;
 }
 .s-lf-h1{
-    font-size: 45px;
+    font-size: 40px;
 }
 .s-lf-h1 strong{
-    font-size: 50px;
+    font-size: 45px;
+    color: #013765;
 }
 .s-lf-h3{
     font-size: 30px;
@@ -24173,12 +24163,11 @@ section.project-benefits .h3 span {
     font-weight: 200;
 }
 .img-services{
-    position: absolute;
+position: absolute;
 left: 0;
-top: -30px;
 width: 25%;
+bottom: 0;
 }
-
 
 .services{
     position: relative;
@@ -24305,7 +24294,43 @@ width: 25%;
 
 }
 .services-title{
-    font-size: 45px;
+    font-size: 50px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+.text-banner-home{
+    font-size: 60px;
+    font-weight: 600;
+    color: #013765;
+    line-height: 60px;
+}
+.p-home{
+    font-size: 16px;
+    font-weight: 400 ;
+    line-height: normal;
+}
+.flame-80{
+    opacity: 0.5;
+}
+.img-pr1{
+    position: absolute;
+    bottom: 0px;
+    width: 80%;
+}
+.pr-1-bg{
+    background: #fff ;
+    position: relative;
+
+}
+.pr-2-bg{
+    background: #013765 ;
+
+
+}
+.img-pr1-1{
+    position: absolute;
+    top: 0px;
+    width: 80%;
 }
 @media screen and (max-width:768px) {
     .programs{
@@ -24325,7 +24350,6 @@ width: 25%;
         background-color: #fff;
         padding: 30px;
         border-radius: 30px;
-        margin: 15px;
     }
     .text-llete {
         font-size: 35px;
