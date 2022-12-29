@@ -24376,11 +24376,27 @@ bottom: 0;
     color: #333333;
     font-size: 40px;
 }
+.program-title-6{
+    color: #4D4D4D;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+}
+.program-title-6 strong{
+    color: #F6AF42;
+    font-size: 60px;
+}
+.program-description{
+    color: #0d0e10;
+}
 .img-program2{
     position: absolute;
     right: 0;
     top: 0;
     width: 27%;
+}
+.img-left{
+    width: 10%;
 }
 @media screen and (max-width:768px) {
     .programs{
