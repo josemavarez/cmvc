@@ -33,9 +33,93 @@
 <body>
 
 
+	<div class="preloader">
+		<img class="preloader-item" src="imgfiles/assets/images/loader/CMVC_GIF.gif" alt="Loading" width="300px"
+			height="400px">
+	</div>
+
+	<div class="search-full collapse bg-dark p-3 pb-lg-0" id="search-open">
+		<div class="container position-relative">
+			<h2 class="position-absolute start-0 bottom-0 mb-n5 display-1 text-white-stroke opacity-1">
+				<span class="d-block">Search</span>
+			</h2>
+			<div class="row vh-100">
+				<div class="d-flex flex-column my-auto py-5 w-100">
+
+					<form class="form-dark form-line position-relative w-100">
+						<div class="mb-3 input-group-lg input-text-white-stroke mb-0">
+
+							<input class="form-control caret-primary mb-0 pe-6" type="text" name="search"
+								placeholder="What are you looking for? ">
+							<span class="focus-border"></span>
+						</div>
+
+						<button type="button" class="position-absolute end-0 top-0 btn pb-3 text-primary-hover h-100">
+							<i class="bi bi-search display-8"></i>
+						</button>
+					</form>
+
+					<p class="small mt-2 mb-0"></p>
+				</div>
+
+				<a class="position-fixed top-0 end-0 m-3 m-md-5 btn btn-white btn-round zoom-hover"
+					data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open"
+					aria-expanded="true">
+					<i class="fas fa-times p-0"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
 
 
+	<div class="modal fade" id="topbarlogin">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary pattern-overlay-7">
+					<div class="modal-title p-3 text-white-force">
+						<h5 class="mb-0">Sign in to your account!</h5>
+						<p class="mb-0">Nice to see you! Please log in with your account.</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="w-100 p-3">
 
+						<form>
+
+							<div class="mb-3">
+								<label class="form-label" for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label" for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1"
+									placeholder="*********">
+							</div>
+
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">keep me signed in</label>
+							</div>
+
+							<div class="row align-items-center">
+								<div class="col-sm-4">
+									<button type="submit" class="btn btn-dark btn-line">Login</button>
+								</div>
+								<div class="col-sm-8 text-sm-end">
+									<span class="text-muted">Don't have an account? <a href="/sign-up">Signup
+											here</a></span>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<header class="navbar-light navbar-transparent navbar-sticky">
@@ -229,6 +313,7 @@
 	</header>
 
 
+
 	<style>
 		.warn1 {
 			display: none;
@@ -286,9 +371,9 @@
 
 					<div class="col-md-7">
 
-						<h2 class="animate__animated animate__fadeInUp animate__delay-1s display-3 fw-bold ">
-							<span class="text-white-stroke text-primary-shadow d-block">Associate of Science
-								in Nursing Degree</span>
+						<h2 class="animate__animated animate__fadeInUp animate__delay-1s display-3 fw-bold text-white">
+							<span class="text-white-stroke text-primary-shadow d-block">Phlebotomy Technician
+								Program Information</span>
 						</h2>
 					</div>
 				</div>
@@ -297,7 +382,7 @@
 			<div id="jarallax-container-0"
 				style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
 				<div
-					style="background-position: 100% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(imgfiles/assets/images/NURSE1.jpg); position: absolute; top: 0px; left: 0px; width: 100%; height: 600px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 63px; transform: translate3d(0px, -63px, 0px);">
+					style="background-position: 100% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(imgfiles/assets/images/phlebotomy1.jpg); position: absolute; top: 0px; left: 0px; width: 100%; height: 600px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 63px; transform: translate3d(0px, -63px, 0px);">
 				</div>
 			</div>
 		</section>
@@ -307,18 +392,28 @@
 		<section class="pr-1-bg">
 			<div class="container pb-6">
 				<div>
-					<img src="imgfiles/assets/images/NURSE2.png" alt="" class="img-pr1">
+					<img src="imgfiles/assets/images/2phlebotomy.png" alt="" class="img-pr1">
 				</div>
 				<div class="row align-items-center">
 
 					<div class="col-2"></div>
 
 					<div class="col-md-8  text-center">
-						<p style="color: #576574;">When you're passionate about helping people, careers that allow you
-							to make a difference are compelling. Pursuing a nursing degree is perfect for those who
-							desire to make a difference daily! If you live in Florida and want to explore a nursing
-							degree, the Compu-Med Vocational Careers' Nursing program can help set you on the right path
-							to obtaining an Associate of Science in Nursing!</p>
+						<p style="color: #576574;">If you find the medical industry intriguing, consider becoming a
+							phlebotomy technician! Phlebotomy technicians are healthcare workers in general wellness.
+							Phlebotomy involves the drawing of blood and its collection and study of other specimens.
+							Phlebotomy technicians collect blood for blood samples, donations, and transfusions. Once
+							blood samples are collected, phlebotomy technicians label them and send them to the health
+							science lab. Phlebotomy technicians are limited to taking blood from patients and collecting
+							non-blood specimens to be analyzed.
+							<br><br>
+							Phlebotomy technicians are members of the medical industry. The samples collected are used
+							to make important decisions about patients' lives and health, such as effective treatment
+							plans. Most PTs work in hospitals and clinics. PT students must enroll and complete the
+							required education to operate as phlebotomist technicians effectively. One can become a
+							phlebotomy technician in Florida with Compu-Med’s phlebotomy technician program at their
+							Miami, FL, campus.
+						</p>
 
 					</div>
 				</div>
@@ -330,74 +425,56 @@
 
 				<div class="row align-items-center">
 
-					<div class="col-6"><img src="imgfiles/assets/images/Grupo 19765.png" alt=""></div>
+					<div class="col-6"><img src="imgfiles/assets/images/Grupo 19771.png" alt=""></div>
 
 					<div class="col-md-6">
-						<h4 class="program-title"><small> ASN Nursing
-							</small> <br>
-							Program Overview</h4>
-						<p style="color: #ffffff;">In the Compu-Med Vocational Careers' ASN program, expert faculty work
-							with students to develop essential nursing skills. The nursing program teaches students how
-							to care for clients, provide safe, supportive environments, and display cultural sensitivity
-							and diversity in the nursing practice. Promoting healthy habits to contribute to total
-							wellness and high-quality lifestyles is essential. </p>
+						<h4 class="program-title"><small> Phlebotomy Tech <br>
+								Program</small>
+							Overview</h4>
+						<p style="color: #ffffff;">Phlebotomy technician schooling aims to prepare students to become
+							phlebotomy technicians! The CMVC phlebotomy technician program takes approximately eight
+							weeks, with 165 hours to complete. The phlebotomy technician program will focus on clinical
+							skills and professional skills needed for the job.
+							<br><br>
+							The CMVC phlebotomy technician program offers hands-on lab and clinical experiences
+							completed on campus. A focus on real-world knowledge and application will be applied to
+							prepare students to draw and collect samples from actual patients. Hands-on practice in
+							completing phlebotomy technician job duties may help students learn.
+						</p>
 
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="dev-features-tech-bg  pp-bg">
+		<section class="position-relative">
 			<div class="container">
-
+				<div><img src="imgfiles/assets/images/pieza-4 (2).png" alt="" class="img-s2"></div>
+				<div><img src="imgfiles/assets/images/pieza-2.png" alt="" class="img-s1"></div>
 				<div class="row justify-content-between align-items-center">
 
-					<div class="col-md-6 ps-lg-5">
-						<h2 class=" display-8" style="color: #013765"><small>What You Will Learn
-							</small><br>In Nursing School</h2>
-						<p style="color: #576574;">While enrolled in CMVC's nursing program, aspiring nurses will
-							learn the importance of navigating a fast-paced work environment. CMVC's nursing program
-							prepares students to be ready to face challenges and quick-thinking situations that can
-							arise in the nursing field. Students will sort through vital client information and
-							determine what is essential for client cases. Future medical professionals must master
-							evaluating medical conditions and distinguish what is valuable to share with other
-							healthcare professionals.
-						</p>
-					</div>
-
-					<div class="col-md-6 ps-lg-5">
-						<h2 class=" display-8" style="color: #013765"><small>Gain Knowledge,
-							</small><br>Gain Confidence</h2>
-						<p style="color: #576574;">CMVC's nursing program understands the importance of students
-							practicing critical thinking skills to learn and master the best path forward for solving
-							medical situations. Compu-Med Vocational Careers emphasizes student learning and details
-							most of their curriculum to real-life scenarios that can arise in a nurse's day, along with
-							need-to-know information for the course.
+					<div class="offset-md-2 col-md-8 text-center">
+						<h2 class=" display-8" style="color: #013765"><small>What You Will
+							</small>Learn in this Program</h2>
+						<p style="color: #576574;">Field experienced instructors are here to help CMVC phlebotomy
+							technician students from the first day! A team of instructors will provide students with
+							meaningful learning experiences that address learners' needs. Collaborating between
+							educators, trainers, and students is vital for growth.Professors will assist students by
+							teaching, coaching, supporting, and demonstrating program knowledge and technical skills
+							necessary for entry-level phlebotomy positions. Field experienced instructors will focus on
+							related phlebotomy topics such as Introduction to Phlebotomy Technician training,
+							Phlebotomy/Law and Ethics, Anatomy and Physiology, Phlebotomy Equipment, Safety in
+							Phlebotomy HIV/AIDS, Phlebotomy Techniques, and Specimen Considerations & Special
+							Procedures.
 							<br><br>
-							Compu-Med Vocational Careers’ nursing students receive education with hands-on classroom
-							instruction, clinical practice opportunities, and clinical laboratory simulation. The more
-							practical nursing knowledge students receive, the greater confidence they will have when
-							entering the field. CMVC prides itself on student preparation.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+							A commitment to the CMVC phlebotomy technician program is needed to fulfill proper training,
+							education, and certification exam requirements. CMVC's phlebotomy technicians program is
+							dedicated to helping students maintain medical records, learn medical terminology, medical
+							billing and coding, patient care and customer service, patient scheduling, and
+							administrative skills. Contact CMVC today to inquire about the skills and knowledge needed
+							to obtain a phlebotomy technician job.
 
-		<section class="home-web-app"
-			style="background-image:url(imgfiles/assets/images/NURSE6.jpg);  background-position: center center; background-size: cover;">
-			<div class="container ">
-				<div class="row">
-					<div class="offset-md-6 col-md-6">
-						<h2 class="display-6 program-title-2">
-							Are You Ready for a
-							<br><strong>Nursing Career?</strong>
-						</h2>
 
-						<p>If you're ready to become an entry-level nurse in Florida, the Associate Degree in Nursing at
-							Compu-Med Vocational Careers can help jumpstart your career! Contact CMVC today to learn
-							more about discovering the knowledge and critical thinking skills needed in the nursing
-							field. Make the goal of becoming a nurse one step closer by enrolling today!
 						</p>
 					</div>
 				</div>
@@ -411,24 +488,39 @@
 				<div><img src="imgfiles/assets/images/ASMA9.png" alt="" class="img-program2"></div>
 				<div class="text-left my-5">
 					<h2 class="display-6 mb-6 program-title-3">
-						CMVC Nursing<br>
+						Phlebotomy Technician <br>
 						<strong>Admissions Requirements </strong>
 					</h2>
 					<div class="row">
 						<div class="col-12">
-							At CMVC, students are greeted and identified by an admissions officer. An interview is
-							conducted to explain to the prospective nursing student the services the institution offers
-							and evaluate qualifications for entrance.
+							At Compu-Med Vocational Careers, the college admissions process is simple. First, we
+							encourage prospective phlebotomy technician students to visit our main Florida campus, where
+							the phlebotomy technician program takes place!
 							<br><br>
-							<strong>Qualifications for entry include: </strong>
+							By visiting the main campus, students can quickly learn about the phlebotomy technician
+							program structure by getting a glimpse of the program material and requirements.
+							<br><br>
+							Previous academic experience is analyzed in the admissions process, and certain factors play
+							a role in evaluating applicants. At CMVC, we seek applicants who have exhibited the desire
+							to learn and succeed.
+
+							<br>
+							<strong>To qualify for enrollment into any program at CMVC, an applicant must meet the
+								following
+								requirements for admission:</strong>
 						</div>
 						<div class="col-12 col-md-6 pt-5">
+
+
+
+
+
 							<div class="d-flex mb-2">
 								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">01</h2>
 								<div class="ms-3 ms-md-5 mb-2">
 
-									<p class="mb-2">Prospective students must be 18 or older or have proof of
-										emancipation.</p>
+									<p class="mb-2">High School Diploma or recipient of Equivalent (General Equivalency
+										Diploma (GED).</p>
 								</div>
 							</div>
 							<div class="d-flex mb-2">
@@ -445,6 +537,11 @@
 								</div>
 							</div>
 
+
+
+						</div>
+
+						<div class="col-12 col-md-6 pt-5">
 							<div class="d-flex mb-2">
 								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">03</h2>
 								<div class="ms-3 ms-md-5 mb-2">
@@ -454,36 +551,23 @@
 										Title IV HEA student assistance</p>
 								</div>
 							</div>
-
-
-
-						</div>
-
-						<div class="col-12 col-md-6 pt-5">
 							<div class="d-flex mb-2">
 								<h2 class="display-4 fa-fw text-end text-dark-stroke opacity-5">04</h2>
 								<div class="ms-3 ms-md-5 mb-2">
 
-									<p class="mb-2">Pass the CMVC Smarter Measure assessment with the following minimum
-										scores:
-										<br> <br>
-										- 70 – Life Factors<br>
-										- 70 – Technical Competency<br>
-										- 60 – Technical Knowledge<br>
-										- Achieve an entrance exam score of one of<br>
-										the following or provide proof of completed
-										bachelor’s degree or BSN
-									</p>
+									<p class="mb-2">Depending on the health care career program chosen, a passing score
+										of a CMVC competent assessment or another entrance exam may be required. </p>
 								</div>
 							</div>
-							<div>Compu-Med Vocational Careers reserves the right to deny admission to any applicant who
-								does not meet these requirements. After the interview, a school tour is provided, and
-								prospective nursing students are given an exclusive invitation to listen to a class
-								before making the big decision. If the student still wishes to enroll, they are directed
-								to the Financial Aid Department to complete the goal of becoming a healthcare
-								professional one step closer!</div>
-						</div>
 
+
+						</div>
+						<div class="text-center">Compu-Med Vocational Careers reserves the right to deny admission to
+							any applicant who does not meet these requirements.
+							<br><br>
+							If a student can meet these requirements and still wishes to enroll, they are directed to
+							the Financial Aid Department to become one step closer to becoming a phlebotomist.
+						</div>
 
 					</div>
 
@@ -498,18 +582,20 @@
 
 				<div class="row align-items-center">
 					<div class="col-12">
-						<img src="imgfiles/assets/images/NURSE8.png" alt="">
+						<img src="imgfiles/assets/images/Grupo 4598.png" alt="">
 					</div>
 					<div class="col-2"></div>
 
 					<div class="col-md-8  text-center ">
-						<h4 class="program-title-2 pt-5">Nursing Job Outlook <strong>(BLS)</strong></h4>
-						<p style="color: #576574;"> According to the Bureau of Labor Statistics, healthcare occupational
-							employment opportunities are projected to grow "13 percent from 2021 to 2031. The healthcare
-							employment increase is expected to result in about 2 million new jobs over the decade, much
-							faster than the average for all occupations. There will be a great need for entry level
-							nurses to oversee medical information and care for patients.
-
+						<h4 class="program-title-2 pt-5">Phlebotomy Technician<strong> Job Outlook</strong></h4>
+						<p style="color: #576574;"> According to the Bureau of Labor Statistics, “Employment of
+							full-time phlebotomists is projected to grow 10 percent from 2021 to 2031, faster than the
+							average for all occupations. About 21,500 openings for phlebotomists are projected each
+							year, on average, over the decade.
+							<br><br>
+							More job opportunities may arise with a certified phlebotomist who has completed a formal
+							training program. Trainedand licensed phlebotomy technicians may be needed at hospitals,
+							blood donor centers, mobile phlebotomy solutions, and diagnostic laboratories.
 						</p>
 
 					</div>
@@ -520,7 +606,8 @@
 
 		<section class="dev-features-tech-bg  company-bg">
 			<div class="container">
-
+				<div><img src="imgfiles/assets/images/pieza-4 (2).png" alt="" class="img-s2"></div>
+				<div><img src="imgfiles/assets/images/pieza-2.png" alt="" class="img-s1"></div>
 				<div class="row align-items-center">
 
 					<div class="col-2"></div>
@@ -529,35 +616,132 @@
 						<h2 class=" display-8 text-center program-title-2">Program Learning
 							<strong>Outcomes</strong>
 						</h2>
-						<p style="color: #576574;">Upon completion of the Associate of Science in Nursing program, the
-							graduate will, upon licensure.
-							<br><br>
+						<p style="color: #576574;">The CMVC phlebotomy technician program uses these learning outcomes
+							to measure student achievement and related competencies: <br><br>
 
-							- Acknowledge the necessity for lifelong learning as a part of personal and professional
-							development and growth <br>
-							- Advocate for patients and families in ways that promote self-determination and integrity.
-							<br>
-							- Make judgments in practice, sustained with evidence that integrates nursing science in
-							providing safe,
-							quality care and promoting patients' health within a family and community context.
-							<br>
-							- Implement one's role as a nurse in ways that reflect integrity, responsibility, ethical
-							practices, and an evolving
-							identity as a nurse committed to evidence-based practice, caring, advocacy, and safe quality
-							care for
-							diverse patients
-							<br>
-
-
-							- Upon graduation, the student is awarded an Associate of Science in Nursing (ASN) and is
-							eligible to take
-							the National Council Licensure Exam (NCLEX). NCLEX is required to become a registered nurse
-							(RN)
-							and subsequently seek employment in the field. The program is approved through the Florida
-							State Board
-							of Nursing
+							- Demonstrate knowledge of phlebotomy medical terminology <br>
+							- Demonstrate knowledge of blood specimens from patients of laboratory analysis <br>
+							- Obtain comprehensive skills to perform venipunctures thoroughly and safely <br>
+							- Develop anatomy and physiology competencies<br>
+							- Acquire specimen hands-on practices<br>
+							- Have an understanding of the phlebotomy course curriculum and the importance
+							it holds in the medical field.
 
 						</p>
+						<div class="pt-4 text-center">
+							<svg xmlns="http://www.w3.org/2000/svg" width="600px" height="auto" viewBox="0 0 607 271">
+								<g id="Grupo_19769" data-name="Grupo 19769" transform="translate(-17126.324 13020)">
+									<text id="Course_PH_601_PH_602_PH_603_PH_604_PH_605_PH_606_TOTAL:" data-name="Course	
+							  
+							  PH – 601
+							  PH – 602
+							  PH – 603
+							  PH – 604
+							  PH – 605
+							  PH – 606
+							  
+							  TOTAL:" transform="translate(17126.324 -13020)" fill="#333" font-size="16"
+										font-family="Montserrat-SemiBold, Montserrat" font-weight="600"
+										letter-spacing="-0.025em">
+										<tspan x="0" y="15">Course </tspan>
+										<tspan font-family="Montserrat-Light, Montserrat" font-weight="300">
+											<tspan x="0" y="43"></tspan>
+											<tspan x="0" y="71">PH – 601</tspan>
+											<tspan x="0" y="99">PH – 602</tspan>
+											<tspan x="0" y="127">PH – 603</tspan>
+											<tspan x="0" y="155">PH – 604</tspan>
+											<tspan x="0" y="183">PH – 605</tspan>
+											<tspan x="0" y="211">PH – 606</tspan>
+											<tspan x="0" y="239"></tspan>
+										</tspan>
+										<tspan x="0" y="267">TOTAL:</tspan>
+									</text>
+									<text id="Credit_H_.5_.5_.5_.5_2.0_1.5_5.5" data-name="Credit/H
+							  
+							  .5
+							  .5
+							  .5
+							  .5
+							  2.0
+							  1.5
+							  
+							  5.5" transform="translate(17584.324 -13020)" fill="#333" font-size="16"
+										font-family="Montserrat-SemiBold, Montserrat" font-weight="600"
+										letter-spacing="-0.025em">
+										<tspan x="0" y="15">Credit/H</tspan>
+										<tspan font-family="Montserrat-Light, Montserrat" font-weight="300">
+											<tspan x="0" y="43"></tspan>
+											<tspan x="0" y="71">.5</tspan>
+											<tspan x="0" y="99">.5</tspan>
+											<tspan x="0" y="127">.5</tspan>
+											<tspan x="0" y="155">.5</tspan>
+											<tspan x="0" y="183">2.0</tspan>
+											<tspan x="0" y="211">1.5</tspan>
+											<tspan x="0" y="239"></tspan>
+										</tspan>
+										<tspan x="0" y="267">5.5</tspan>
+									</text>
+									<text
+										id="Title_Introduction_to_Phlebotomy_Law_Ethics_Anatomy_and_Physiology_Phlebotomy_Equipment_Safety_in_Phlebotomy_HIV_AIDS_Phlebotomy_Techniques_Specimen_Considerations_Special_Procedures_"
+										data-name="Title
+							  
+							  Introduction to Phlebotomy / Law &amp; Ethics
+							  Anatomy and Physiology
+							  Phlebotomy Equipment
+							  Safety in Phlebotomy / HIV / AIDS
+							  Phlebotomy Techniques
+							  Specimen Considerations &amp; Special Procedures
+							  
+							  " transform="translate(17210.324 -13020)" fill="#333" font-size="16"
+										font-family="Montserrat-SemiBold, Montserrat" font-weight="600"
+										letter-spacing="-0.025em">
+										<tspan x="0" y="15">Title</tspan>
+										<tspan font-family="Montserrat-Light, Montserrat" font-weight="300">
+											<tspan x="0" y="43"></tspan>
+											<tspan x="0" y="71">Introduction to Phlebotomy / Law &amp; Ethics</tspan>
+											<tspan x="0" y="99">Anatomy and Physiology</tspan>
+											<tspan x="0" y="127">Phlebotomy Equipment</tspan>
+											<tspan x="0" y="155">Safety in Phlebotomy / HIV / AIDS</tspan>
+											<tspan x="0" y="183">Phlebotomy Techniques</tspan>
+											<tspan x="0" y="211">Specimen Considerations &amp; Special Procedures
+											</tspan>
+											<tspan x="0" y="239"></tspan>
+										</tspan>
+										<tspan font-family="Montserrat-Light" font-weight="300">
+											<tspan x="0" y="267"></tspan>
+										</tspan>
+									</text>
+									<text id="Clock_H_15_15_15_15_60_45_165" data-name="Clock/H
+							  
+							  15
+							  15
+							  15
+							  15
+							  60
+							  45
+							  
+							  165" transform="translate(17670.324 -13020)" fill="#333" font-size="16"
+										font-family="Montserrat-SemiBold, Montserrat" font-weight="600"
+										letter-spacing="-0.025em">
+										<tspan x="0" y="15">Clock/H</tspan>
+										<tspan font-family="Montserrat-Light, Montserrat" font-weight="300">
+											<tspan x="0" y="43"></tspan>
+											<tspan x="0" y="71">15</tspan>
+											<tspan x="0" y="99">15</tspan>
+											<tspan x="0" y="127">15</tspan>
+											<tspan x="0" y="155">15</tspan>
+											<tspan x="0" y="183">60</tspan>
+											<tspan x="0" y="211">45</tspan>
+											<tspan x="0" y="239"></tspan>
+										</tspan>
+										<tspan x="0" y="267">165</tspan>
+									</text>
+								</g>
+							</svg>
+
+
+
+						</div>
 
 					</div>
 				</div>
@@ -565,173 +749,14 @@
 		</section>
 		<section class="home-web-app"
 			style="background-image:url(imgfiles/assets/images/Grupo-3664.jpg);  background-position: center center; background-size: cover;">
-			<div class="container py-6">
+			<div class="container ">
 				<div class="row">
-					<div class="col-md-6">
-						<h2 class="display-6 program-title-2">
-							Nursing School
-							<strong><br> Tuition and Fees:</strong>
+					<div class="offset-md-2 col-md-8 text-center">
+						<h2 class="display-6 mb-6 program-title-2">
+							Phlebotomy Technician <br>
+							<strong>Tuition and Fees:</strong>
 						</h2>
-						<p class="pb-6">Tuition and fees vary among healthcare programs. You may discuss the payment
-							with the Compu-Med Vocational Careers bursar's office. Payment plans may be offered along
-							with financial aid options. </p>
-					</div>
-					<div class="col-md-6">
-						<svg xmlns="http://www.w3.org/2000/svg" width="430.031" height="420.185"
-							viewBox="0 0 430.031 420.185">
-							<g id="Grupo_4494" data-name="Grupo 4494" transform="translate(-1113.045 -5899.081)">
-								<text id="Tuition_Charges_of_Associate_in_Science_in_Nursing_Starting_7_12_21"
-									data-name="Tuition Charges of Associate in
-						  Science in Nursing Starting 7/12/21" transform="translate(1328.312 5918.081)" fill="#333" font-size="20"
-									font-family="Montserrat-SemiBold, Montserrat" font-weight="600"
-									letter-spacing="-0.025em">
-									<tspan x="-151.28" y="0">Tuition Charges of Associate in</tspan>
-									<tspan x="-167.98" y="26">Science in Nursing Starting 7/12/21</tspan>
-								</text>
-								<text
-									id="Semester_Semester_1_Semester_2_Semester_3_Semester_4_Semester_5_Semester_6_TOTAL_"
-									data-name="Semester
-						  
-						  Semester 1
-						  
-						  Semester 2
-						  
-						  Semester 3
-						  
-						  Semester 4
-						  
-						  Semester 5
-						  
-						  Semester 6
-						  
-						  TOTAL
-						  " transform="translate(1158.659 6015.266)" fill="#333" font-size="16"
-									font-family="Montserrat-Medium, Montserrat" font-weight="500"
-									letter-spacing="-0.025em">
-									<tspan x="0" y="0">Semester</tspan>
-									<tspan font-family="Montserrat-Light, Montserrat" font-weight="300">
-										<tspan x="0" y="20"></tspan>
-										<tspan x="0" y="40">Semester 1</tspan>
-										<tspan x="0" y="60"></tspan>
-										<tspan x="0" y="80">Semester 2</tspan>
-										<tspan x="0" y="100"></tspan>
-										<tspan x="0" y="120">Semester 3</tspan>
-										<tspan x="0" y="140"></tspan>
-										<tspan x="0" y="160">Semester 4</tspan>
-										<tspan x="0" y="180"></tspan>
-										<tspan x="0" y="200">Semester 5</tspan>
-										<tspan x="0" y="220"></tspan>
-										<tspan x="0" y="240">Semester 6</tspan>
-										<tspan x="0" y="260"></tspan>
-									</tspan>
-									<tspan x="0" y="280">TOTAL</tspan>
-									<tspan font-family="Montserrat-Medium">
-										<tspan x="0" y="300"></tspan>
-									</tspan>
-								</text>
-								<text
-									id="Total_Tuition_5_530.00_6_320.00_9_100.00_8_400.00_8_400.00_6_300.00_44_050.00_"
-									data-name="Total Tuition
-						  
-						  $5,530.00
-						  
-						  $6,320.00
-						  
-						  $9,100.00
-						  
-						  $8,400.00
-						  
-						  $8,400.00
-						  
-						  $6,300.00
-						  
-						  $44,050.00
-						  " transform="translate(1411.462 6015.266)" fill="#333" font-size="16"
-									font-family="Montserrat-Medium, Montserrat" font-weight="500"
-									letter-spacing="-0.025em">
-									<tspan x="0" y="0">Total Tuition</tspan>
-									<tspan font-family="Montserrat-Light, Montserrat" font-weight="300">
-										<tspan x="0" y="20"></tspan>
-										<tspan x="0" y="40">$5,530.00</tspan>
-										<tspan x="0" y="60"></tspan>
-										<tspan x="0" y="80">$6,320.00</tspan>
-										<tspan x="0" y="100"></tspan>
-										<tspan x="0" y="120">$9,100.00</tspan>
-										<tspan x="0" y="140"></tspan>
-										<tspan x="0" y="160">$8,400.00</tspan>
-										<tspan x="0" y="180"></tspan>
-										<tspan x="0" y="200">$8,400.00</tspan>
-										<tspan x="0" y="220"></tspan>
-										<tspan x="0" y="240">$6,300.00</tspan>
-									</tspan>
-									<tspan x="0" y="260"></tspan>
-									<tspan x="0" y="280">$44,050.00</tspan>
-									<tspan font-family="Montserrat-Medium">
-										<tspan x="0" y="300"></tspan>
-									</tspan>
-								</text>
-								<text id="Credits_14_16_13_12_12_9_76" data-name="Credits
-						  
-						  14
-						  
-						  16
-						  
-						  13
-						  
-						  12
-						  
-						  12
-						  
-						  9
-						  
-						  76" transform="translate(1328.561 6015.266)" fill="#333" font-size="16"
-									font-family="Montserrat-Medium, Montserrat" font-weight="500"
-									letter-spacing="-0.025em">
-									<tspan x="-27.672" y="0">Credits</tspan>
-									<tspan font-family="Montserrat-Light, Montserrat" font-weight="300">
-										<tspan x="0" y="20"></tspan>
-										<tspan x="-7.856" y="40">14</tspan>
-										<tspan x="0" y="60"></tspan>
-										<tspan x="-7.44" y="80">16</tspan>
-										<tspan x="0" y="100"></tspan>
-										<tspan x="-7.088" y="120">13</tspan>
-										<tspan x="0" y="140"></tspan>
-										<tspan x="-7.128" y="160">12</tspan>
-										<tspan x="0" y="180"></tspan>
-										<tspan x="-7.128" y="200">12</tspan>
-										<tspan x="0" y="220"></tspan>
-										<tspan x="-4.816" y="240">9</tspan>
-										<tspan x="0" y="260"></tspan>
-									</tspan>
-									<tspan x="-9.36" y="280">76</tspan>
-								</text>
-								<line id="Línea_349" data-name="Línea 349" x2="430.031"
-									transform="translate(1113.045 5961.835)" fill="none" stroke="#f6af42"
-									stroke-width="1" />
-								<line id="Línea_350" data-name="Línea 350" x2="430.031"
-									transform="translate(1113.045 6031.567)" fill="none" stroke="#f6af42"
-									stroke-width="1" />
-								<line id="Línea_351" data-name="Línea 351" x2="430.031"
-									transform="translate(1113.045 6069.388)" fill="none" stroke="#f6af42"
-									stroke-width="1" />
-								<line id="Línea_352" data-name="Línea 352" x2="430.031"
-									transform="translate(1113.045 6111.935)" fill="none" stroke="#f6af42"
-									stroke-width="1" />
-								<line id="Línea_353" data-name="Línea 353" x2="430.031"
-									transform="translate(1113.045 6149.757)" fill="none" stroke="#f6af42"
-									stroke-width="1" />
-								<line id="Línea_354" data-name="Línea 354" x2="430.031"
-									transform="translate(1113.045 6191.122)" fill="none" stroke="#f6af42"
-									stroke-width="1" />
-								<line id="Línea_355" data-name="Línea 355" x2="430.031"
-									transform="translate(1113.045 6231.308)" fill="none" stroke="#f6af42"
-									stroke-width="1" />
-								<line id="Línea_356" data-name="Línea 356" x2="430.031"
-									transform="translate(1113.045 6272.673)" fill="none" stroke="#f6af42"
-									stroke-width="1" />
-							</g>
-						</svg>
-
+						<p class="pb-6">Tuition and fees vary among healthcare programs. You may discuss the payment with the Compu-Med Vocational Careers bursar's office.  Payment plans may be offered along with financial aid options. </p>
 					</div>
 				</div>
 			</div>
@@ -745,38 +770,21 @@
 							<strong>Asked Questions</strong>
 						</h2>
 						<h4><small>(and Answers)</small></h4>
-						<p class="pb-6 pt-4"><strong> - What is the difference between an LPN and an RN?</strong><br>
-
-							An LPN, is a licensed practical nurse who has received vocational training for practically
-							12 months. LPNs must work under the supervision of a nurse while providing basic patient
-							care.
-							An RN, is a registered nurse who has received an undergraduate degree of either an associate
-							or bachelor’s level. With the added education, RNs have a broader level of training and
-							therefore gain a broader scope of practice. These additional education and skills lead to
-							higher salary potential. <br><br>
-
-							<strong> - Should I pursue an associate's degree in nursing?</strong><br>
-							Yes, beginning your career in nursing with an associate's degree allows you to begin your
-							career at the RN level with a minimum timeframe of 24 months or less.<br><br>
-
-							<strong> - Is it possible to be an RN with an associate's degree?</strong><br>
-							Yes, to become a Registered Nurse (RN) and sit for the NCLEX-RN, a candidate must have an
-							undergraduate degree of an associate’s degree or a bachelor’s degree in Nursing.<br><br>
-
-							<strong> - Is a registered nurse with an associate's degree worth it?</strong><br>
-							A registered nurse (RN) with an associate's degree can be worth the time and money it takes
-							to get one. It’s a worthwhile investment for your future—particularly if you're interested
-							in advancing or beginning your career as a nurse.<br><br>
-
-							<strong> - Is an undergraduate degree required for nursing?</strong><br>
-							Yes, an associate or bachelor’s degree in Nursing is required to sit for the NCLEX-RN and
-							become a Registered Nurse (RN).<br><br>
-
-							<strong> - Do hospitals hire nurses with associate degrees?</strong><br>
-							The answer is yes—many hospitals are hiring nurses with associate degrees. In fact,
-							according to the U.S. Bureau of Labor Statistics, employment for registered nurses with
-							associate degrees is projected to grow by 18% through 2026.
-
+						<p class="pb-6 pt-4"><br>
+							<strong> - Which is the best phlebotomy technician school in Florida?</strong><br>
+							The program at CompuMed Vocational Careers includes training and techniques on industry equipment, including a hands-on component that ensures students are prepared for the fast-paced world of phlebotomy. <br><br>
+							
+							<strong> - Is being a phlebotomist hard?</strong><br>
+							It is an interesting job. The main responsibility of a phlebotomist is to draw blood from patients to perform tests. Phlebotomists must always follow strict safety procedures and are required to wear protective equipment. They must also be very organized and detail oriented. Some people who work as phlebotomists enjoy the job because they get to meet new people every day.
+							<br><br>
+								<strong> - What is it like being a phlebotomy student?</strong><br>
+							CompuMed’s Phlebotomy program is an 8 week program where you will learn how to draw blood from patients, as well as how to use equipment such as microscopes and other medical tools. You will also learn about health and sanitation practices, which will help you work safely with patients. 
+							<br><br>
+							<strong> - Is a medical lab technician the same as a phlebotomist?</strong><br>
+							No, a medical lab technician is not the same as a phlebotomist. Phlebotomists are trained to draw blood from patients and perform other tasks related to blood collection. They can work in both healthcare settings and laboratories, but they're usually not involved in diagnostics or testing the way lab techs are. 
+							<br><br>
+							<strong> - Is phlebotomy a great career to get into?</strong><br>
+							Phlebotomy may be a good career to get into. It is projected to grow faster than the average for all occupations, based on the Bureau of Labor Statistics.
 						</p>
 					</div>
 				</div>
@@ -784,22 +792,15 @@
 		</section>
 
 		<section class="home-web-app"
-			style="background-image:url(imgfiles/assets/images/NURSE13.jpg);  background-position: center center; background-size: cover;">
-			<div class="container py-6">
+			style="background-image:url(imgfiles/assets/images/phleb.jpg);  background-position: center center; background-size: cover;">
+			<div class="container ">
 				<div class="row">
 					<div class="offset-md-6 col-md-6">
-						<h2 class="display-6 program-title-4">
-							Becoming a nurse can
-							lead to a
-							<strong>fulfilling career!</strong>
+						<h2 class="display-6 program-title-2">
+							Become Certified in<br>
+							<strong>8 Weeks! </strong>
 						</h2>
-						<p class="pb-3 text-white">Enrolling in the Associates Nursing degree at Comu-Med Vocational
-							Careers can lead to a fulfilling nursing career! As an entry-level nurse, you can ensure the
-							healthcare systems run smoothly and make a difference daily by caring for those in need. If
-							becoming a nurse is a goal you wish to achieve, contact CMVC’s Nursing program to enroll
-							today. See the positive impact firsthand when you register for Compu-Med Vocational Nursing
-							Program!
-						</p>
+						<p class="pb-6">If you need additional information or are interested in becoming a phlebotomist technician, reserve your spot now with CMVC’s Phlebotomy Technician Program.</p>
 					</div>
 				</div>
 			</div>

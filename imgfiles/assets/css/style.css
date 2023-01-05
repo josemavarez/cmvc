@@ -49,7 +49,7 @@ body {
     margin: 0;
     font-family: montserrat, sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.6;
     color: #272727;
     background-color: #fff;
@@ -3337,7 +3337,7 @@ fieldset:disabled .btn {
 .btn-primary {
     color: rgb(255, 255, 255);
     background-color: #013765;
-    border-color: #013765
+    border-color: #013765;
 }
 
 .btn-primary:hover {
@@ -18014,7 +18014,7 @@ fieldset:disabled .btn {
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    font-family: "font awesome 5 pro";
+    font-family: "font awesome 5 free";
     font-size: 6px;
     font-weight: 700;
     display: flex;
@@ -18613,8 +18613,8 @@ fieldset:disabled .btn {
 }
 
 .dropdown-toggle:after {
-    content: "";
-    font-family: "font awesome 5 pro";
+    content: "/f078";
+    font-family: "font awesome 5 free";
     font-size: .5rem;
     margin-left: .35rem;
     font-weight: 900;
@@ -18623,8 +18623,8 @@ fieldset:disabled .btn {
 }
 
 .dropend .dropdown-toggle:after {
-    content: "";
-    font-family: "font awesome 5 pro";
+    content: "/f078";
+    font-family: "font awesome 5 free";
     font-size: .5rem;
     margin-left: .35rem;
     font-weight: 900;
@@ -18634,7 +18634,7 @@ fieldset:disabled .btn {
 
 .dropstart .dropdown-toggle:before {
     content: "";
-    font-family: "font awesome 5 pro";
+    font-family: "font awesome 5 free";
     font-size: .5rem;
     margin-left: .35rem;
     font-weight: 900;
@@ -18643,8 +18643,8 @@ fieldset:disabled .btn {
 }
 
 .dropup .dropdown-toggle:after {
-    content: "";
-    font-family: "font awesome 5 pro";
+    content: "/f078";
+    font-family: "font awesome 5 free";
     font-size: .5rem;
     margin-left: .35rem;
     font-weight: 900;
@@ -18838,7 +18838,7 @@ fieldset:disabled .btn {
 .dropdown-toggle-start-icon .collapsed.dropdown-toggle:after {
     content: "";
     color: #f8bf52;
-    font-family: "font awesome 5 pro";
+    font-family: "font awesome 5 free";
     font-size: 14px;
     top: 5px;
     transform: rotate(45deg);
@@ -18846,9 +18846,9 @@ fieldset:disabled .btn {
 }
 
 .dropdown-toggle-start-icon .dropdown-toggle:after {
-    content: "";
+    content: "/f078";
     color: #f8bf52;
-    font-family: "font awesome 5 pro";
+    font-family: "font awesome 5 free";
     font-size: 14px;
     top: 5px;
     transform: rotate(0deg);
@@ -19378,8 +19378,8 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 }
 
 .navbar .dropdown-menu .dropdown-submenu.dropend .dropdown-toggle:after {
-    content: "";
-    font-family: "font awesome 5 pro";
+    content: "/f078";
+    font-family: "font awesome 5 free";
     font-size: 10px;
     top: 8px;
     transform: rotate(45deg);
@@ -19399,8 +19399,8 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 }
 
 .navbar .dropdown-menu .dropdown-submenu.dropstart .dropdown-toggle:before {
-    content: "";
-    font-family: "font awesome 5 pro";
+    content: "\f078";
+    font-family: "font awesome 5 free";
     font-size: 10px;
     top: 8px;
     transform: rotate(45deg);
@@ -24072,7 +24072,8 @@ section.project-benefits .h3 span {
 }
 
 .banner-social a {
-    font-size: .8rem
+    font-size: 1rem;
+    font-weight: 600 !important;
 }
 
 .customer-succeed .logo {
@@ -24098,6 +24099,11 @@ section.project-benefits .h3 span {
 .programs-card{
     border-radius: 15px;
     background-color: #013765;
+    align-items: center;
+}
+.programs-card-2{
+    border-radius: 15px;
+    background-color: #fff;
     align-items: center;
 }
 .icon-cir{
@@ -24265,6 +24271,11 @@ bottom: 0;
     position: relative;
 
 }
+.s3-bg{
+    background-color: #012a4d;
+    position: relative;
+
+}
 .text-llete-2{
     font-size: 35px;
     font-weight: 200;
@@ -24386,6 +24397,16 @@ bottom: 0;
     color: #F6AF42;
     font-size: 60px;
 }
+.program-title-7{
+    color: #4D4D4D;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+}
+.program-title-7 strong{
+    color: #012a4d;
+    font-size: 60px;
+}
 .program-description{
     color: #0d0e10;
 }
@@ -24397,6 +24418,15 @@ bottom: 0;
 }
 .img-left{
     width: 10%;
+}
+.fts-subtitle{
+    font-size: 30px !important;
+    font-weight: 600;
+    color: #333333;
+}
+.pr-btn{
+    font-size: 16px;
+    font-weight: 500;
 }
 @media screen and (max-width:768px) {
     .programs{

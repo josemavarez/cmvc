@@ -22,15 +22,15 @@
 	<link rel="stylesheet" type="text/css" href="imgfiles/assets/css/style.css?14">
 	<script src="jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 		crossorigin="anonymous" type="42264ca914524534c0c096a6-text/javascript"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"
+	<script src="ajax/libs/font-awesome/5.12.0-2/js/fontawesome.min.js"
 		type="42264ca914524534c0c096a6-text/javascript"></script>
-
+	<link href="assets/external/widget.css" rel="stylesheet">
+	<script src="assets/external/widget.js" type="42264ca914524534c0c096a6-text/javascript" async=""></script>
 
 
 </head>
 
 <body>
-
 
 
 	<div class="preloader">
@@ -122,7 +122,6 @@
 	</div>
 
 
-
 	<header class="navbar-light navbar-transparent navbar-sticky">
 
 		<div class="navbar-top d-none d-lg-block">
@@ -148,8 +147,8 @@
 					<div class="d-flex align-items-center justify-content-center">
 
 						<div class="dropdown ms-3">
-							<a class="" href="#" role="button" id="dropdownLanguage"
-								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English <i class="fas fa-chevron-down"></i> </a>
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownLanguage"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English </a>
 							<div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage">
 
 								<a class="dropdown-item text-white" href="index-spanish.html">Spanish</a>
@@ -163,7 +162,7 @@
 								<a href="" class="nav-link">(786) 542 5210</a>
 							</li>
 							<li class="nav-item">
-								<a href="https://compumed.instructure.com/login/canvas" class="nav-link" target="_blank"><i
+								<a href="index.htm" class="nav-link" target="_blank"><i
 										class="far fa-user me-2"></i>Login</a>
 							</li>
 						</ul>
@@ -191,10 +190,10 @@
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 
 					<div class="offcanvas-header navbar-mobile">
-						<a href="https://compumed.instructure.com/login/canvas" class="nav-link" target="_blank"><i class="far fa-user me-2"></i>Login</a>
+						<a href="index.htm" class="nav-link" target="_blank"><i class="far fa-user me-2"></i>Login</a>
 						<div class="dropdown ms-4 other-nav">
-							<a class="" href="#" role="button" id="dropdownLanguageMobile"
-								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English <i class="fas fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownLanguageMobile"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English </a>
 							<div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguageMobile">
 								<a class="dropdown-item text-white" href="#">Español</a>
 								<a class="dropdown-item text-white" href="#">Français</a>
@@ -224,8 +223,8 @@
 					</div>
 					<ul class=" navbar-nav navbar-nav-scroll navbar-nav-scroll mx-auto mt-3 mt-lg-0 mb-3 mb-lg-0">
 						<li class="nav-item dropdown">
-							<a class="nav-link " href="" id="about" data-bs-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">About CMVC <i class="fas fa-chevron-down"></i></a>
+							<a class="nav-link dropdown-toggle" href="" id="about" data-bs-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">About CMVC</a>
 							<ul class="dropdown-menu" aria-labelledby="about">
 								<li> <a navbar-item-title="/index" class="dropdown-item" href="company.html">Company</a>
 								</li>
@@ -257,8 +256,8 @@
 
 						<li class="nav-item dropdown">
 
-							<a class="nav-link " href="#" id="admission" data-bs-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">Admission <i class="fas fa-chevron-down"></i></a>
+							<a class="nav-link dropdown-toggle" href="#" id="admission" data-bs-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">Admission</a>
 							<ul class="dropdown-menu" aria-labelledby="admission">
 								<li> <a navbar-item-title="/index" class="dropdown-item"
 										href="paperless-admission.html">Paperless Admission</a></li>
@@ -273,8 +272,8 @@
 
 						<li class="nav-item dropdown">
 
-							<a class="nav-link " href="#" id="newsroom" data-bs-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">Newsroom <i class="fas fa-chevron-down"></i></a>
+							<a class="nav-link dropdown-toggle" href="#" id="newsroom" data-bs-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">Newsroom</a>
 							<ul class="dropdown-menu" aria-labelledby="newsroom">
 								<li> <a navbar-item-title="/index" class="dropdown-item" href="blog.html">Blog</a></li>
 								<li> <a navbar-item-title="/index" class="dropdown-item" href="events.html">Events</a>
@@ -303,7 +302,7 @@
 					</div>
 
 					<div class="nav-item d-none d-xl-block">
-						<a href="contact.html" class="btn btn-sm btn-secondary mb-0 mx-2"
+						<a href="contact.html" target="_blank" class="btn btn-sm btn-secondary mb-0 mx-2"
 							style=" padding: 0.6rem 1.3rem ">Contact Us</a>
 					</div>
 				</div>
@@ -312,6 +311,7 @@
 		</nav>
 
 	</header>
+
 
 
 	<style>
@@ -333,9 +333,27 @@
 	<main>
 
 
-		<section class=" position-relative bg-dark p-0 ">
-			<div class="position-absolute top-50 start-0 translate-middle z-index-9 ms-4 d-none d-xxl-block">
-				<div class="list-group-inline list-unstyled rotate-270 banner-social">
+
+		<section class="
+		bg-parallax bg-dark-overlay-1
+		pt-8 pt-md-10
+		pb-6 pb-md-8
+		position-relative height-600-header
+		" style="background: none center center / cover no-repeat; z-index: 0;" data-jarallax-original-styles="
+		background: url(imgfiles/assets/images/PRIVATE_POLICY_mockup.jpg)
+		no-repeat center center;
+		background-size: cover;
+		">
+			<div class="
+		   position-absolute
+		   top-50
+		   start-0
+		   translate-middle
+		   z-index-9
+		   ms-4
+		   d-none d-xxl-block
+		   ">
+				<div class="list-group-inline list-unstyled rotate-270">
 					<a href="https://www.facebook.com/CMVCFACE" target="_blank"
 						class="list-group-item bg-transparent mt-4">Facebook</a>
 					<a href="https://www.linkedin.com/company/compu-med-vocational-careers/" target="_blank"
@@ -346,474 +364,335 @@
 						class="list-group-item bg-transparent mt-4">Instagram</a>
 					<a href="https://www.youtube.com/channel/UCsGVA9obM4WRBxvdLMRQKiQ/feed" target="_blank"
 						class="list-group-item bg-transparent mt-4">YouTube</a>
-
 				</div>
 			</div>
-
-
-			<div class="scroll-down scroll-down-light m-5 d-none d-md-block">
-				<div class="scroll-line"></div>
-				<span class="scoll-text">Scroll Down</span>
-			</div>
-
-			<div
-				class="tiny-slider main-tiny-slider dots-white dots-bordered dots-end arrow-bordered arrow-large arrow-round arrow-start-bottom arrow-md-none">
-				<div class="tiny-slider-inner  main-slider-item" data-autoplay="true" data-autoplaytime="7000"
-					data-gutter="0" data-arrow="true" data-dots="true" data-items="1">
-
-					<div class="h-100  bg-dark "
-						style="background-image:url(imgfiles/assets/images/V3_HOME_mockup_nuevo.jpg); background-position: center center; background-size: cover;">
-						<div class="banner-home ">
-							<div class="container h-100  position-relative">
-								<div class="banner-home__text ">
-									<div class="slider-content text-start">
-										<h2
-											class="animate__animated animate__fadeInUp animate__delay-1s text-banner-home col-md-6">
-											<span class="d-block text-banner-home">Your School
-												of Progress
-										</h2>
-
-										<p class="p-home animate__animated animate__fadeInUp animate__delay-3s">
-											Lorem ipsum dolor sit amet. Aut quos earum qui voluptatem voluptatem aut
-											dolorem iusto qui reprehenderit perferendis hic dolorem sint non magnam
-											modi.</p>
-										<div class="animate__animated animate__fadeInUp animate__delay-4s ">
-											<a href="/contact.html"  class="btn btn-primary  me-3">Enroll
-												NOW!</a>
-											<a href="/admission.html" class="btn btn-outline-dark">Apply NOW!</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="h-100  bg-dark "
-						style="background-image:url(imgfiles/assets/images/HOME_slide_2.jpg); background-position: center center; background-size: cover;">
-						<div class="banner-home ">
-							<div class="container h-100  position-relative">
-								<div class="banner-home__text ">
-									<div class="slider-content text-start">
-										<h2
-											class="animate__animated animate__fadeInUp animate__delay-1s text-banner-home col-md-6">
-											<span class="d-block text-banner-home">Your School
-												of Progress
-										</h2>
-
-										<p class="p-home animate__animated animate__fadeInUp animate__delay-3s">
-											Lorem ipsum dolor sit amet. Aut quos earum qui voluptatem voluptatem aut
-											dolorem iusto qui reprehenderit perferendis hic dolorem sint non magnam
-											modi.</p>
-										<div class="animate__animated animate__fadeInUp animate__delay-4s ">
-											<a href="/contact.html"  class="btn btn-primary  me-3">Enroll
-												NOW!</a>
-											<a href="/admission.html" class="btn btn-outline-dark">Apply NOW!</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="h-100  bg-dark"
-						style="background-image:url(imgfiles/assets/images/HOME_slide_3.jpg);  background-position: center center; background-size: cover;">
-						<div class="banner-home ">
-							<div class="container h-100  position-relative">
-								<div class="banner-home__text ">
-									<div class="slider-content text-start">
-										<h2
-											class="animate__animated animate__fadeInUp animate__delay-1s text-banner-home col-md-6">
-											<span class="d-block text-banner-home">Be successful!</span>
-										</h2>
-										<h4 class="fw-light animate__animated animate__fadeInUp animate__delay-2s">
-											We wish you to achieve your
-											dreams and purposes.</h4>
-										<p class="p-home animate__animated animate__fadeInUp animate__delay-3s">
-											Lorem ipsum dolor sit amet. Aut quos earum qui voluptatem voluptatem aut
-											dolorem iusto qui reprehenderit perferendis hic dolorem sint non magnam
-											modi.</p>
-										<div class="animate__animated animate__fadeInUp animate__delay-4s ">
-											<a href="/contact.html" class="btn btn-primary  me-3">Enroll
-												NOW!</a>
-											<a href="/admission.html" class="btn btn-outline-dark">Apply NOW!</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</section>
-
-
-		<section class="   ">
 			<div class="container">
-				<div class="d-none d-md-block"><img src="imgfiles/assets/images/pieza-1.png" alt="" class="img-program">
-				</div>
-				<div class="row position-relative">
-					<div class="text-center mb-5">
-						<h2 class="display-6 programs-title">
-							Programs
+				<div class="row d-flex justify-content-lg-between">
+
+					<div class="col-md-7">
+
+						<h2 class="animate__animated animate__fadeInUp animate__delay-1s display-3 fw-bold text-white">
+							<span class="text-white-stroke text-primary-shadow d-block">Patient Care
+								Technician Training
+								Program</span>
 						</h2>
-						<p class="p-program px-md-6">Lorem ipsum dolor sit amet. Aut quos earum qui voluptatem
-							voluptatem aut
-							dolorem iusto qui reprehenderit perferendis hic dolorem sint non magnam modi.</p>
-					</div>
-					<div class="container">
-						<div class="row programs ">
-
-							<a class="col-md-4 programs-card row py-5" href="dental.html">
-								<div class="col-4 icon-cir">
-									<img src="imgfiles/assets/images/icono-1.png" alt="">
-								</div>
-								<div class="col-8">
-									<h4 class="fw-light text-white text-program"><strong>Dental</strong> <br>Assistant
-									</h4>
-								</div>
-							</a>
-
-							<a class="col-md-4 programs-card row py-5" href="medical-assistant.html">
-								<div class="col-4 icon-cir">
-									<img src="imgfiles/assets/images/icono-2.png" alt="">
-								</div>
-								<div class="col-8">
-									<h4 class="fw-light text-white text-program"><strong>Associates of Science</strong>
-										<br> in Medical Assisting
-									</h4>
-								</div>
-							</a>
-
-							<a class="col-md-4 programs-card row py-5" href="asma.html">
-								<div class="col-4 icon-cir">
-									<img src="imgfiles/assets/images/icono-3.png" alt="">
-								</div>
-								<div class="col-8">
-									<h4 class="fw-light text-white text-program"><strong>Medical</strong> <br>Assistant
-									</h4>
-								</div>
-							</a>
-						</div>
-
-
-						<div class="row programs">
-							<a class="col-md-4 programs-card row py-5" href="phlebotomy.html">
-								<div class="col-4 icon-cir">
-									<img src="imgfiles/assets/images/icono-4.png" alt="">
-								</div>
-								<div class="col-8">
-									<h4 class="fw-light text-white text-program"><strong>Phlebotomy</strong>
-										<br>Technician
-									</h4>
-								</div>
-							</a>
-
-							<a class="col-md-4 programs-card row py-5" href="patient-care.html">
-								<div class="col-4 icon-cir">
-									<img src="imgfiles/assets/images/icono-5.png" alt="">
-								</div>
-								<div class="col-8">
-									<h4 class="fw-light text-white text-program"><strong>Patient Care</strong>
-										<br>Technician
-									</h4>
-								</div>
-							</a>
-
-							<a class="col-md-4 programs-card row py-5" href="nursing.html">
-								<div class="col-4 icon-cir">
-									<img src="imgfiles/assets/images/icono-6.png" alt="">
-								</div>
-								<div class="col-8">
-									<h4 class="fw-light text-white text-program"><strong>Associate of Science</strong>
-										<br>in Nursing
-									</h4>
-								</div>
-							</a>
-						</div>
-
-
-
 					</div>
 				</div>
-				<div class="animate__animated animate__fadeInUp animate__delay-4s mt-5 text-center">
-					<a href="/programs.html" class="btn btn-outline-dark  me-3">Learn more</a>
+
+			</div>
+			<div id="jarallax-container-0"
+				style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+				<div
+					style="background-position: 100% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(imgfiles/assets/images/PATIENTE-CARE1.jpg); position: absolute; top: 0px; left: 0px; width: 100%; height: 600px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 63px; transform: translate3d(0px, -63px, 0px);">
 				</div>
 			</div>
 		</section>
 
 
 
+		<section class="pr-1-bg">
+			<div class="container pb-6">
+				<div>
+					<img src="imgfiles/assets/images/PATIENT-CARE2.png" alt="" class="img-pr1">
+				</div>
+				<div class="row align-items-center">
 
+					<div class="col-2"></div>
 
+					<div class="col-md-12  text-center">
+						<p style="color: #576574;">If you are a compassionate person who loves helping others, consider
+							becoming a patient care technician! Patient care technicians are responsible for caring for
+							and monitoring others who cannot care for themselves. During a hospital stay or medical
+							visit, PCTs are the support personnel to a patient; they assist patients in walking,
+							dressing, bathing, feeding, cleaning, and more. PCTs work under the supervision of
+							healthcare professionals.
+							<br><br>
+							Patient care technicians understand their patient's concerns by being empathetic and
+							attentive. PCTs are informed of client cases. They must effectively convey issues, concerns,
+							and updates, to colleagues, and supervisors. PCTs main responsibility is patient comfort.
+							<br><br>
+							To become a Patient Care Tech, professional training is required! If you are near Florida,
+							explore the CompuMed Vocational patient care technician training program.
+						</p>
 
+					</div>
+				</div>
+			</div>
+		</section>
 
-
-		<section class="bg-light home-foundation "
-			style="background-image:url(imgfiles/assets/images/pieza-2.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+		<section class="pr-2-bg">
 			<div class="container">
-				<div class="row d-flex justify-content-md-between lf-text">
-					<div class="col-lg-7 text-center">
-						<h1 class="s-lf-h1 fw-light ">Are you ready to pursue your <br><strong>passion in
-								healthcare?</strong></h1>
 
-						<h3 class="s-lf-h3">Upcoming starts</h3>
+				<div class="row align-items-center">
 
-						<div class="lf-icons row">
-							<div class="col-4">
-								<img src="imgfiles/assets/images/icono-1.png" alt="">
-								<p class="p-lf">Dental</p>
+					<div class="col-6"><img src="imgfiles/assets/images/Grupo 19847.png" alt=""></div>
 
+					<div class="col-md-6">
+						<h4 class="program-title"><small>Program</small> <br>
+							Overview</h4>
+						<p style="color: #ffffff;">To show potential employers you have the skills and experience to be
+							employed, you will need to earn a Patient Care Technician Diploma. At CompuMed Vocational
+							Careers, a patient care technician diploma is achievable by enrolling in the Online Patient
+							Care Tech Training program or in person at our Kendall-Miami campus.
+							<br><br>
+							CMVC’s patient care technician job training program is 45 weeks long, with 915 clock hours.
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="dev-features-tech-bg  pp-bg">
+			<div class="container">
+				<div><img src="imgfiles/assets/images/pieza-4 (2).png" alt="" class="img-s2"></div>
+				<div><img src="imgfiles/assets/images/pieza-2.png" alt="" class="img-s1"></div>
+				<div class="row justify-content-between align-items-center">
+
+					<div class="col-md-6 position-relative">
+
+
+
+						<div class="row mt-4 mt-md-0">
+							<div class="col-5 offset-1 px-2 mb-3 align-self-end">
+								<img class="rounded" src="imgfiles/assets/images/PATIENT-CARE7.png" alt="">
 							</div>
-							<div class="col-4">
-								<img src="imgfiles/assets/images/icono-3.png" alt="">
-								<p class="p-lf">Medical</p>
-
+							<div class="col-6 px-2 mb-3">
+								<img class="rounded" src="imgfiles/assets/images/PATIENT-CARE6.png" alt="">
 							</div>
-							<div class="col-4">
-								<img src="imgfiles/assets/images/icono-6.png" alt="">
-								<p class="p-lf">Nurse</p>
-
+							<div class="col-7 px-2 mb-3">
+								<div style="height: 194px;"
+									class="bg-primary d-flex justify-content-center align-items-center rounded p-2 p-sm-3 p-lg-4 p-xl-5 text-white-force">
+									<h4>PATIENT
+										CARE</h4>
+								</div>
 							</div>
-
+							<div class="col-5 align-self-start ps-2 mb-3">
+								<img class="rounded" src="imgfiles/assets/images/PATIENT-CARE5.png" alt="">
+							</div>
 						</div>
 					</div>
 
-
-
-
-
-
-					<div class="col-lg-5 animate__animated animate__fadeInUp animate__delay-4s mt-5 mb-4">
-						<form class="row g-3 lead-form">
-							<div class="col-md-6">
-								<label for="inputEmail4" class="form-label">Campus</label>
-								<input type="text" class="form-control">
-							</div>
-
-							<div class="col-md-6">
-								<label for="inputState" class="form-label">Program</label>
-								<select class="form-select">
-									<option selected>Choose...</option>
-									<option>Dental assistant</option>
-									<option>Medical assistant</option>
-									<option>Patient Care</option>
-									<option>Associates of science in medical assistant</option>
-									<option>Phlebotomy Technician</option>
-									<option>Associates of science in nursing</option>
-								</select>
-							</div>
-							<div class="col-12">
-								<label for="inputAddress" class="form-label">Name</label>
-								<input type="text" class="col-6 form-control" placeholder="">
-							</div>
-							<div class="col-12">
-								<label for="inputAddress2" class="form-label">Phone</label>
-								<input type="text" class="form-control" placeholder="">
-							</div>
-							<div class="col-md-12">
-								<label for="inputZip" class="form-label">Zip</label>
-								<input type="text" class="form-control">
-							</div>
-							<div class="col-md-12">
-								<label for="inputCity" class="form-label">Email</label>
-								<input type="email" class="form-control">
-							</div>
-
-							<div class="col-12">
-								<button type="submit" class="btn btn-primary">Send request</button>
-							</div>
-						</form>
+					<div class="col-md-6 ps-lg-5">
+						<h2 class=" display-8" style="color: #013765"><small>What You Will</small><br>Learn at CMVC</h2>
+						<p style="color: #576574;">At the CMVC Patient Care Tech program, students are trained to
+							prepare for entry-level positions as Patient Care Technicians / Home Health Aides / or
+							Phlebotomists. Students are taught the theory, skills, and importance of patient care
+							assistance. CMVC’s patient care technician courses include Nursing Procedures, Medical
+							Terminology, Phlebotomy, Anatomy, Physiology, Home Health Aide, and more. All of the courses
+							provided in the CMVC’s patient care technical training align with the expectations and
+							duties of a PCT.
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section class="home-web-app"
-			style="background-image:url(imgfiles/assets/images/imagen-1.jpg);  background-position: center center; background-size: cover;">
-			<div class="container my-6 ">
+			style="background-image:url(imgfiles/assets/images/Grupo_19778.jpg);  background-position: center center; background-size: cover;">
+			<div class="container ">
 				<div class="row">
 					<div class="offset-md-6 col-md-6">
 						<div>
 							<img src="imgfiles/assets/images/1.png" alt="" class="flame-80">
 						</div>
-						<h2 class="display-6 mb-6 text-white text-llete">
-							Are you ready to <br><strong>YOUR PROGRESS?</strong>
+						<h2 class="display-6 program-title-2">
+							Patient Care Technician
+
+							<br><strong>Job Description</strong>
 						</h2>
 
-						<a href="/developers-academy" class="btn btn-primary me-3">Enroll now</a>
+						<p>The main concern of a PCT is to keep patients comfortable. Experienced instructors at the
+							CMVC’s patient care technician training will teach students how to fulfill the duties of a
+							patient care technician job.
+							<br><br>
+							You may make people’s lives brighter in less than a year by enrolling in CMVC’s patient care
+							technician training program.
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 
+		<section class="s2-bg"
+			style="background-color: #F2F2F2;  background-position: left top; background-size: contain;background-repeat: no-repeat;">
+			<div class="container ">
+				<div><img src="imgfiles/assets/images/ASMA9.png" alt="" class="img-program2"></div>
+				<div class="text-left my-5">
+					<h2 class="display-6 mb-6 program-title-3">
+						CMVC Patient Care Tech<br>
+						<strong>Admissions Requirements</strong>
+					</h2>
+					<div class="row">
+						<div class="col-12">
+							You’ve taken the time to decide that becoming a patient care tech is right for you, and the
+							thought of dealing with the paperwork and time needed to apply for a patient care technician
+							training program can be intimidating. That is why at Compu-Med Vocational Careers, we keep
+							the college admissions process simple. First, we encourage prospective students to visit one
+							of our Florida locations. By visiting the campus, students can quickly learn about the
+							program structure by getting a glimpse of program material and requirements.
+							<br><br>
+							Previous academic experience is analyzed in the admissions process, and certain factors play
+							a role in evaluating applicants. At CMVC, we seek applicants who have exhibited the desire
+							to learn. You will be considered for admission if you are serious about achieving an
+							education and have a strong desire to grow.
 
 
-
-
-
-		<section class="py-6">
-
-
-			<div class="services">
-				<div class="container text-services p-4">
-					<div class="col-12 row">
-						<div class="col-12 col-md-4">
-							<h2 class="services-title">
-								Our services
-							</h2>
-							<p class="p-program">Lorem ipsum dolor sit amet. Aut quos earum qui voluptatem voluptatem
-								aut
-								dolorem iusto qui reprehenderit perferendis hic dolorem sint non magnam modi.</p>
-							<a href="/developers-academy" class="btn btn-primary me-3">Enroll now</a>
 						</div>
-						<div class="col-12 col-md-8">
-							<div class="col-12 row">
-								<div class="col-md-6">
-									<div>
 
-										<h5 class="service-title"><i></i> Admission</h5>
-
-										<p>Admission is the first place the student
-											meets when he/she visits the school
-											premises. At this time, the student is
-											greeted by an Admission Officer.</p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div>
-										<h5 class="service-title">Externship</h5>
-										<p>An externship is an invaluable way of
-											learning about the daily work of
-											professionals in your field. It can offer
-											individuals the opportunity to test a
-											career by job shadowing and having
-											hands on in a real medical scenario.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 row py-4">
-								<div class="col-md-6">
-									<div>
-										<h5 class="service-title">Financial Aid and
-											Monthly Payments</h5>
-										<p>Compu-Med Vocational Careers, Corp.
-											is a participant in the student financial
-											assistance programs supported by the
-											U.S. Department of Education.</p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div>
-										<h5 class="service-title">Employment Assistant</h5>
-										<p>Although no guarantee of
-											employment can be made the Job
-											Placement Department is committed
-											to assisting our students and alumni
-											with employability skills.</p>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
-				</div>
-				<img class="img-services" src="imgfiles/assets/images/pieza-3-.png" alt="">
 
-			</div>
-			</div>
-			<div class="col-7"></div>
-			</div>
+				</div>
 		</section>
 
 
-		<section class=""
-			style="background-image:url(imgfiles/assets/images/imagen-2.jpg);  background-position: center center; background-size: cover;">
-			<div class="container my-4 ">
+		<section class="pr-1-bg">
+			<div class="container pt-4">
+
+				<div class="row align-items-center">
+					<div class="col-12">
+						<img src="imgfiles/assets/images/NURSE8.png" alt="">
+					</div>
+					<div class="col-2"></div>
+
+					<div class="col-md-8  text-center ">
+						<h4 class="program-title-2 pt-5">Patient Care Technician <strong>Job Outlook</strong></h4>
+						<p style="color: #576574;">A significant portion of the U.S. population is reaching old age. Age
+							is beyond control and will continue to climb year after year. The elderly population may
+							need patient care technicians.
+							<br><br>
+							According to the Bureau of Labor Statistics, "Overall employment in healthcare occupations
+							is projected to grow 13 percent from 2021 to 2031, much faster than the average for all
+							occupations; this increase is expected to result in about 2 million new jobs over the
+							decade."
+							<br><br>
+							While the BLS doesn't have a specific listing for PCTs, ” Its reported a median annual
+							salary of $30,310 for nursing assistants in 2021.” This number can vary based on location,
+							patient care setting, and experience level.
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="dev-features-tech-bg  company-bg">
+			<div class="container">
+				<div><img src="imgfiles/assets/images/pieza-4 (2).png" alt="" class="img-s2"></div>
+				<div><img src="imgfiles/assets/images/pieza-2.png" alt="" class="img-s1"></div>
+				<div class="row align-items-center">
+
+					<div class="col-2"></div>
+
+					<div class="col-md-8  ">
+						<h2 class=" display-8 program-title-2">Program Learning
+							<strong>Outcomes</strong>
+						</h2>
+						<p style="color: #576574;">Upon completion of the Patient Care Technician Education at CMVC,
+							students will achieve the following outcomes:
+							<br><br>
+							- Provide primary patient care<br>
+							- Acquire, distribute and administer patient care supplies<br>
+							- Perform safety checks and ensure cleanliness in patients' rooms<br>
+							- Accommodate the unique needs of patients accordingly<br>
+							- Obtain EKG readings and monitor vital signs<br>
+							- Perform phlebotomy procedures<br>
+							- Provide physical and emotional support to patient and families coping with loss.
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="home-web-app"
+			style="background-image:url(imgfiles/assets/images/Grupo-3664.jpg);  background-position: center center; background-size: cover;">
+			<div class="container ">
 				<div class="row">
-					<div class=" col-md-6">
-
-						<h2 class="display-6 text-llete">
-							<strong>CMVC</strong>
+					<div class="offset-md-2 col-md-8 text-center">
+						<h2 class="display-6 mb-6 program-title-2">
+							Program <strong>Tuition and Fees</strong>
 						</h2>
-						<h3 class="display-6 mb-6  text-llete">
-							Your School of Progress
-						</h3>
+						<p class="pb-6">Tuition and fees vary among healthcare programs. You can discuss the payment
+							with the Compu-Med Vocational Careers bursar's office. Payment plans may be offered, along
+							with financial aid options. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container ">
+				<div class="row">
+					<div class="offset-md-2 col-md-8">
+						<h2 class="display-6 program-title-2">
+							Frequently
+							<strong>Asked Questions</strong>
+						</h2>
+						<h4><small>(and Answers)</small></h4>
+						<p class="pb-6 pt-4"><strong> - What are the duties of a patient care technician?</strong><br>
+							A patient care technician's primary goal is always to ensure that their patients are
+							comfortable and safe at all times.
+							<br><br>
+							<strong> - Where does a patient care technician work in a hospital?</strong><br>
+							A patient care technician works in the hospital on the floor. They work directly with
+							patients, helping them with their daily needs and activities. They are responsible for
+							providing support to patients and their families. For example, they may provide assistance
+							with bathing and grooming, dressing, feeding, and performing activities of daily living.
+							<br><br>
+							<strong> - How much does a patient care tech make?</strong><br>
+							A patient care technician's salary can vary based on their location and experience.
+							<br><br>
+							<strong> - What is the difference between a medical assistant and a PCT?</strong><br>
+							The difference between a medical assistant and a Patient Care Technician is that the PCT
+							role is more focused on direct patient care, whereas the MA role is more focused on
+							administrative duties. A PCT will typically work alongside other nurses and doctors to help
+							provide direct care to patients, while an MA will focus more on administrative duties like
+							scheduling appointments, managing files and paperwork, and other clerical tasks. MA’s are
+							also more in the doctors’ offices.
+							<br><br>
+							<strong> - How to become a patient care tech?</strong><br>
+							Patient care technician programs are designed to prepare students for employment in the
+							medical field, with a focus on patient care. To qualify for these programs, students must
+							have a high school diploma or equivalent certificate. Some employers may require additional
+							education or experience as well; however, this varies widely depending on the type of job
+							you want to pursue after graduation.
+							<br><br>
+							<strong> - How do I become a patient care tech at a hospital?</strong><br>
+							Becoming a patient care technician is the first step in your career as a healthcare
+							professional. With our program, you'll gain the skills and knowledge needed to help provide
+							care to patients of all ages. You'll learn how to treat patients in a way that helps them
+							feel comfortable, calm, and at ease. You'll also learn how to provide them with information
+							about their treatment plan and answer any questions they may have.
 
+
+
+
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-
-
-
-
-
-
-
+		<section class="home-web-app"
+			style="background-image:url(imgfiles/assets/images/PATIENTE-CARE16.jpg);  background-position: center center; background-size: cover;">
+			<div class="container ">
+				<div class="row">
+					<div class="offset-md-6 col-md-6">
+						<h2 class="display-6 program-title-2">
+							Become a Patient <br>
+							Care Tech with <br>
+							<strong>CompuMed Vocational! </strong>
+						</h2>
+						<p class="pb-6">If you've asked yourself, where can I find a patient care technician program near me, look no further. If you are in the Miami, Florida, area, call CMVC today to take the first step in achieving the educational requirements and certification needed to become a patient care technician!  
+<br><br>
+							You can fall asleep at night knowing you’re doing good for others. Build relationships that make a difference in people's lives!
+							</p>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
-	<script type="42264ca914524534c0c096a6-text/javascript">
-
-      $('#contact-form').submit(function (e){	
-		   e.preventDefault();		
-			var datos = new FormData(this);			
-			$.ajax({
-				cache: false,
-				contentType: false,
-				processData: false,
-				type: 'POST',
-				url: '/Contactanos.addSubscribe',
-				data: datos,
-				success: function(response) {
-					console.log(response);
-					 if(response == " OK")
-					{                    
-                  $("#modalcontent").html(`<h3>Thank<br/><span>You</span></h3>
-                     <p>Our partner manager will be contacting you shortly to define the next steps</p>
-                     `);
-						myModal.toggle();
-					}else{
-						$("#Grupo_8640").html(`<circle id="Elipse_1352" data-name="Elipse 1352" cx="58" cy="58" r="58" transform="translate(911 358)" fill="#ff3b3b"/>
-                  <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M31.283,27.451,42.832,15.9A2.706,2.706,0,0,0,39,12.076L27.456,23.625,15.908,12.076A2.706,2.706,0,1,0,12.081,15.9L23.629,27.451,12.081,39a2.706,2.706,0,0,0,3.827,3.827L27.456,31.278,39,42.827A2.706,2.706,0,1,0,42.832,39Z" transform="translate(941.716 388.71)" fill="#fff"/>`);
-                  $("#modalcontent").html(`<h3>Oups</h3>
-                  <p>it was not possible to send this form Please try again later</p>`);
-                   myModal.toggle();
-					} 
-				}
-			});
-		
-	});
-
-	$('#start-form').submit(function (e){	
-		e.preventDefault();
-		var emailPeople=$("#peopleEmail").val();
-		
-		if(emailPeople==''){
-			$("#warnMsn1").show("fast")
-		}
-
-		else if(validateEmail(emailPeople)) {
-			console.log("DONE")
-			$("#warnMsn1").hide()
-			$("#warnMsn2").hide()
-			$("#warnMsn3").show()
-		}
-
-		else{
-			$("#warnMsn2").show("fast")
-		}
-	});
-
-	function validateEmail(email) {
-		const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		return re.test(String(email).toLowerCase());
-	}
-
-   </script>
 
 	<style>
 		.footerL {
@@ -831,7 +710,7 @@
 					<h6 class="mt-2 me-4 text-white footerl2">Follow on:</h6>
 					<div class="d-flex me-auto">
 						<div class="footer-social-media">
-							<a href="https://www.facebook.com/CMVCFACE" target="_blank">
+							<a href="https://www.facebook.com/kanecode" target="_blank">
 								<svg xmlns="http://www.w3.org/2000/svg" width="6.784" height="12.77"
 									viewbox="0 0 6.784 12.77">
 									<path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
@@ -839,7 +718,7 @@
 										transform="translate(-1.609)" fill="#f8bf52"></path>
 								</svg>
 							</a>
-							<a href="https://twitter.com/CMVCMiami" target="_blank">
+							<a href="https://twitter.com/KaneCodeInc " target="_blank">
 								<svg xmlns="http://www.w3.org/2000/svg" width="15.424" height="12.77"
 									viewbox="0 0 15.424 12.77">
 									<path id="Icon_metro-twitter" data-name="Icon metro-twitter"
@@ -847,7 +726,7 @@
 										transform="translate(-2.571 -4.817)" fill="#f8bf52"></path>
 								</svg>
 							</a>
-							<a href="https://www.linkedin.com/company/compu-med-vocational-careers/" target="_blank">
+							<a href="https://es.linkedin.com/company/kanecode" target="_blank">
 								<svg xmlns="http://www.w3.org/2000/svg" width="12.768" height="12.768"
 									viewbox="0 0 12.768 12.768">
 									<path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"
@@ -855,7 +734,7 @@
 										transform="translate(0 0)" fill="#f8bf52"></path>
 								</svg>
 							</a>
-							<a href="https://www.instagram.com/cmvcmiami/" target="_blank">
+							<a href="https://www.instagram.com/wearekanecode/ " target="_blank">
 								<svg xmlns="http://www.w3.org/2000/svg" width="14.27" height="14.27"
 									viewbox="0 0 14.27 14.27">
 									<g id="Icon_feather-instagram" data-name="Icon feather-instagram"
@@ -863,18 +742,21 @@
 										<path id="Path_10898" data-name="Path 10898"
 											d="M6.193,3h6.385A3.193,3.193,0,0,1,15.77,6.193v6.385a3.192,3.192,0,0,1-3.193,3.193H6.193A3.193,3.193,0,0,1,3,12.578V6.193A3.193,3.193,0,0,1,6.193,3Z"
 											transform="translate(-3 -3)" fill="none" stroke="#f8bf52"
-											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+										</path>
 										<path id="Path_10899" data-name="Path 10899"
 											d="M17.052,14.074a2.507,2.507,0,1,1-2.112-2.112A2.507,2.507,0,0,1,17.052,14.074Z"
 											transform="translate(-8.159 -8.085)" fill="none" stroke="#f8bf52"
-											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+										</path>
 										<path id="Path_10900" data-name="Path 10900" d="M26.25,9.75h0"
 											transform="translate(-16.353 -6.877)" fill="none" stroke="#f8bf52"
-											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+											stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+										</path>
 									</g>
 								</svg>
 							</a>
-							<a href="https://www.youtube.com/channel/UCsGVA9obM4WRBxvdLMRQKiQ/feed" target="_blank">
+							<a href="https://www.youtube.com/channel/UCdrjbNzgz4WxbZhWhxCwZbg " target="_blank">
 								<svg xmlns="http://www.w3.org/2000/svg" width="18.162" height="12.77"
 									viewbox="0 0 18.162 12.77">
 									<path id="Icon_awesome-youtube" data-name="Icon awesome-youtube"
@@ -891,26 +773,28 @@
 
 						<div class="col-md-6 offset-lg-1 col-lg-2 mb-5">
 							<h6 class="mb-4 text-white">Contact Us</h6>
-							<a href="#" target="_blank"
-								class="text-white mb-2 footerL">2900 West 12th Avenue. 3rd Floor. Hialeah, FL 33012</a>
+							<a href="https://kanecode.readme.io/docs" target="_blank"
+								class="text-white mb-2 footerL">2900 West 12th Avenue. 3rd Floor. Hialeah, FL
+								33012</a>
 
-							<a href="#" class="text-white mb-2 footerL">(305) 888-9200 / (786) 542-5210</a>
-							<a href="#" class="text-white mb-2 footerL">info@compumed.edu</a>
-							<a href="#" class="text-white mb-2 footerL">11401 SW 40 Street. Suite 150, 1st Floor.
+							<a href="/support" class="text-white mb-2 footerL">(305) 888-9200 / (786) 542-5210</a>
+							<a href="/support" class="text-white mb-2 footerL">info@compumed.edu</a>
+							<a href="/support" class="text-white mb-2 footerL">11401 SW 40 Street. Suite 150, 1st
+								Floor.
 								Miami, FL</a>
-							<a href="#" class="text-white mb-2 footerL">(305) 553-2898 / (305) 221-6713</a>
+							<a href="/support" class="text-white mb-2 footerL">(305) 553-2898 / (305) 221-6713</a>
 
 						</div>
 						<div class="col-md-6 col-lg-2 mb-5">
 							<h6 class="mb-4 text-white">Useful Links</h6>
-							<a href="/blog.html" class="text-white mb-2 footerL">Blog</a>
-							<a href="/company.html" class="text-white mb-2 footerL">Company</a>
-							<a href="/services.html" class="text-white mb-2 footerL">Services</a>
-							<a href="/programs.html" class="text-white mb-2 footerL">Programs</a>
-							<a href="/admission.html" class="text-white mb-2 footerL">Admission</a>
-							<a href="/financial-aid.html" class="text-white mb-2 footerL">Financial aid</a>
-							<a href="/contact.html" class="text-white mb-2 footerL">Get a consultation</a>
-							<a href="/events.html" class="text-white mb-2 footerL">Events</a>
+							<a href="/channel-partners-become-a-partner" class="text-white mb-2 footerL">Blog</a>
+							<a href="/channel-partner-program" class="text-white mb-2 footerL">Company</a>
+							<a href="/enterprise-academy" class="text-white mb-2 footerL">Services</a>
+							<a href="/find-your-partner" class="text-white mb-2 footerL">Programs</a>
+							<a href="/channel-partners-become-a-partner" class="text-white mb-2 footerL">Admission</a>
+							<a href="/channel-partner-program" class="text-white mb-2 footerL">Financial aid</a>
+							<a href="/enterprise-academy" class="text-white mb-2 footerL">Get a consultation</a>
+							<a href="/find-your-partner" class="text-white mb-2 footerL">Events</a>
 						</div>
 						<div class="col-md-6 col-lg-4 mb-5">
 							<a class="twitter-timeline" data-height="300" data-theme="dark"
@@ -933,11 +817,11 @@
 				<div class="col-md-6 footer-legacy">
 					<ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
 						<li class="nav-item"><a class="nav-link  text-white text-primary-hover"
-								href="#">Privacy statement</a></li>
+								href="/developers-privacy-policy">Privacy statement</a></li>
 						<li class="nav-item"><a class="nav-link  text-white text-primary-hover"
-								href="#">Cookie Policy</a></li>
+								href="/developers-cookies">Cookie Policy</a></li>
 						<li class="nav-item"><a class="nav-link  text-white text-primary-hover pe-0"
-								href="#">Contact us</a></li>
+								href="/developers-contact-us">Contact us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -1003,11 +887,10 @@
 	<script type="42264ca914524534c0c096a6-text/javascript">
 <!--
 window.onload = new Function('iniciaScripts','document.eBDPageReady=true;' + onload_calls);
- -->
+// -->
 </script>
 	<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
 		data-cf-settings="42264ca914524534c0c096a6-|49" defer=""></script>
-
 </body>
 
 </html>
