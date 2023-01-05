@@ -19026,7 +19026,7 @@ img.img-grayscale {
     border: none;
     display: inline-block;
     padding: .425rem 0;
-    margin-right: 30px;
+    margin-right: 18px;
     width: auto
 }
 
@@ -24140,10 +24140,22 @@ section.project-benefits .h3 span {
 }
 .s-lf-h1{
     font-size: 40px;
+    font-weight: 500;
 }
 .s-lf-h1 strong{
-    font-size: 45px;
+    font-size: 40px;
     color: #013765;
+    font-weight: 700;
+}
+.s2-lf-h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #0d0e10;
+}
+.s2-lf-h1 strong{
+    font-size: 40px;
+    color: #0d0e10;
+    font-weight: 700;
 }
 .s-lf-h3{
     font-size: 30px;
@@ -24317,8 +24329,9 @@ bottom: 0;
 }
 .p-home{
     font-size: 16px;
-    font-weight: 400 ;
+    font-weight: 500 !important;
     line-height: normal;
+    color: #0d0e10;
 }
 .flame-80{
     opacity: 0.5;
