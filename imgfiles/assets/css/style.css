@@ -19245,8 +19245,8 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 }
 
 .navbar-top {
-    border-bottom: 1px solid #fff;
-    background-color: #ffffff6b;
+    border-bottom: 1px solid #F6AF43;
+    background-color: #ffffffc4;
 }
 
 .navbar-top span {
@@ -22203,7 +22203,7 @@ button.text-primary-hover:hover {
     position: absolute;
     top: 25vh;
     left: 0;
-    padding: 0 20px
+    padding: 0px
 }
 
 @media screen and (min-width:992px) {
@@ -24322,13 +24322,14 @@ bottom: 0;
     color: #4d4d4d;
 }
 .text-banner-home{
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 600;
     color: #013765;
-    line-height: 60px;
+    line-height: 50px;
 }
+
 .p-home{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500 !important;
     line-height: normal;
     color: #0d0e10;
