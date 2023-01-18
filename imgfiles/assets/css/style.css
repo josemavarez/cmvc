@@ -19151,7 +19151,8 @@ img.img-grayscale {
 
 .navbar {
     z-index: 9;
-    height: 75px
+    height: 75px;
+    background: linear-gradient(180deg, #ffffffc4 0%, rgba(255,255,255,0) 100%);
 }
 
 .navbar-nav .nav-link {
@@ -19948,7 +19949,8 @@ body {
     height: 100%;
     overflow-x: hidden;
     z-index: 0;
-    position: relative
+    position: relative;
+    overflow-y: overlay;
 }
 
 main {
@@ -22217,7 +22219,7 @@ button.text-primary-hover:hover {
 @media screen and (min-width:1400px) {
     .banner-home__text {
         padding: 0 20px;
-        top: 40vh;
+        top: 22vh;
         left: 0
     }
 }
@@ -24177,8 +24179,9 @@ section.project-benefits .h3 span {
 }
 
 .text-llete{
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 200;
+    line-height: 55px;
 }
 .img-services{
 position: absolute;
@@ -24325,7 +24328,7 @@ bottom: 0;
     font-size: 45px;
     font-weight: 600;
     color: #013765;
-    line-height: 50px;
+    line-height: 45px;
 }
 
 .p-home{
@@ -24335,7 +24338,13 @@ bottom: 0;
     color: #0d0e10;
 }
 .flame-80{
-    opacity: 0.5;
+    opacity: 1;
+}
+.flame-home{
+    object-fit: cover !important;
+    width: 5% !important;
+    height: 100% !important;
+position: static !important;
 }
 .img-pr1{
     position: absolute;
@@ -24441,6 +24450,25 @@ bottom: 0;
 .pr-btn{
     font-size: 16px;
     font-weight: 500;
+}
+.bg-light-overlay-4 {
+    position: relative;
+    z-index: 1
+}
+
+.bg-light-overlay-4:before {
+    content: " ";
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.56) 28%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1
 }
 @media screen and (max-width:768px) {
     .programs{
